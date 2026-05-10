@@ -18,6 +18,7 @@ El código está dividido en niveles progresivos. Cada ejercicio incluye su prop
 8. **Nivel 8: Documentación Dinámica (`Swagger/OpenAPI`)** -> Interfaz web interactiva para probar la API en `/swagger-ui/index.html`.
 9. **Nivel 9: Dockerización (`Containerization`)** -> Empaquetado profesional para despliegue en cualquier entorno.
 10. **Nivel 10: Orquestación (`Docker Compose`)** -> Sistema multi-contenedor con PostgreSQL real.
+11. **Nivel 11: Testing de Élite (`Testcontainers`)** -> Pruebas de integración automáticas con Docker.
 
 ## 🛠️ Requisitos
 - **Java 21 LTS** - **Maven 3.8+** - **Docker & Docker Compose**
