@@ -30,6 +30,7 @@ El código está dividido en niveles progresivos. Cada ejercicio incluye su prop
 20. **Nivel 20: Notificaciones Pro (`Spring Mail`)** -> Flujo completo de avisos automáticos integrados con eventos.
 21. **Nivel 21: Diseño Visual (`Mermaid Architecture`)** -> Documentación técnica con diagramas de flujo e infraestructura.
 22. **Nivel 22: Consultas Flexibles (`GraphQL`)** -> Alternativa moderna a REST para optimizar el tráfico de datos.
+23. **Nivel 23: Resiliencia y Tolerancia (`Circuit Breaker`)** -> Protección del sistema ante fallos en dependencias externas.
 
 ## 🛠️ Requisitos
 - **Java 21 LTS** - **Maven 3.8+** - **Docker & Docker Compose**
