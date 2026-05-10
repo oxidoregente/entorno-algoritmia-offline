@@ -24,6 +24,7 @@ El código está dividido en niveles progresivos. Cada ejercicio incluye su prop
 14. **Nivel 14: Arquitectura de Eventos (`RabbitMQ`)** -> Comunicación asíncrona entre componentes mediante mensajería.
 15. **Nivel 15: Observabilidad 360° (`Actuator + Prometheus`)** -> Monitorización de salud y métricas de rendimiento en tiempo real.
 16. **Nivel 16: Gestión de Entornos (`Spring Profiles`)** -> Separación de configuraciones entre desarrollo y producción.
+17. **Nivel 17: Evolución de Datos (`Flyway`)** -> Versionado y migración automática de esquemas de base de datos.
 
 ## 🛠️ Requisitos
 - **Java 21 LTS** - **Maven 3.8+** - **Docker & Docker Compose**
