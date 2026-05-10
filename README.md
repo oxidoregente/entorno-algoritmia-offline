@@ -1,43 +1,44 @@
 # Entorno de Algoritmia Offline - "LeetCode Local"
 
-¡Bienvenido, futuro Ingeniero! Este proyecto ha sido diseñado por tu **Tech Lead** para ayudarte a dominar el ecosistema moderno de Java y Spring Boot de forma 100% práctica y offline.
+¡Bienvenido! Este repositorio es un laboratorio de aprendizaje de código abierto diseñado para dominar el ecosistema moderno de Java y Spring Boot de forma 100% práctica y sin conexión a internet. 
 
-## 🚀 Niveles de Aprendizaje
+El proyecto nació como una iniciativa personal de **Brandon**, estudiante de Ingeniería de Sistemas, en colaboración con inteligencia artificial (Gemini), con el objetivo de crear un entorno de pruebas robusto donde cualquier desarrollador pueda mejorar su lógica de programación, aprender testing y dominar arquitecturas reales sin depender de plataformas web externas.
 
-1. **Nivel 1: Algoritmia Base** (`com.brandon.nivel1`)
-   - Objetivo: Resolver problemas lógicos y aprender **JUnit 5**.
-   - Concepto: Patrón Arrange-Act-Assert.
+## 🚀 Estructura de Aprendizaje
 
-2. **Nivel 2: Java Funcional** (`com.brandon.nivel2`)
-   - Objetivo: Dominar la **API de Streams** y expresiones Lambda.
-   - Concepto: Procesamiento declarativo de colecciones.
+El código está dividido en niveles progresivos. Cada ejercicio incluye su propia clase de lógica y su respectiva prueba unitaria (`Test`), documentada exhaustivamente.
 
-3. **Nivel 3: Lógica de Negocio** (`com.brandon.nivel3`)
-   - Objetivo: Crear servicios con **Spring Boot (@Service)**.
-   - Concepto: Inyección de dependencias y lógica empresarial.
-
-4. **Nivel 4: Persistencia JPA** (`com.brandon.nivel4`)
-   - Objetivo: Guardar datos en una base de datos real (**H2**).
-   - Concepto: Entidades, Repositorios y `@DataJpaTest`.
-
-5. **Nivel 5: API REST** (`com.brandon.nivel5`)
-   - Objetivo: Exponer funcionalidad a través de HTTP.
-   - Concepto: `@RestController` y `@RequestMapping`.
+1. **Nivel 1: Algoritmia Base (`com.brandon.nivel1`)** -> Lógica pura, estructuras de datos y patrón Arrange-Act-Assert con JUnit 5.
+2. **Nivel 2: Java Funcional (`com.brandon.nivel2`)** -> Procesamiento de colecciones con la API de Streams y Lambdas.
+3. **Nivel 3: Lógica de Negocio (`com.brandon.nivel3`)** -> Creación de servicios con `@Service` y manejo de reglas empresariales (inyección de dependencias).
+4. **Nivel 4: Persistencia JPA (`com.brandon.nivel4`)** -> Base de datos en memoria (H2) con `@Entity`, repositorios y pruebas con `@DataJpaTest`.
+5. **Nivel 5: API REST (`com.brandon.nivel5`)** -> Exposición de funcionalidades mediante `@RestController`.
+6. **Nivel 6: Arquitectura Avanzada (`com.brandon.nivel6`)** -> Patrones DTO con `records`, manejo de excepciones globales y uso de Mockito.
 
 ## 🛠️ Requisitos
-- **Java 21** (Uso de Records, Switch mejorado, etc.)
-- **Maven 3.8+**
+- **Java 21 LTS** - **Maven 3.8+**
 
-## 🧪 Cómo ejecutar las pruebas
-Para validar que todo funciona correctamente, abre una terminal en la raíz del proyecto y ejecuta:
+## 🧪 Cómo Usar y Probar el Proyecto
+
+La filosofía de este repositorio es **Test-Driven**. No necesitas levantar un servidor para probar los algoritmos; todo se ejecuta a través de pruebas automatizadas.
+
+Para ejecutar todos los ejercicios a la vez:
 ```bash
-mvn test
+mvn clean test
 ```
 
-## 📝 Notas del Mentor
-- **Clean Code:** Observa cómo las variables están nombradas en español para tu facilidad, pero siguiendo la estructura `camelCase` estándar de Java.
-- **Testing:** Nunca des por hecho que un código funciona si no tienes un test que lo demuestre.
-- **Offline:** No necesitas internet para correr este proyecto; todas las dependencias se gestionan localmente una vez descargadas.
+*Tip para entornos offline:* Si ya ejecutaste el comando anterior una vez con internet, puedes correr todas las pruebas sin conexión añadiendo el flag offline: `mvn clean test -o`.
+
+## 🤝 Cómo Contribuir
+
+¡Las contribuciones son bienvenidas! Si deseas agregar nuevos ejercicios o mejorar las explicaciones teóricas:
+
+1. Haz un Fork del repositorio.
+2. Crea una rama para tu ejercicio (`git checkout -b feature/nivelX-nombre-ejercicio`).
+3. Asegúrate de incluir el código principal y su test correspondiente en verde.
+4. Usa comentarios en formato Javadoc para explicar la teoría detrás de tu solución.
+5. Abre un Pull Request detallando qué concepto nuevo aporta tu ejercicio.
 
 ---
-*Diseñado para Brandon - Facultad de Ingeniería de Sistemas.*
+
+*Construyendo código sólido, un test a la vez.*
