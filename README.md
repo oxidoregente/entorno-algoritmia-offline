@@ -25,6 +25,7 @@ El código está dividido en niveles progresivos. Cada ejercicio incluye su prop
 15. **Nivel 15: Observabilidad 360° (`Actuator + Prometheus`)** -> Monitorización de salud y métricas de rendimiento en tiempo real.
 16. **Nivel 16: Gestión de Entornos (`Spring Profiles`)** -> Separación de configuraciones entre desarrollo y producción.
 17. **Nivel 17: Evolución de Datos (`Flyway`)** -> Versionado y migración automática de esquemas de base de datos.
+18. **Nivel 18: Automatización de Tareas (`Scheduler`)** -> Programación de procesos autónomos en segundo plano.
 
 ## 🛠️ Requisitos
 - **Java 21 LTS** - **Maven 3.8+** - **Docker & Docker Compose**
