@@ -1,5 +1,6 @@
 package com.brandon.nivel3.servicios;
 
+import com.brandon.nivel14.mensajeria.ProductorMensajes;
 import org.springframework.stereotype.Service;
 
 /**
@@ -11,6 +12,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProcesadorPagosFintech {
 
+    private final ProductorMensajes productor;
+
+    public ProcesadorPagosFintech(ProductorMensajes productor) {
+        this.productor = productor;
+    }
+
     public enum TipoTarjeta {
         DEBITO, CREDITO, CORPORATIVA
     }
@@ -21,10 +28,15 @@ public class ProcesadorPagosFintech {
     public double calcularComision(double monto, TipoTarjeta tipo) {
         if (monto <= 0) return 0;
 
-        return switch (tipo) {
+        double comision = switch (tipo) {
             case DEBITO -> monto * 0.01;      // 1%
             case CREDITO -> monto * 0.03;     // 3%
             case CORPORATIVA -> monto * 0.05; // 5%
         };
+
+        // Enviamos evento asíncrono vía RabbitMQ
+        productor.enviarEvento("Pago procesado - Monto: $" + monto + " | Comisión: $" + comision);
+
+        return comision;
     }
 }
