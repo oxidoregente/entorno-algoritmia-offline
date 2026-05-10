@@ -19,6 +19,7 @@ El código está dividido en niveles progresivos. Cada ejercicio incluye su prop
 9. **Nivel 9: Dockerización (`Containerization`)** -> Empaquetado profesional para despliegue en cualquier entorno.
 10. **Nivel 10: Orquestación (`Docker Compose`)** -> Sistema multi-contenedor con PostgreSQL real.
 11. **Nivel 11: Testing de Élite (`Testcontainers`)** -> Pruebas de integración automáticas con Docker.
+12. **Nivel 12: Seguridad Industrial (`Spring Security + JWT`)** -> Protección de endpoints y autenticación con tokens.
 
 ## 🛠️ Requisitos
 - **Java 21 LTS** - **Maven 3.8+** - **Docker & Docker Compose**
