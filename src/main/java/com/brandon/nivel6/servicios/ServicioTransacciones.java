@@ -4,6 +4,7 @@ import com.brandon.nivel4.repositorios.Transaccion;
 import com.brandon.nivel4.repositorios.TransaccionRepository;
 import com.brandon.nivel6.dto.TransaccionDTO;
 import com.brandon.nivel6.excepciones.ErrorDeNegocioException;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -25,7 +26,9 @@ public class ServicioTransacciones {
 
     /**
      * Obtiene el historial transformado a DTOs con validaciones.
+     * Se almacena en caché para mejorar el rendimiento.
      */
+    @Cacheable(value = "historial_transacciones")
     public List<TransaccionDTO> obtenerHistorialSeguro() {
         return repositorio.findAll().stream()
             .map(this::mapearADto)

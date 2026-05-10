@@ -15,6 +15,14 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
+  # Servicio de Caché (Redis)
+  cache:
+    image: redis:7-alpine
+    container_name: leetcode-cache
+    restart: always
+    ports:
+      - "6379:6379"
+
   # Servicio de la Aplicación (Spring Boot)
   app:
     build: .
@@ -24,12 +32,16 @@ services:
       - "8080:8080"
     depends_on:
       - db
+      - cache
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/algoritmiadb
       - SPRING_DATASOURCE_USERNAME=brandon
       - SPRING_DATASOURCE_PASSWORD=password123
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
       - SPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.PostgreSQLDialect
+      - SPRING_DATA_REDIS_HOST=cache
+      - SPRING_DATA_REDIS_PORT=6379
+      - SPRING_CACHE_TYPE=redis
 
 volumes:
   postgres_data:
