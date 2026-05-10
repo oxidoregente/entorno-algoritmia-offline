@@ -54,15 +54,10 @@ services:
       - cache
       - queue
     environment:
+      - SPRING_PROFILES_ACTIVE=prod
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/algoritmiadb
       - SPRING_DATASOURCE_USERNAME=brandon
       - SPRING_DATASOURCE_PASSWORD=password123
-      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
-      - SPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.PostgreSQLDialect
-      - SPRING_DATA_REDIS_HOST=cache
-      - SPRING_DATA_REDIS_PORT=6379
-      - SPRING_RABBITMQ_HOST=queue
-      - SPRING_CACHE_TYPE=redis
 
 volumes:
   postgres_data:
