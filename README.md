@@ -43,6 +43,7 @@ Para levantar la aplicación junto con todo su ecosistema profesional:
    - App: `http://localhost:8080`
    - Swagger: `http://localhost:8080/swagger-ui/index.html`
    - Prometheus: `http://localhost:9090`
+   - Zipkin: `http://localhost:9411`
    - RabbitMQ Admin: `http://localhost:15672` (usuario/pass: guest)
 
 ## 🧪 Cómo Usar y Probar el Proyecto
@@ -65,6 +66,11 @@ mvn clean test
 3. Asegúrate de incluir el código principal y su test correspondiente en verde.
 4. Usa comentarios en formato Javadoc para explicar la teoría detrás de tu solución.
 5. Abre un Pull Request detallando qué concepto nuevo aporta tu ejercicio.
+
+---
+
+*Construyendo código sólido, un test a la vez.*
+vo aporta tu ejercicio.
 
 ---
 
