@@ -27,6 +27,7 @@ El código está dividido en niveles progresivos. Cada ejercicio incluye su prop
 17. **Nivel 17: Evolución de Datos (`Flyway`)** -> Versionado y migración automática de esquemas de base de datos.
 18. **Nivel 18: Automatización de Tareas (`Scheduler`)** -> Programación de procesos autónomos en segundo plano.
 19. **Nivel 19: Integración Externa (`WebClient`)** -> Consumo de APIs de terceros mediante clientes HTTP reactivos.
+20. **Nivel 20: Notificaciones Pro (`Spring Mail`)** -> Flujo completo de avisos automáticos integrados con eventos.
 
 ## 🛠️ Requisitos
 - **Java 21 LTS** - **Maven 3.8+** - **Docker & Docker Compose**
