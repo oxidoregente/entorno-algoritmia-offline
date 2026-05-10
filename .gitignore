@@ -1,5 +1,38 @@
 target/
-.settings/
+!.mvn/wrapper/maven-wrapper.jar
+/src/main/resources/static/
+/src/main/resources/templates/
+
+### STS ###
+.apt_generated
 .classpath
+.factorypath
 .project
-*.jar
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Others ###
+*.log
+*.temp
+*.tmp
+.DS_Store
