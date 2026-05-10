@@ -23,6 +23,15 @@ services:
     ports:
       - "6379:6379"
 
+  # Servicio de Mensajería (RabbitMQ)
+  queue:
+    image: rabbitmq:3-management-alpine
+    container_name: leetcode-queue
+    restart: always
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
   # Servicio de la Aplicación (Spring Boot)
   app:
     build: .
@@ -33,6 +42,7 @@ services:
     depends_on:
       - db
       - cache
+      - queue
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/algoritmiadb
       - SPRING_DATASOURCE_USERNAME=brandon
@@ -41,6 +51,7 @@ services:
       - SPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.PostgreSQLDialect
       - SPRING_DATA_REDIS_HOST=cache
       - SPRING_DATA_REDIS_PORT=6379
+      - SPRING_RABBITMQ_HOST=queue
       - SPRING_CACHE_TYPE=redis
 
 volumes:

@@ -21,6 +21,7 @@ El código está dividido en niveles progresivos. Cada ejercicio incluye su prop
 11. **Nivel 11: Testing de Élite (`Testcontainers`)** -> Pruebas de integración automáticas con Docker.
 12. **Nivel 12: Seguridad Industrial (`Spring Security + JWT`)** -> Protección de endpoints y autenticación con tokens.
 13. **Nivel 13: Optimización Extrema (`Redis Cache`)** -> Aceleración de respuestas mediante caché distribuido.
+14. **Nivel 14: Arquitectura de Eventos (`RabbitMQ`)** -> Comunicación asíncrona entre componentes mediante mensajería.
 
 ## 🛠️ Requisitos
 - **Java 21 LTS** - **Maven 3.8+** - **Docker & Docker Compose**
