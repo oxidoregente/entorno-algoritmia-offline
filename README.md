@@ -29,6 +29,7 @@ El código está dividido en niveles progresivos. Cada ejercicio incluye su prop
 19. **Nivel 19: Integración Externa (`WebClient`)** -> Consumo de APIs de terceros mediante clientes HTTP reactivos.
 20. **Nivel 20: Notificaciones Pro (`Spring Mail`)** -> Flujo completo de avisos automáticos integrados con eventos.
 21. **Nivel 21: Diseño Visual (`Mermaid Architecture`)** -> Documentación técnica con diagramas de flujo e infraestructura.
+22. **Nivel 22: Consultas Flexibles (`GraphQL`)** -> Alternativa moderna a REST para optimizar el tráfico de datos.
 
 ## 🛠️ Requisitos
 - **Java 21 LTS** - **Maven 3.8+** - **Docker & Docker Compose**

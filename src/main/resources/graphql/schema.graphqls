@@ -1,0 +1,11 @@
+type Query {
+    todasLasTransacciones: [Transaccion]
+    transaccionPorId(id: ID!): Transaccion
+}
+
+type Transaccion {
+    id: ID
+    estado: String
+    monto: Float
+    fecha: String
+}
