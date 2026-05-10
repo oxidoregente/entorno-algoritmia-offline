@@ -22,15 +22,20 @@ El código está dividido en niveles progresivos. Cada ejercicio incluye su prop
 12. **Nivel 12: Seguridad Industrial (`Spring Security + JWT`)** -> Protección de endpoints y autenticación con tokens.
 13. **Nivel 13: Optimización Extrema (`Redis Cache`)** -> Aceleración de respuestas mediante caché distribuido.
 14. **Nivel 14: Arquitectura de Eventos (`RabbitMQ`)** -> Comunicación asíncrona entre componentes mediante mensajería.
+15. **Nivel 15: Observabilidad 360° (`Actuator + Prometheus`)** -> Monitorización de salud y métricas de rendimiento en tiempo real.
 
 ## 🛠️ Requisitos
 - **Java 21 LTS** - **Maven 3.8+** - **Docker & Docker Compose**
 
 ## 🐳 Ejecución con Docker (Ecosistema Completo)
-Para levantar la aplicación junto con una base de datos PostgreSQL real:
+Para levantar la aplicación junto con todo su ecosistema profesional:
 1. Compila el JAR: `mvn clean package -DskipTests`
 2. Levanta el ecosistema: `docker-compose up --build`
-3. Accede a la API en `http://localhost:8080` y a Swagger en `/swagger-ui/index.html`.
+3. **Endpoints de interés:**
+   - App: `http://localhost:8080`
+   - Swagger: `http://localhost:8080/swagger-ui/index.html`
+   - Prometheus: `http://localhost:9090`
+   - RabbitMQ Admin: `http://localhost:15672` (usuario/pass: guest)
 
 ## 🧪 Cómo Usar y Probar el Proyecto
 
