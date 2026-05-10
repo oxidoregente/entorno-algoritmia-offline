@@ -1,5 +1,9 @@
 package com.brandon.nivel18.automatizacion;
 
+import org.springframework.batch.core.Job;
+import org.springframework.batch.core.JobParameters;
+import org.springframework.batch.core.JobParametersBuilder;
+import org.springframework.batch.core.launch.JobLauncher;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -8,27 +12,36 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 
 /**
- * Nivel 18: Automatización de Tareas con Spring Scheduler.
- * 
- * <p>Esta clase demuestra cómo programar tareas que se ejecutan de forma autónoma
- * en segundo plano, basándose en intervalos de tiempo o expresiones Cron.</p>
+ * Nivel 18/25: Automatización y Procesamiento por Lotes.
  */
 @Service
 public class TareaMantenimiento {
 
     private static final Logger logger = LoggerFactory.getLogger(TareaMantenimiento.class);
+    private final JobLauncher jobLauncher;
+    private final Job jobCierreContable;
 
-    /**
-     * Tarea de mantenimiento simulada que se ejecuta cada 5 minutos.
-     * fixedRate: indica el intervalo en milisegundos.
-     */
-    @Scheduled(fixedRate = 300000) // 5 minutos
-    public void ejecutarLimpiezaCache() {
-        logger.info(">> [AUTOMATIZACIÓN] Iniciando tarea de limpieza de caché programada - {}", LocalDateTime.now());
-        // Aquí iría la lógica real de limpieza
-        logger.info("<< [AUTOMATIZACIÓN] Tarea de limpieza finalizada exitosamente.");
+    public TareaMantenimiento(JobLauncher jobLauncher, Job jobCierreContable) {
+        this.jobLauncher = jobLauncher;
+        this.jobCierreContable = jobCierreContable;
     }
 
+    /**
+     * Dispara el proceso masivo de Spring Batch cada 10 minutos.
+     */
+    @Scheduled(fixedRate = 600000) 
+    public void ejecutarCierreMasivo() {
+        try {
+            logger.info(">> [AUTOMATIZACIÓN] Iniciando Job de Spring Batch - {}", LocalDateTime.now());
+            JobParameters params = new JobParametersBuilder()
+                    .addString("idEjecucion", String.valueOf(System.currentTimeMillis()))
+                    .toJobParameters();
+            jobLauncher.run(jobCierreContable, params);
+        } catch (Exception e) {
+            logger.error("Error al ejecutar el lote: {}", e.getMessage());
+        }
+    }
+...
     /**
      * Tarea de reporte de salud que se ejecuta cada hora usando expresión Cron.
      * Estructura: "segundos minutos horas día mes día-semana"
