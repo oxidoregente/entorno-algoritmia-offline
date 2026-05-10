@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  # Servicio de Base de Datos (PostgreSQL)
+  db:
+    image: postgres:15-alpine
+    container_name: leetcode-db
+    restart: always
+    environment:
+      POSTGRES_DB: algoritmiadb
+      POSTGRES_USER: brandon
+      POSTGRES_PASSWORD: password123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # Servicio de la Aplicación (Spring Boot)
+  app:
+    build: .
+    container_name: leetcode-app
+    restart: on-failure
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/algoritmiadb
+      - SPRING_DATASOURCE_USERNAME=brandon
+      - SPRING_DATASOURCE_PASSWORD=password123
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - SPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.PostgreSQLDialect
+
+volumes:
+  postgres_data:

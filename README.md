@@ -17,15 +17,16 @@ El código está dividido en niveles progresivos. Cada ejercicio incluye su prop
 7. **Nivel 7: Observabilidad y AOP (`com.brandon.nivel7`)** -> Auditoría automática de servicios y monitoreo de tiempos de ejecución.
 8. **Nivel 8: Documentación Dinámica (`Swagger/OpenAPI`)** -> Interfaz web interactiva para probar la API en `/swagger-ui/index.html`.
 9. **Nivel 9: Dockerización (`Containerization`)** -> Empaquetado profesional para despliegue en cualquier entorno.
+10. **Nivel 10: Orquestación (`Docker Compose`)** -> Sistema multi-contenedor con PostgreSQL real.
 
 ## 🛠️ Requisitos
-- **Java 21 LTS** - **Maven 3.8+** - **Docker** (Opcional para Nivel 9)
+- **Java 21 LTS** - **Maven 3.8+** - **Docker & Docker Compose**
 
-## 🐳 Ejecución con Docker
-Si tienes Docker instalado, puedes correr el proyecto sin configurar Java localmente:
-1. Compila el proyecto: `mvn clean package -DskipTests`
-2. Construye la imagen: `docker build -t brandon/leetcode-local .`
-3. Inicia el contenedor: `docker run -p 8080:8080 brandon/leetcode-local`
+## 🐳 Ejecución con Docker (Ecosistema Completo)
+Para levantar la aplicación junto con una base de datos PostgreSQL real:
+1. Compila el JAR: `mvn clean package -DskipTests`
+2. Levanta el ecosistema: `docker-compose up --build`
+3. Accede a la API en `http://localhost:8080` y a Swagger en `/swagger-ui/index.html`.
 
 ## 🧪 Cómo Usar y Probar el Proyecto
 
