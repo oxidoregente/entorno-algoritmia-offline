@@ -2,6 +2,8 @@ package com.brandon.nivel5.api;
 
 import com.brandon.nivel3.servicios.ProcesadorPagosFintech;
 import com.brandon.nivel3.servicios.ProcesadorPagosFintech.TipoTarjeta;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
@@ -14,6 +16,7 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/api/v1/pagos")
+@Tag(name = "Pagos", description = "Endpoints para la gestión y cálculo de comisiones fintech")
 public class PagoController {
 
     private final ProcesadorPagosFintech procesador;
@@ -28,6 +31,7 @@ public class PagoController {
      * Ejemplo de uso: GET /api/v1/pagos/comision?monto=100&tipo=CREDITO
      */
     @GetMapping("/comision")
+    @Operation(summary = "Calcular comisión", description = "Calcula la comisión basada en el monto y el tipo de tarjeta")
     public Map<String, Object> obtenerComision(
             @RequestParam double monto,
             @RequestParam TipoTarjeta tipo) {

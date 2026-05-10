@@ -14,9 +14,18 @@ El código está dividido en niveles progresivos. Cada ejercicio incluye su prop
 4. **Nivel 4: Persistencia JPA (`com.brandon.nivel4`)** -> Base de datos en memoria (H2) con `@Entity`, repositorios y pruebas con `@DataJpaTest`.
 5. **Nivel 5: API REST (`com.brandon.nivel5`)** -> Exposición de funcionalidades mediante `@RestController`.
 6. **Nivel 6: Arquitectura Avanzada (`com.brandon.nivel6`)** -> Patrones DTO con `records`, manejo de excepciones globales y uso de Mockito.
+7. **Nivel 7: Observabilidad y AOP (`com.brandon.nivel7`)** -> Auditoría automática de servicios y monitoreo de tiempos de ejecución.
+8. **Nivel 8: Documentación Dinámica (`Swagger/OpenAPI`)** -> Interfaz web interactiva para probar la API en `/swagger-ui/index.html`.
+9. **Nivel 9: Dockerización (`Containerization`)** -> Empaquetado profesional para despliegue en cualquier entorno.
 
 ## 🛠️ Requisitos
-- **Java 21 LTS** - **Maven 3.8+**
+- **Java 21 LTS** - **Maven 3.8+** - **Docker** (Opcional para Nivel 9)
+
+## 🐳 Ejecución con Docker
+Si tienes Docker instalado, puedes correr el proyecto sin configurar Java localmente:
+1. Compila el proyecto: `mvn clean package -DskipTests`
+2. Construye la imagen: `docker build -t brandon/leetcode-local .`
+3. Inicia el contenedor: `docker run -p 8080:8080 brandon/leetcode-local`
 
 ## 🧪 Cómo Usar y Probar el Proyecto
 
