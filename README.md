@@ -26,6 +26,7 @@ El código está dividido en niveles progresivos. Cada ejercicio incluye su prop
 16. **Nivel 16: Gestión de Entornos (`Spring Profiles`)** -> Separación de configuraciones entre desarrollo y producción.
 17. **Nivel 17: Evolución de Datos (`Flyway`)** -> Versionado y migración automática de esquemas de base de datos.
 18. **Nivel 18: Automatización de Tareas (`Scheduler`)** -> Programación de procesos autónomos en segundo plano.
+19. **Nivel 19: Integración Externa (`WebClient`)** -> Consumo de APIs de terceros mediante clientes HTTP reactivos.
 
 ## 🛠️ Requisitos
 - **Java 21 LTS** - **Maven 3.8+** - **Docker & Docker Compose**
