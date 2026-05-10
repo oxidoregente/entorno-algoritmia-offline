@@ -31,6 +31,8 @@ El código está dividido en niveles progresivos. Cada ejercicio incluye su prop
 21. **Nivel 21: Diseño Visual (`Mermaid Architecture`)** -> Documentación técnica con diagramas de flujo e infraestructura.
 22. **Nivel 22: Consultas Flexibles (`GraphQL`)** -> Alternativa moderna a REST para optimizar el tráfico de datos.
 23. **Nivel 23: Resiliencia y Tolerancia (`Circuit Breaker`)** -> Protección del sistema ante fallos en dependencias externas.
+24. **Nivel 24: Trazabilidad Distribuida (`Zipkin`)** -> Seguimiento del ciclo de vida de las peticiones (Trace ID).
+25. **Nivel 25: Procesamiento Masivo (`Spring Batch`)** -> Gestión de grandes volúmenes de datos mediante trabajos por lotes.
 
 ## 🛠️ Requisitos
 - **Java 21 LTS** - **Maven 3.8+** - **Docker & Docker Compose**
@@ -66,11 +68,6 @@ mvn clean test
 3. Asegúrate de incluir el código principal y su test correspondiente en verde.
 4. Usa comentarios en formato Javadoc para explicar la teoría detrás de tu solución.
 5. Abre un Pull Request detallando qué concepto nuevo aporta tu ejercicio.
-
----
-
-*Construyendo código sólido, un test a la vez.*
-vo aporta tu ejercicio.
 
 ---
 
