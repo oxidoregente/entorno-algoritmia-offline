@@ -50,7 +50,13 @@ Para levantar la aplicación junto con todo su ecosistema profesional:
 
 ## 🧪 Cómo Usar y Probar el Proyecto
 
-La filosofía de este repositorio es **Test-Driven**. No necesitas levantar un servidor para probar los algoritmos; todo se ejecuta a través de pruebas automatizadas.
+La filosofía de este repositorio es **Interactiva y Basada en Pruebas (TDD)**. Para los ejercicios de lógica (Nivel 1 y 2), sigue este flujo de aprendizaje:
+
+1. **Lee el Enunciado:** Abre la clase `[Nombre]Enunciado.java`. Allí encontrarás la descripción del problema y un método vacío con un `// TODO`.
+2. **Corre el Test:** Ejecuta `[Nombre]Test.java`. Verás que las pruebas fallan (aparecen en **rojo**). ¡Esto es normal!
+3. **Escribe tu Código:** Implementa la lógica necesaria en la clase `Enunciado` para resolver el reto.
+4. **Valida tu Progreso:** Corre el test nuevamente. Cuando todas las pruebas estén en **verde**, habrás resuelto el problema.
+5. **Compara:** Abre `[Nombre]Solucion.java` para ver una implementación optimizada y leer la explicación teórica detallada.
 
 Para ejecutar todos los ejercicios a la vez:
 ```bash

@@ -41,7 +41,7 @@ public class TareaMantenimiento {
             logger.error("Error al ejecutar el lote: {}", e.getMessage());
         }
     }
-...
+
     /**
      * Tarea de reporte de salud que se ejecuta cada hora usando expresión Cron.
      * Estructura: "segundos minutos horas día mes día-semana"
