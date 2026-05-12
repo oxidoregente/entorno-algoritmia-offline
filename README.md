@@ -34,6 +34,7 @@ El código está dividido en niveles progresivos, contando con **más de 40 reto
 24. **Nivel 24: Trazabilidad Distribuida (`Zipkin`)** -> Seguimiento del ciclo de vida de las peticiones (Trace ID).
 25. **Nivel 25: Procesamiento Masivo (`Spring Batch`)** -> Gestión de grandes volúmenes de datos mediante trabajos por lotes.
 27. **Nivel 27: Auditoría de Datos (`Hibernate Envers`)** -> Registro automático del historial de cambios en entidades.
+28. **Nivel 28: Simulación de APIs (`WireMock`)** -> Pruebas de servicios externos sin dependencia de internet.
 
 ## 🛠️ Requisitos
 - **Java 21 LTS** - **Maven 3.8+** - **Docker & Docker Compose**
