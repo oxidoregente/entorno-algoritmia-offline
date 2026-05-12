@@ -5,7 +5,7 @@ import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.verify;
 
 import com.brandon.nivel14.mensajeria.ProductorMensajes;
-import com.brandon.nivel3.servicios.ProcesadorPagosFintech.TipoTarjeta;
+import com.brandon.nivel3.servicios.ProcesadorPagosFintechEnunciado.TipoTarjeta;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -13,9 +13,8 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 /**
- * Test unitario para el Procesador de Pagos.
- * Usamos @ExtendWith(MockitoExtension.class) para una prueba rápida y aislada,
- * sin necesidad de levantar el contexto de Spring o conectar a RabbitMQ.
+ * Test para validar ProcesadorPagosFintechEnunciado.
+ * El estudiante debe implementar la lógica para que estos tests pasen.
  */
 @ExtendWith(MockitoExtension.class)
 class ProcesadorPagosFintechTest {
@@ -24,26 +23,21 @@ class ProcesadorPagosFintechTest {
     private ProductorMensajes productor;
 
     @InjectMocks
-    private ProcesadorPagosFintech procesador;
+    private ProcesadorPagosFintechEnunciado procesador;
 
     @Test
     void testComisionCredito() {
-        double monto = 100.0;
-        double comision = procesador.calcularComision(monto, TipoTarjeta.CREDITO);
+        double comision = procesador.calcularComision(100.0, TipoTarjeta.CREDITO);
         
-        // Assert: 100 * 0.03 = 3.0
-        assertEquals(3.0, comision);
-        // Verificamos que se intentó enviar el mensaje de auditoría
+        assertEquals(3.0, comision, "La comisión de crédito (3%) de 100 debe ser 3");
         verify(productor).enviarEvento(anyString());
     }
 
     @Test
     void testComisionDebito() {
-        double monto = 100.0;
-        double comision = procesador.calcularComision(monto, TipoTarjeta.DEBITO);
+        double comision = procesador.calcularComision(100.0, TipoTarjeta.DEBITO);
         
-        // Assert: 100 * 0.01 = 1.0
-        assertEquals(1.0, comision);
+        assertEquals(1.0, comision, "La comisión de débito (1%) de 100 debe ser 1");
         verify(productor).enviarEvento(anyString());
     }
 }

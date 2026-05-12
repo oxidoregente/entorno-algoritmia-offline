@@ -1,7 +1,7 @@
 package com.brandon.nivel5.api;
 
-import com.brandon.nivel3.servicios.ProcesadorPagosFintech;
-import com.brandon.nivel3.servicios.ProcesadorPagosFintech.TipoTarjeta;
+import com.brandon.nivel3.servicios.ProcesadorPagosFintechEnunciado;
+import com.brandon.nivel3.servicios.ProcesadorPagosFintechEnunciado.TipoTarjeta;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.*;
@@ -19,10 +19,10 @@ import java.util.Map;
 @Tag(name = "Pagos", description = "Endpoints para la gestión y cálculo de comisiones fintech")
 public class PagoController {
 
-    private final ProcesadorPagosFintech procesador;
+    private final ProcesadorPagosFintechEnunciado procesador;
 
     // Inyección por constructor (Práctica recomendada en Spring)
-    public PagoController(ProcesadorPagosFintech procesador) {
+    public PagoController(ProcesadorPagosFintechEnunciado procesador) {
         this.procesador = procesador;
     }
 
