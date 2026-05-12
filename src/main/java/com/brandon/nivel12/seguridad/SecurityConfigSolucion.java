@@ -8,21 +8,19 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.config.http.SessionCreationPolicy;
 
 /**
- * Configuración de Seguridad con Spring Security.
+ * SOLUCIÓN: Configuración de Seguridad con Roles.
  */
-@Configuration
-@EnableWebSecurity
-public class SecurityConfig {
+public class SecurityConfigSolucion {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
-            .csrf(csrf -> csrf.disable()) // Deshabilitar CSRF para APIs
+            .csrf(csrf -> csrf.disable())
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/v1/auth/**").permitAll() // Permitir login
-                .requestMatchers("/swagger-ui/**", "/v3/api-docs/**").permitAll() // Permitir Swagger
-                .anyRequest().authenticated() // Proteger todo lo demás
+                .requestMatchers("/api/v1/auth/**").permitAll()
+                .requestMatchers("/api/v1/pagos/comision").hasRole("ADMIN")
+                .anyRequest().authenticated()
             );
         
         return http.build();
