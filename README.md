@@ -6,7 +6,7 @@ El proyecto nació como una iniciativa personal de **Brandon**, estudiante de In
 
 ## 🚀 Estructura de Aprendizaje
 
-El código está dividido en niveles progresivos, contando con **más de 40 retos interactivos**. Cada ejercicio incluye su propia clase de lógica (`Enunciado`), su referencia optimizada (`Solucion`) y su respectiva prueba unitaria (`Test`), documentada exhaustivamente.
+El código está dividido en niveles progresivos, contando con **más de 40 retos interactivos** (puedes consultar el [Catálogo Completo aquí](CHALLENGES.md)). Cada ejercicio incluye su propia clase de lógica (`Enunciado`), su referencia optimizada (`Solucion`) y su respectiva prueba unitaria (`Test`), documentada exhaustivamente.
 
 1. **Nivel 1: Algoritmia Base (`com.brandon.nivel1`)** -> Lógica pura, estructuras de datos y patrón Arrange-Act-Assert con JUnit 5.
 2. **Nivel 2: Java Funcional (`com.brandon.nivel2`)** -> Procesamiento de colecciones con la API de Streams y Lambdas.
