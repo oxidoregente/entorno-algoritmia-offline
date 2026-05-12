@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 /**
  * SOLUCIÓN B: Gestor de Movimientos de Ajedrez.
  */
-@Service
+
 public class GestorMovimientosAjedrezSolucion {
 
     public enum Pieza { PEON, TORRE }

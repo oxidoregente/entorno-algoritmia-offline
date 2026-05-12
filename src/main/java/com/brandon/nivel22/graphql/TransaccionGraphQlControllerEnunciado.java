@@ -5,30 +5,32 @@ import com.brandon.nivel4.repositorios.TransaccionRepositoryEnunciado;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
-
 import java.util.List;
 
 /**
- * Nivel 22: GraphQL Controller.
+ * RETO: GraphQL Controller.
  * 
- * Permite realizar consultas flexibles donde el cliente elige qué campos obtener.
+ * Implementa los puntos de entrada para consultas flexibles.
+ * El estudiante debe mapear los métodos del esquema .graphqls.
  */
 @Controller
-public class TransaccionGraphQlController {
+public class TransaccionGraphQlControllerEnunciado {
 
     private final TransaccionRepositoryEnunciado repositorio;
 
-    public TransaccionGraphQlController(TransaccionRepositoryEnunciado repositorio) {
+    public TransaccionGraphQlControllerEnunciado(TransaccionRepositoryEnunciado repositorio) {
         this.repositorio = repositorio;
     }
 
     @QueryMapping
     public List<TransaccionEnunciado> todasLasTransacciones() {
-        return repositorio.findAll();
+        // TODO: Implementar consulta total
+        return null;
     }
 
     @QueryMapping
     public TransaccionEnunciado transaccionPorId(@Argument Long id) {
-        return repositorio.findById(id).orElse(null);
+        // TODO: Implementar consulta por ID
+        return null;
     }
 }

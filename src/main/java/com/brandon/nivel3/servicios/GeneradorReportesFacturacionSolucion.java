@@ -10,7 +10,7 @@ import java.util.List;
  * Usamos streams para procesar la lista eficientemente. 
  * Records de Java 21 facilitan la creación de estructuras de datos inmutables.</p>
  */
-@Service
+
 public class GeneradorReportesFacturacionSolucion {
 
     public record Factura(String id, double monto) {}

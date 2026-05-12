@@ -10,7 +10,7 @@ import java.util.Random;
  * El uso de inyección manual de un objeto Random con semilla permite 
  * realizar pruebas deterministas sobre algoritmos probabilísticos.</p>
  */
-@Service
+
 public class MotorCalculoRoguelikeSolucion {
 
     private final Random random;

@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 /**
  * SOLUCIÓN: Servicio de Transacciones con DTO.
  */
-@Service
+
 public class ServicioTransaccionesSolucion {
 
     private final TransaccionRepositoryEnunciado repositorio;

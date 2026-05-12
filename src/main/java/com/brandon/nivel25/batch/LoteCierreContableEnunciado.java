@@ -16,16 +16,16 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.domain.Sort;
 import org.springframework.transaction.PlatformTransactionManager;
-
 import java.util.Map;
 
 /**
- * Nivel 25: Spring Batch - Procesamiento Masivo.
+ * RETO: Lote de Cierre Contable.
  * 
- * Simula un cierre contable que procesa transacciones en bloques (chunks).
+ * Implementa un Job de procesamiento masivo.
+ * El estudiante debe definir el Step y el Job vinculando los componentes.
  */
 @Configuration
-public class LoteCierreContableConfig {
+public class LoteCierreContableEnunciado {
 
     @Bean
     public RepositoryItemReader<TransaccionEnunciado> reader(TransaccionRepositoryEnunciado repository) {
@@ -39,11 +39,8 @@ public class LoteCierreContableConfig {
 
     @Bean
     public ItemProcessor<TransaccionEnunciado, TransaccionEnunciado> processor() {
-        return transaccion -> {
-            System.out.println(">> [BATCH] Procesando transacción masiva ID: " + transaccion.getId());
-            transaccion.setEstado("ARCHIVADA_BATCH");
-            return transaccion;
-        };
+        // TODO: Transformar el estado a "PROCESADO_POR_LOTE"
+        return null;
     }
 
     @Bean
@@ -59,18 +56,13 @@ public class LoteCierreContableConfig {
                            RepositoryItemReader<TransaccionEnunciado> reader,
                            ItemProcessor<TransaccionEnunciado, TransaccionEnunciado> processor,
                            RepositoryItemWriter<TransaccionEnunciado> writer) {
-        return new StepBuilder("stepCierre", jobRepository)
-                .<TransaccionEnunciado, TransaccionEnunciado>chunk(10, transactionManager)
-                .reader(reader)
-                .processor(processor)
-                .writer(writer)
-                .build();
+        // TODO: Construir el step usando StepBuilder con chunks de 10
+        return null;
     }
 
     @Bean
     public Job jobCierre(JobRepository jobRepository, Step stepCierre) {
-        return new JobBuilder("jobCierreContable", jobRepository)
-                .start(stepCierre)
-                .build();
+        // TODO: Construir el job usando JobBuilder
+        return null;
     }
 }

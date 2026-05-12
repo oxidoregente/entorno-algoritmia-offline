@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  * por constructor para asegurar que las dependencias (como ProductorMensajes) 
  * estén presentes.</p>
  */
-@Service
+
 public class ProcesadorPagosFintechSolucion {
 
     private final ProductorMensajes productor;
