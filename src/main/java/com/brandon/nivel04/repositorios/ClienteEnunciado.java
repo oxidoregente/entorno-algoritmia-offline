@@ -17,5 +17,6 @@ public class ClienteEnunciado {
 
     public ClienteEnunciado() {}
     public ClienteEnunciado(String nombre) { this.nombre = nombre; }
+    public Long getId() { return id; }
     public String getNombre() { return nombre; }
 }
