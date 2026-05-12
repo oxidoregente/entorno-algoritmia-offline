@@ -1,7 +1,7 @@
 package com.brandon.nivel6.servicios;
 
-import com.brandon.nivel4.repositorios.Transaccion;
-import com.brandon.nivel4.repositorios.TransaccionRepository;
+import com.brandon.nivel4.repositorios.TransaccionEnunciado;
+import com.brandon.nivel4.repositorios.TransaccionRepositoryEnunciado;
 import com.brandon.nivel6.dto.TransaccionDTO;
 import com.brandon.nivel6.excepciones.ErrorDeNegocioException;
 import org.springframework.cache.annotation.Cacheable;
@@ -17,10 +17,10 @@ import java.util.stream.Collectors;
 @Service
 public class ServicioTransacciones {
 
-    private final TransaccionRepository repositorio;
+    private final TransaccionRepositoryEnunciado repositorio;
 
     // Inyección por constructor: La forma más segura y testeable.
-    public ServicioTransacciones(TransaccionRepository repositorio) {
+    public ServicioTransacciones(TransaccionRepositoryEnunciado repositorio) {
         this.repositorio = repositorio;
     }
 
@@ -35,7 +35,7 @@ public class ServicioTransacciones {
             .collect(Collectors.toList());
     }
 
-    private TransaccionDTO mapearADto(Transaccion t) {
+    private TransaccionDTO mapearADto(TransaccionEnunciado t) {
         // Validación de integridad
         if (t.getMonto() != null && t.getMonto() < 0) {
             throw new ErrorDeNegocioException("Detección de monto inválido en transacción: " + t.getId());

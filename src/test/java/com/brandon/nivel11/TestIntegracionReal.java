@@ -10,8 +10,8 @@ import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
-import com.brandon.nivel4.repositorios.Transaccion;
-import com.brandon.nivel4.repositorios.TransaccionRepository;
+import com.brandon.nivel4.repositorios.TransaccionEnunciado;
+import com.brandon.nivel4.repositorios.TransaccionRepositoryEnunciado;
 
 /**
  * Nivel 11: Testing de Integración con Testcontainers.
@@ -39,12 +39,12 @@ class TestIntegracionReal {
     }
 
     @Autowired
-    private TransaccionRepository repository;
+    private TransaccionRepositoryEnunciado repository;
 
     @Test
     void testPersistenciaEnPostgresReal() {
         // Arrange
-        Transaccion t = new Transaccion("POSTGRES_REAL", 999.99);
+        TransaccionEnunciado t = new TransaccionEnunciado("POSTGRES_REAL", 999.99);
         
         // Act
         repository.save(t);

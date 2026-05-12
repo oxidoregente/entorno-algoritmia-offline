@@ -1,7 +1,7 @@
 package com.brandon.nivel25.batch;
 
-import com.brandon.nivel4.repositorios.Transaccion;
-import com.brandon.nivel4.repositorios.TransaccionRepository;
+import com.brandon.nivel4.repositorios.TransaccionEnunciado;
+import com.brandon.nivel4.repositorios.TransaccionRepositoryEnunciado;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.job.builder.JobBuilder;
@@ -28,8 +28,8 @@ import java.util.Map;
 public class LoteCierreContableConfig {
 
     @Bean
-    public RepositoryItemReader<Transaccion> reader(TransaccionRepository repository) {
-        return new RepositoryItemReaderBuilder<Transaccion>()
+    public RepositoryItemReader<TransaccionEnunciado> reader(TransaccionRepositoryEnunciado repository) {
+        return new RepositoryItemReaderBuilder<TransaccionEnunciado>()
                 .repository(repository)
                 .methodName("findAll")
                 .sorts(Map.of("id", Sort.Direction.ASC))
@@ -38,7 +38,7 @@ public class LoteCierreContableConfig {
     }
 
     @Bean
-    public ItemProcessor<Transaccion, Transaccion> processor() {
+    public ItemProcessor<TransaccionEnunciado, TransaccionEnunciado> processor() {
         return transaccion -> {
             System.out.println(">> [BATCH] Procesando transacción masiva ID: " + transaccion.getId());
             transaccion.setEstado("ARCHIVADA_BATCH");
@@ -47,8 +47,8 @@ public class LoteCierreContableConfig {
     }
 
     @Bean
-    public RepositoryItemWriter<Transaccion> writer(TransaccionRepository repository) {
-        return new RepositoryItemWriterBuilder<Transaccion>()
+    public RepositoryItemWriter<TransaccionEnunciado> writer(TransaccionRepositoryEnunciado repository) {
+        return new RepositoryItemWriterBuilder<TransaccionEnunciado>()
                 .repository(repository)
                 .methodName("save")
                 .build();
@@ -56,11 +56,11 @@ public class LoteCierreContableConfig {
 
     @Bean
     public Step stepCierre(JobRepository jobRepository, PlatformTransactionManager transactionManager,
-                           RepositoryItemReader<Transaccion> reader,
-                           ItemProcessor<Transaccion, Transaccion> processor,
-                           RepositoryItemWriter<Transaccion> writer) {
+                           RepositoryItemReader<TransaccionEnunciado> reader,
+                           ItemProcessor<TransaccionEnunciado, TransaccionEnunciado> processor,
+                           RepositoryItemWriter<TransaccionEnunciado> writer) {
         return new StepBuilder("stepCierre", jobRepository)
-                .<Transaccion, Transaccion>chunk(10, transactionManager)
+                .<TransaccionEnunciado, TransaccionEnunciado>chunk(10, transactionManager)
                 .reader(reader)
                 .processor(processor)
                 .writer(writer)

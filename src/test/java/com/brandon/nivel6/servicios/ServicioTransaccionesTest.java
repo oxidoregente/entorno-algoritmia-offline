@@ -4,8 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.when;
 
-import com.brandon.nivel4.repositorios.Transaccion;
-import com.brandon.nivel4.repositorios.TransaccionRepository;
+import com.brandon.nivel4.repositorios.TransaccionEnunciado;
+import com.brandon.nivel4.repositorios.TransaccionRepositoryEnunciado;
 import com.brandon.nivel6.dto.TransaccionDTO;
 import com.brandon.nivel6.excepciones.ErrorDeNegocioException;
 import org.junit.jupiter.api.Test;
@@ -24,7 +24,7 @@ import java.util.List;
 class ServicioTransaccionesTest {
 
     @Mock
-    private TransaccionRepository repository;
+    private TransaccionRepositoryEnunciado repository;
 
     @InjectMocks
     private ServicioTransacciones servicio;
@@ -32,7 +32,7 @@ class ServicioTransaccionesTest {
     @Test
     void testObtenerHistorialSeguroExitoso() {
         // Arrange
-        Transaccion t = new Transaccion("APROBADO", 200.0);
+        TransaccionEnunciado t = new TransaccionEnunciado("APROBADO", 200.0);
         when(repository.findAll()).thenReturn(List.of(t));
 
         // Act
@@ -47,7 +47,7 @@ class ServicioTransaccionesTest {
     @Test
     void testLanzaExcepcionSiMontoNegativo() {
         // Arrange
-        Transaccion tInvalida = new Transaccion("ERROR", -10.0);
+        TransaccionEnunciado tInvalida = new TransaccionEnunciado("ERROR", -10.0);
         when(repository.findAll()).thenReturn(List.of(tInvalida));
 
         // Act & Assert

@@ -1,18 +1,17 @@
 package com.brandon.nivel4.repositorios;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
 /**
- * Nivel 4: Persistencia con Spring Data JPA.
+ * RETO: Gestión de Transacciones.
  * 
- * @Entity marca esta clase para que JPA la mapee a una tabla en la base de datos.
+ * Implementa la persistencia para una entidad financiera.
+ * El estudiante debe definir las anotaciones JPA básicas y 
+ * el Query Method en el repositorio.
  */
 @Entity
-public class Transaccion {
+public class TransaccionEnunciado {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,10 +21,9 @@ public class Transaccion {
     private Double monto;
     private LocalDateTime fecha;
 
-    // Constructor vacío requerido por JPA
-    public Transaccion() {}
+    public TransaccionEnunciado() {}
 
-    public Transaccion(String estado, Double monto) {
+    public TransaccionEnunciado(String estado, Double monto) {
         this.estado = estado;
         this.monto = monto;
         this.fecha = LocalDateTime.now();
