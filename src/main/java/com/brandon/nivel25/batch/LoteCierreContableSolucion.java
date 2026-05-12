@@ -1,7 +1,7 @@
 package com.brandon.nivel25.batch;
 
-import com.brandon.nivel4.repositorios.TransaccionEnunciado;
-import com.brandon.nivel4.repositorios.TransaccionRepositoryEnunciado;
+import com.brandon.nivel04.repositorios.TransaccionEnunciado;
+import com.brandon.nivel04.repositorios.TransaccionRepositoryEnunciado;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.job.builder.JobBuilder;

@@ -6,6 +6,7 @@ Este laboratorio contiene **58 retos interactivos** diseñados para llevar tus h
 *Enfocado en estructuras de datos, recursión y manipulación de tipos básicos.*
 
 | Reto | Temática | Pista Clave |
+| **Calculadora Financiera** | Testing | Patrón AAA (Prueba Inversa). |
 | :--- | :--- | :--- |
 | **Factorial** | Recursión | Caso base y llamada recursiva. |
 | **Palíndromo** | Strings | Técnica de Two Pointers. |
@@ -27,6 +28,7 @@ Este laboratorio contiene **58 retos interactivos** diseñados para llevar tus h
 *Dominio de la programación declarativa y procesamiento de colecciones.*
 
 | Reto | Operación Clave | Propósito |
+| **Calculadora Financiera** | Testing | Patrón AAA (Prueba Inversa). |
 | :--- | :--- | :--- |
 | **Agrupador Jerárquico** | `groupingBy` anidado | Clasificación multinivel. |
 | **Analizador de Logs** | `filter` + Regex | Procesamiento de texto masivo. |
@@ -45,6 +47,7 @@ Este laboratorio contiene **58 retos interactivos** diseñados para llevar tus h
 *Implementación de reglas empresariales y servicios desacoplados.*
 
 | Reto | Dominio | Concepto Spring |
+| **Calculadora Financiera** | Testing | Patrón AAA (Prueba Inversa). |
 | :--- | :--- | :--- |
 | **Calculadora Lealtad** | Fintech | Lógica condicional compleja. |
 | **Conversor Monedas** | Finanzas | Precisión decimal y mapas. |
@@ -61,6 +64,7 @@ Este laboratorio contiene **58 retos interactivos** diseñados para llevar tus h
 *Modelado relacional y consultas de base de datos.*
 
 | Reto | Entidad | Consulta (Query Method) |
+| **Calculadora Financiera** | Testing | Patrón AAA (Prueba Inversa). |
 | :--- | :--- | :--- |
 | **Carta Tarot** | Enums | Filtrado por Enum y ordenamiento. |
 | **Empresa & Dirección** | `@Embedded` | Consultas en objetos embebidos. |
@@ -74,6 +78,7 @@ Este laboratorio contiene **58 retos interactivos** diseñados para llevar tus h
 *Desafíos finales de integración, seguridad y sistemas distribuidos.*
 
 | Reto | Nivel | Área Técnica |
+| **Calculadora Financiera** | Testing | Patrón AAA (Prueba Inversa). |
 | :--- | :--- | :--- |
 | **Servicio Transacciones** | 6 | Patrón DTO y Mapeo de Datos. |
 | **Categorizador Errores** | 6 | Manejo Global de Excepciones. |

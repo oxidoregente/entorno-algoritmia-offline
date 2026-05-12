@@ -1,6 +1,6 @@
 package com.brandon.nivel27.auditoria;
 
-import com.brandon.nivel4.repositorios.TransaccionEnunciado;
+import com.brandon.nivel04.repositorios.TransaccionEnunciado;
 import org.springframework.stereotype.Service;
 
 /**

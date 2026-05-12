@@ -1,7 +1,7 @@
 package com.brandon.nivel22.graphql;
 
-import com.brandon.nivel4.repositorios.TransaccionEnunciado;
-import com.brandon.nivel4.repositorios.TransaccionRepositoryEnunciado;
+import com.brandon.nivel04.repositorios.TransaccionEnunciado;
+import com.brandon.nivel04.repositorios.TransaccionRepositoryEnunciado;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;

@@ -10,8 +10,8 @@ import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
-import com.brandon.nivel4.repositorios.TransaccionEnunciado;
-import com.brandon.nivel4.repositorios.TransaccionRepositoryEnunciado;
+import com.brandon.nivel04.repositorios.TransaccionEnunciado;
+import com.brandon.nivel04.repositorios.TransaccionRepositoryEnunciado;
 
 /**
  * Nivel 11: Testing de Integración con Testcontainers.
