@@ -1,13 +1,13 @@
 package com.brandon.nivel3.servicios;
 
-import com.brandon.nivel14.mensajeria.ProductorMensajes;
+import com.brandon.nivel14.mensajeria.ProductorMensajesEnunciado;
 import org.springframework.stereotype.Service;
 
 /**
  * RETO: Procesador de Pagos Fintech.
  * 
  * Este servicio debe calcular la comisión de una transacción basada en el tipo de tarjeta.
- * Además, debe notificar cada pago procesado a través del ProductorMensajes (Nivel 14).
+ * Además, debe notificar cada pago procesado a través del ProductorMensajesEnunciado (Nivel 14).
  * 
  * Reglas:
  * - DEBITO: 1%
@@ -17,9 +17,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProcesadorPagosFintechEnunciado {
 
-    private final ProductorMensajes productor;
+    private final ProductorMensajesEnunciado productor;
 
-    public ProcesadorPagosFintechEnunciado(ProductorMensajes productor) {
+    public ProcesadorPagosFintechEnunciado(ProductorMensajesEnunciado productor) {
         this.productor = productor;
     }
 

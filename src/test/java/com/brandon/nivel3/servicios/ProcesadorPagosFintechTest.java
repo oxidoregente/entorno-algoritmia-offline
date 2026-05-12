@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.verify;
 
-import com.brandon.nivel14.mensajeria.ProductorMensajes;
+import com.brandon.nivel14.mensajeria.ProductorMensajesEnunciado;
 import com.brandon.nivel3.servicios.ProcesadorPagosFintechEnunciado.TipoTarjeta;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -20,7 +20,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 class ProcesadorPagosFintechTest {
 
     @Mock
-    private ProductorMensajes productor;
+    private ProductorMensajesEnunciado productor;
 
     @InjectMocks
     private ProcesadorPagosFintechEnunciado procesador;

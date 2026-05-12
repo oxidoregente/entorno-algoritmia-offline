@@ -4,19 +4,20 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 
 /**
- * Servicio encargado de enviar mensajes a la cola.
+ * RETO: Productor de Mensajes.
+ * 
+ * Envía eventos a una cola de RabbitMQ para ser procesados asíncronamente.
  */
 @Service
-public class ProductorMensajes {
+public class ProductorMensajesEnunciado {
 
     private final RabbitTemplate rabbitTemplate;
 
-    public ProductorMensajes(RabbitTemplate rabbitTemplate) {
+    public ProductorMensajesEnunciado(RabbitTemplate rabbitTemplate) {
         this.rabbitTemplate = rabbitTemplate;
     }
 
     public void enviarEvento(String mensaje) {
-        System.out.println(">> [PRODUCTOR] Enviando evento: " + mensaje);
-        rabbitTemplate.convertAndSend(ConfiguracionRabbit.COLA_AUDITORIA, mensaje);
+        // TODO: Enviar el mensaje a la cola definida en ConfiguracionRabbit.COLA_AUDITORIA
     }
 }

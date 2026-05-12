@@ -1,6 +1,6 @@
 package com.brandon.nivel3.servicios;
 
-import com.brandon.nivel14.mensajeria.ProductorMensajes;
+import com.brandon.nivel14.mensajeria.ProductorMensajesEnunciado;
 import org.springframework.stereotype.Service;
 
 /**
@@ -8,17 +8,17 @@ import org.springframework.stereotype.Service;
  * 
  * <p>Teoría:
  * En Spring Boot, los servicios encapsulan la lógica de negocio. Usamos inyección
- * por constructor para asegurar que las dependencias (como ProductorMensajes) 
+ * por constructor para asegurar que las dependencias (como ProductorMensajesEnunciado) 
  * estén presentes.</p>
  */
-
 public class ProcesadorPagosFintechSolucion {
 
-    private final ProductorMensajes productor;
+    private final ProductorMensajesEnunciado productor;
 
-    public ProcesadorPagosFintechSolucion(ProductorMensajes productor) {
+    public ProcesadorPagosFintechSolucion(ProductorMensajesEnunciado productor) {
         this.productor = productor;
     }
+
 
     public enum TipoTarjeta {
         DEBITO, CREDITO, CORPORATIVA
