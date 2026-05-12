@@ -1,5 +1,6 @@
 package com.brandon.nivel4.repositorios;
 
+import org.hibernate.envers.Audited;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
@@ -11,6 +12,7 @@ import java.time.LocalDateTime;
  * el Query Method en el repositorio.
  */
 @Entity
+@Audited
 public class TransaccionEnunciado {
 
     @Id
