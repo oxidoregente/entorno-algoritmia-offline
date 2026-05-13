@@ -1,6 +1,12 @@
 type Query {
     todasLasTransacciones: [Transaccion]
     transaccionPorId(id: ID!): Transaccion
+    filtrarPorMontoMinimo(monto: Float!): [Transaccion]
+    calcularIvaSimulado(monto: Float!): Float
+}
+
+type Mutation {
+    actualizarEstadoTicket(id: ID!, nuevoEstado: String!): Ticket
 }
 
 type Transaccion {
@@ -8,4 +14,10 @@ type Transaccion {
     estado: String
     monto: Float
     fecha: String
+}
+
+type Ticket {
+    id: ID
+    descripcion: String
+    prioridad: String
 }
