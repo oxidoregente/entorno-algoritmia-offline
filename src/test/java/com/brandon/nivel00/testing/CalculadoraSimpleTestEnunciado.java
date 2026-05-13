@@ -1,0 +1,15 @@
+package com.brandon.nivel00.testing;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+/**
+ * RETO: Escribe el test más simple del laboratorio.
+ */
+class CalculadoraSimpleTestEnunciado {
+
+    @Test
+    void testSuma() {
+        // TODO: Prueba que 2 + 2 sea 4 usando el patrón AAA
+    }
+}
