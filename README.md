@@ -6,35 +6,27 @@ El proyecto nació como una iniciativa personal de **Brandon**, estudiante de In
 
 ## 🚀 Estructura de Aprendizaje
 
-El código está dividido en niveles progresivos, contando con **más de 40 retos interactivos** (puedes consultar el [Catálogo Completo aquí](CHALLENGES.md)). Cada ejercicio incluye su propia clase de lógica (`Enunciado`), su referencia optimizada (`Solucion`) y su respectiva prueba unitaria (`Test`), documentada exhaustivamente.
+El código está dividido en niveles progresivos, contando con **más de 60 retos interactivos** (puedes consultar el [Catálogo Completo aquí](CHALLENGES.md)). Cada ejercicio incluye su propia clase de lógica (`Enunciado`), su referencia optimizada (`Solucion`) y su respectiva prueba unitaria (`Test`), documentada exhaustivamente.
 
-1. **Nivel 1: Algoritmia Base (`com.brandon.nivel1`)** -> Lógica pura, estructuras de datos y patrón Arrange-Act-Assert con JUnit 5.
-2. **Nivel 2: Java Funcional (`com.brandon.nivel2`)** -> Procesamiento de colecciones con la API de Streams y Lambdas.
-3. **Nivel 3: Lógica de Negocio (`com.brandon.nivel3`)** -> Creación de servicios con `@Service` y manejo de reglas empresariales (inyección de dependencias).
-4. **Nivel 4: Persistencia JPA (`com.brandon.nivel4`)** -> Base de datos en memoria (H2) con `@Entity`, repositorios y pruebas con `@DataJpaTest`.
-5. **Nivel 5: API REST (`com.brandon.nivel5`)** -> Exposición de funcionalidades mediante `@RestController`.
-6. **Nivel 6: Arquitectura Avanzada (`com.brandon.nivel6`)** -> Patrones DTO con `records`, manejo de excepciones globales y uso de Mockito.
-7. **Nivel 7: Observabilidad y AOP (`com.brandon.nivel7`)** -> Auditoría automática de servicios y monitoreo de tiempos de ejecución.
-8. **Nivel 8: Documentación Dinámica (`Swagger/OpenAPI`)** -> Interfaz web interactiva para probar la API en `/swagger-ui/index.html`.
-9. **Nivel 9: Dockerización (`Containerization`)** -> Empaquetado profesional para despliegue en cualquier entorno.
-10. **Nivel 10: Orquestación (`Docker Compose`)** -> Sistema multi-contenedor con PostgreSQL real.
-11. **Nivel 11: Testing de Élite (`Testcontainers`)** -> Pruebas de integración automáticas con Docker.
-12. **Nivel 12: Seguridad Industrial (`Spring Security + JWT`)** -> Protección de endpoints y autenticación con tokens.
-13. **Nivel 13: Optimización Extrema (`Redis Cache`)** -> Aceleración de respuestas mediante caché distribuido.
-14. **Nivel 14: Arquitectura de Eventos (`RabbitMQ`)** -> Comunicación asíncrona entre componentes mediante mensajería.
-15. **Nivel 15: Observabilidad 360° (`Actuator + Prometheus`)** -> Monitorización de salud y métricas de rendimiento en tiempo real.
-16. **Nivel 16: Gestión de Entornos (`Spring Profiles`)** -> Separación de configuraciones entre desarrollo y producción.
-17. **Nivel 17: Evolución de Datos (`Flyway`)** -> Versionado y migración automática de esquemas de base de datos.
-18. **Nivel 18: Automatización de Tareas (`Scheduler`)** -> Programación de procesos autónomos en segundo plano.
-19. **Nivel 19: Integración Externa (`WebClient`)** -> Consumo de APIs de terceros mediante clientes HTTP reactivos.
-20. **Nivel 20: Notificaciones Pro (`Spring Mail`)** -> Flujo completo de avisos automáticos integrados con eventos.
-21. **Nivel 21: Diseño Visual (`Mermaid Architecture`)** -> Documentación técnica con diagramas de flujo e infraestructura.
-22. **Nivel 22: Consultas Flexibles (`GraphQL`)** -> Alternativa moderna a REST para optimizar el tráfico de datos.
-23. **Nivel 23: Resiliencia y Tolerancia (`Circuit Breaker`)** -> Protección del sistema ante fallos en dependencias externas.
-24. **Nivel 24: Trazabilidad Distribuida (`Zipkin`)** -> Seguimiento del ciclo de vida de las peticiones (Trace ID).
-25. **Nivel 25: Procesamiento Masivo (`Spring Batch`)** -> Gestión de grandes volúmenes de datos mediante trabajos por lotes.
-27. **Nivel 27: Auditoría de Datos (`Hibernate Envers`)** -> Registro automático del historial de cambios en entidades.
-28. **Nivel 28: Simulación de APIs (`WireMock`)** -> Pruebas de servicios externos sin dependencia de internet.
+### Niveles Base (Core Java & Spring)
+00. **Nivel 00: Testing Inverso (`com.brandon.nivel00`)** -> Aprende a escribir pruebas para código ya existente.
+01. **Nivel 01: Algoritmia Base (`com.brandon.nivel01`)** -> Lógica pura, estructuras de datos, árboles y recursión.
+02. **Nivel 02: Java Funcional (`com.brandon.nivel02`)** -> Procesamiento de colecciones con la API de Streams y Lambdas.
+03. **Nivel 03: Lógica de Negocio (`com.brandon.nivel03`)** -> Creación de servicios con `@Service` e inyección de dependencias.
+04. **Nivel 04: Persistencia JPA (`com.brandon.nivel04`)** -> Modelado relacional, Query Methods y relaciones `@ManyToOne`.
+05. **Nivel 05: API REST (`com.brandon.nivel05`)** -> Exposición de funcionalidades mediante `@RestController` y Swagger.
+06. **Nivel 06: Arquitectura Avanzada (`com.brandon.nivel06`)** -> Patrones DTO con `records` y manejo de excepciones globales.
+07. **Nivel 07: Observabilidad AOP (`com.brandon.nivel07`)** -> Auditoría automática de servicios mediante Aspectos.
+
+### Niveles de Infraestructura & Sistemas Distribuidos
+- **Nivel 08-11:** Documentación Dinámica (Swagger), Dockerización y Testing de Élite con **Testcontainers**.
+- **Nivel 12:** Seguridad Industrial con **Spring Security + JWT** (Roles ADMIN/USER).
+- **Nivel 13-14:** Optimización con **Redis Cache** y Mensajería Asíncrona con **RabbitMQ**.
+- **Nivel 15:** Monitorización de Grado de Producción con **Actuator + Prometheus**.
+- **Nivel 16-17:** Gestión de Entornos (Profiles) y Evolución de Datos con **Flyway**.
+- **Nivel 18-20:** Automatización (Scheduler), Integración Externa (WebClient) y Notificaciones (Email).
+- **Nivel 21-24:** Diseño Visual (Mermaid), GraphQL, **Resiliencia (Circuit Breaker)** y Trazabilidad (Zipkin).
+- **Nivel 25-29:** Procesamiento Masivo (**Spring Batch**), Auditoría de Entidades y Pruebas Parametrizadas.
 
 ## 🛠️ Requisitos
 - **Java 21 LTS** - **Maven 3.8+** - **Docker & Docker Compose**
@@ -45,38 +37,25 @@ Para levantar la aplicación junto con todo su ecosistema profesional:
 2. Levanta el ecosistema: `docker-compose up --build`
 3. **Endpoints de interés:**
    - App: `http://localhost:8080`
-   - Swagger: `http://localhost:8080/swagger-ui/index.html`
+   - Swagger UI: `/swagger-ui/index.html`
    - Prometheus: `http://localhost:9090`
-   - Zipkin: `http://localhost:9411`
-   - RabbitMQ Admin: `http://localhost:15672` (usuario/pass: guest)
+   - Zipkin Tracing: `http://localhost:9411`
+   - RabbitMQ Admin: `http://localhost:15672` (guest/guest)
 
 ## 🧪 Cómo Usar y Probar el Proyecto
 
-La filosofía de este repositorio es **Interactiva y Basada en Pruebas (TDD)**. Para los ejercicios de lógica (Nivel 1 y 2), sigue este flujo de aprendizaje:
+La filosofía de este repositorio es **Interactiva y Basada en Pruebas (TDD)**:
 
-1. **Lee el Enunciado:** Abre la clase `[Nombre]Enunciado.java`. Allí encontrarás la descripción del problema y un método vacío con un `// TODO`.
-2. **Corre el Test:** Ejecuta `[Nombre]Test.java`. Verás que las pruebas fallan (aparecen en **rojo**). ¡Esto es normal!
-3. **Escribe tu Código:** Implementa la lógica necesaria en la clase `Enunciado` para resolver el reto.
-4. **Valida tu Progreso:** Corre el test nuevamente. Cuando todas las pruebas estén en **verde**, habrás resuelto el problema.
-5. **Compara:** Abre `[Nombre]Solucion.java` para ver una implementación optimizada y leer la explicación teórica detallada.
+1. **Lee el Enunciado:** Abre la clase `[Nombre]Enunciado.java`. Allí encontrarás la descripción del problema y un método vacío.
+2. **Corre el Test:** Ejecuta `[Nombre]Test.java`. Verás que las pruebas fallan (en **rojo**).
+3. **Programa:** Implementa la lógica necesaria en la clase `Enunciado`.
+4. **Valida:** Corre el test nuevamente. Cuando esté en **verde**, habrás resuelto el reto.
+5. **Compara:** Consulta `[Nombre]Solucion.java` para ver mejores prácticas y teoría.
 
-Para ejecutar todos los ejercicios a la vez:
+Para ejecutar la suite completa (más de 115 tests):
 ```bash
 mvn clean test
 ```
 
-*Tip para entornos offline:* Si ya ejecutaste el comando anterior una vez con internet, puedes correr todas las pruebas sin conexión añadiendo el flag offline: `mvn clean test -o`.
-
-## 🤝 Cómo Contribuir
-
-¡Las contribuciones son bienvenidas! Si deseas agregar nuevos ejercicios o mejorar las explicaciones teóricas:
-
-1. Haz un Fork del repositorio.
-2. Crea una rama para tu ejercicio (`git checkout -b feature/nivelX-nombre-ejercicio`).
-3. Asegúrate de incluir el código principal y su test correspondiente en verde.
-4. Usa comentarios en formato Javadoc para explicar la teoría detrás de tu solución.
-5. Abre un Pull Request detallando qué concepto nuevo aporta tu ejercicio.
-
 ---
-
 *Construyendo código sólido, un test a la vez.*
