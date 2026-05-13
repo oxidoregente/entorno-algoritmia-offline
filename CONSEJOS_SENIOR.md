@@ -1,6 +1,6 @@
-# 🎓 Consejos Senior para Brandon
+# 🎓 Consejos Senior para el Futuro Ingeniero
 
-Has recorrido un largo camino desde el Nivel 00 hasta el Nivel 32. Como tu mentor, aquí tienes los pilares para tu carrera profesional:
+Has recorrido un largo camino desde el Nivel 00 hasta el Nivel 32. Aquí tienes los pilares para tu carrera profesional:
 
 ## 1. El Principio de Menor Sorpresa
 Escribe código que sea obvio. No intentes ser "demasiado inteligente". Un código que un compañero puede entender en 5 segundos es mejor que uno ingenioso que toma 5 minutos descifrar.

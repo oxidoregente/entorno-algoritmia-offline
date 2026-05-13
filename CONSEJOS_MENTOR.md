@@ -1,4 +1,4 @@
-# 🏁 Hoja de Ruta para Brandon (Ingeniería de Sistemas)
+# 🏁 Hoja de Ruta del Estudiante (Ingeniería de Sistemas)
 
 Como tu mentor, aquí tienes los 3 pilares que debes cuidar para ser un desarrollador Java de élite:
 

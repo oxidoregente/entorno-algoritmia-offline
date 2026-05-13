@@ -2,7 +2,7 @@
 FROM eclipse-temurin:21-jdk-alpine
 
 # Metadatos
-LABEL maintainer="Brandon <estudiante@ingenieria.com>"
+LABEL maintainer="Laboratorio de Algoritmia <ingenieria@ejemplo.com>"
 LABEL version="1.0"
 LABEL description="Entorno de Algoritmia Offline - LeetCode Local"
 

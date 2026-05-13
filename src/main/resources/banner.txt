@@ -6,5 +6,5 @@
  | |___|  __/|  __/| |_| |___| (_) | (_| |  __/  
  |______\___| \___| \__|\_____\___/ \__ _|\___|  
                                                  
- >> Entorno de Algoritmia Offline - Brandon <<
+ >> Entorno de Algoritmia Offline <<
 

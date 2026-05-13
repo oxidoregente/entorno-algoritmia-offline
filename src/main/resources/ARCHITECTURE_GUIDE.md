@@ -42,4 +42,4 @@ graph TD
 4. **Inmutabilidad:** Usa Records de Java 21 para tus DTOs. Evita efectos secundarios.
 
 ---
-*Felicidades Brandon. Has completado el laboratorio de ingeniería más avanzado.*
+*Felicidades UsuarioPrueba. Has completado el laboratorio de ingeniería más avanzado.*

@@ -8,7 +8,7 @@ services:
     restart: always
     environment:
       POSTGRES_DB: algoritmiadb
-      POSTGRES_USER: brandon
+      POSTGRES_USER: admin
       POSTGRES_PASSWORD: password123
     ports:
       - "5432:5432"
@@ -65,7 +65,7 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=prod
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/algoritmiadb
-      - SPRING_DATASOURCE_USERNAME=brandon
+      - SPRING_DATASOURCE_USERNAME=admin
       - SPRING_DATASOURCE_PASSWORD=password123
       - MANAGEMENT_ZIPKIN_TRACING_ENDPOINT=http://zipkin:9411/api/v2/spans
 
