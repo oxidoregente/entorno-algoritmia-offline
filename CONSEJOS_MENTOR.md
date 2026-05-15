@@ -17,11 +17,14 @@ Mantente actualizado con las últimas versiones de LTS (Long Term Support).
 - Si ves un método de 100 líneas, intenta extraerlo en métodos más pequeños.
 - Si una variable se llama `x`, cámbiala a algo descriptivo como `montoTotal`.
 
+## 4. Testing de Integración Real
+No te conformes con los mocks. Los mocks mienten; la base de datos real no.
+- **Testcontainers:** Úsalos para levantar PostgreSQL o Redis reales durante tus tests. Es la diferencia entre "creo que funciona" y "sé que funciona".
+
 ## 🛠️ Próximos Pasos Sugeridos:
-1. **Seguridad:** Integra **Spring Security** para aprender sobre JWT y OAuth2.
-2. **Frontend:** Crea una interfaz en **React** o **Angular** que consuma los endpoints de este proyecto.
-3. **Contenedores:** Aprende a empaquetar esta aplicación en una imagen de **Docker**.
-4. **Cloud:** Intenta desplegar la aplicación en una instancia gratuita de AWS o Azure.
+1. **Infraestructura:** Domina los niveles 08-11 para aprender Swagger, Docker, Compose y Testcontainers.
+2. **Seguridad Avanzada:** Implementa seguridad reactiva y auditoría con Envers (Nivel 27).
+3. **Observabilidad:** No vueles a ciegas; usa Actuator y Prometheus para ver qué pasa en tu app.
 
 ¡El camino de la ingeniería es un maratón, no un sprint. Sigue practicando y nunca dejes de curiosear!
 

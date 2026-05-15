@@ -35,13 +35,33 @@ Este laboratorio contiene **más de 150 componentes y retos interactivos** dise�
 - **Entidades**: Cliente, Coche, Curso, Empresa, Estudiante, Item, Jugador, Pedido, Producto, Proyecto, Tarea, Ticket, Transacción, Usuario.
 - **Consultas**: Búsquedas por atributos, TopN (Rankings), Rangos de fecha, Filtros complejos, Relaciones @ManyToOne, Atributos @Embedded.
 
-## 🏗️ Fase 2: Infraestructura y Sistemas Modernos
+### Nivel 08: Documentación Dinámica (Swagger)
+- **Swagger Básico**: Configuración inicial.
+- **Metadatos**: Personalización de Info.
+- **Seguridad**: Integración con JWT.
+- **Grupos**: Filtrado de Endpoints.
+- **Schemas**: Documentación de Modelos.
 
-- **Nivel 05-06**: Controladores REST, Patrones DTO, Mappers, Manejo Global de Excepciones.
-- **Nivel 07**: Programación Orientada a Aspectos (AOP) - Auditoría y Validación.
-- **Nivel 08-11**: Swagger UI, Docker, Docker Compose y **Testcontainers** (PostgreSQL real).
-- **Nivel 12-14**: Seguridad (JWT, Roles), Caché Redis (Manual/Declarativo) y RabbitMQ (Events).
-- **Nivel 15**: Actuator Metrics y monitorización con Prometheus.
+### Nivel 09: Dockerización (Dockerfile)
+- **Base**: Imagen JDK 21.
+- **Multi-Etapa**: Optimización de compilación.
+- **Seguridad**: Ejecución como no-root.
+- **Healthcheck**: Monitoreo de estado.
+- **Labels**: Metadatos de imagen.
+
+### Nivel 10: Orquestación (Docker Compose)
+- **Full Stack**: App + Base de Datos.
+- **Persistencia**: Uso de Volúmenes.
+- **Redes**: Aislamiento entre servicios.
+- **Dependencias**: Orden de inicio (Healthcheck).
+- **Entornos**: Uso de archivos .env.
+
+### Nivel 11: Testing de Élite (Testcontainers)
+- **Postgres**: Base de datos real en tests.
+- **Redis**: Caché real en tests.
+- **RabbitMQ**: Mensajería real en tests.
+- **Propiedades**: Inyección dinámica con @DynamicPropertySource.
+- **Optimización**: Reutilización con Patrón Singleton.
 
 ## ⚡ Fase 3: Ingeniería de Avanzada y Resiliencia
 
