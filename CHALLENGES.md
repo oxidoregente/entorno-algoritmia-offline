@@ -35,48 +35,95 @@ Este laboratorio contiene **más de 150 componentes y retos interactivos** dise�
 - **Entidades**: Cliente, Coche, Curso, Empresa, Estudiante, Item, Jugador, Pedido, Producto, Proyecto, Tarea, Ticket, Transacción, Usuario.
 - **Consultas**: Búsquedas por atributos, TopN (Rankings), Rangos de fecha, Filtros complejos, Relaciones @ManyToOne, Atributos @Embedded.
 
+## 🏗️ Fase 2: Infraestructura y Modernización
+
 ### Nivel 08: Documentación Dinámica (Swagger)
-- **Swagger Básico**: Configuración inicial.
-- **Metadatos**: Personalización de Info.
-- **Seguridad**: Integración con JWT.
-- **Grupos**: Filtrado de Endpoints.
-- **Schemas**: Documentación de Modelos.
+- **Swagger Básico**: Configuración inicial de OpenAPI.
+- **Metadatos**: Personalización de Título, Versión y Descripción.
+- **Seguridad**: Integración de esquemas JWT (Bearer).
+- **Grupos**: Aislamiento de APIs Públicas vs Privadas.
+- **Schemas**: Anotaciones para modelos de datos (Records).
 
 ### Nivel 09: Dockerización (Dockerfile)
-- **Base**: Imagen JDK 21.
-- **Multi-Etapa**: Optimización de compilación.
-- **Seguridad**: Ejecución como no-root.
-- **Healthcheck**: Monitoreo de estado.
-- **Labels**: Metadatos de imagen.
+- **Base**: Imágenes ligeras de Java 21 (Slim).
+- **Multi-Etapa**: Optimización de compilación con Maven.
+- **Seguridad**: Ejecución como usuario no-root.
+- **Healthcheck**: Monitoreo nativo desde Docker.
+- **Labels**: Gestión de metadatos de autoría.
 
 ### Nivel 10: Orquestación (Docker Compose)
-- **Full Stack**: App + Base de Datos.
-- **Persistencia**: Uso de Volúmenes.
-- **Redes**: Aislamiento entre servicios.
-- **Dependencias**: Orden de inicio (Healthcheck).
-- **Entornos**: Uso de archivos .env.
+- **Full Stack**: Conexión App + PostgreSQL.
+- **Persistencia**: Gestión de Volúmenes externos.
+- **Redes**: Aislamiento mediante Docker Networks.
+- **Dependencias**: Orden de inicio con Healthchecks.
+- **Entornos**: Inyección de secretos vía archivos .env.
 
 ### Nivel 11: Testing de Élite (Testcontainers)
-- **Postgres**: Base de datos real en tests.
-- **Redis**: Caché real en tests.
-- **RabbitMQ**: Mensajería real en tests.
+- **Postgres**: Base de datos real en tiempo de ejecución.
+- **Redis**: Validación de caché distribuido.
+- **RabbitMQ**: Pruebas de integración de colas.
 - **Propiedades**: Inyección dinámica con @DynamicPropertySource.
-- **Optimización**: Reutilización con Patrón Singleton.
+- **Optimización**: Reutilización de contenedores (Singleton).
+
+### Nivel 12: Seguridad Industrial (Spring Security)
+- **Auth Flow**: Implementación de Login y JWT.
+- **Cifrado**: Uso de BCryptPasswordEncoder.
+- **Tokens**: Generación y validación de Claims.
+- **Config**: Cadena de filtros y protección de rutas.
+- **UserDetailsService**: Carga personalizada de perfiles.
+
+### Nivel 13: Optimización con Redis (Cache)
+- **Cacheable**: Almacenamiento declarativo de perfiles.
+- **Manual**: Uso de RedisTemplate para tipos complejos.
+- **Eviction**: Invalidación selectiva y total de caché.
+- **Conditional**: Lógica SpEL para cacheo inteligente.
+- **CachePut**: Sincronización proactiva de datos.
+
+### Nivel 14: Arquitectura de Eventos (RabbitMQ)
+- **Producer**: Envío de mensajes a Exchanges.
+- **Consumer**: Procesamiento asíncrono con @RabbitListener.
+- **Prioridad**: Filtrado de mensajes críticos.
+- **Reenvío**: Lógica de puente entre colas.
+- **DLQ**: Manejo de mensajes fallidos (Dead Letter).
+
+### Nivel 15: Monitorización 360° (Actuator)
+- **Health**: Diagnóstico de servicios externos.
+- **Metrics**: Contadores personalizados con Micrometer.
+- **Info**: Exposición de metadatos de autoría.
+- **Endpoints**: Creación de puntos de control propios.
+- **Prometheus**: Integración de métricas para Scraping.
 
 ## ⚡ Fase 3: Ingeniería de Avanzada y Resiliencia
 
-- **Nivel 16-17**: Spring Profiles (Gestión de entornos) y Flyway (Migraciones de base de datos).
-- **Nivel 18-20**: Scheduler (Tareas programadas), WebClient (Consumo APIs) y Notificaciones por Email.
-- **Nivel 21-24**: Arquitectura Mermaid, GraphQL, **Circuit Breaker (Resilience4j)** y Zipkin Tracing.
+### Nivel 16-18: Gestión y Automatización
+- **Profiles**: Beans condicionales y negación de perfiles (!).
+- **Properties**: Carga de archivos application-{env}.properties.
+- **Flyway**: Migraciones versionadas, Repeatable y Baseline.
+- **Scheduler**: Tareas fijas, retardadas y dinámicas.
+
+### Nivel 19-21: Integración y Diseño
+- **WebClient**: Peticiones GET/POST reactivas y reintentos.
+- **Spring Mail**: Envío de HTML profesional y archivos adjuntos.
+- **Mermaid**: Documentación visual de arquitectura (C4 Model).
+
+### Nivel 22-24: APIs y Trazabilidad
+- **GraphQL**: Query, Mutation y Subscriptions (Real-time).
+- **Resilience4j**: Circuit Breaker, Rate Limiter y Bulkhead.
+- **Tracing**: Spans personalizados, Baggage y TraceID en logs.
 
 ## 🏆 Fase 4: Especialización y Cierre Maestro
 
-- **Nivel 25**: Spring Batch (Procesamiento masivo de datos).
-- **Nivel 26**: Comunicación en tiempo real con **WebSockets + STOMP**.
-- **Nivel 27**: Auditoría histórica de entidades con **Hibernate Envers**.
-- **Nivel 28**: Simulación de dependencias externas con **WireMock**.
-- **Nivel 29**: Dominio de **Pruebas Parametrizadas** (JUnit 5).
-- **Nivel 30-32**: Orquestación Global, Lógica Reactiva (Project Reactor) y Detección de Intrusos.
+### Nivel 25-28: Datos y Simulación
+- **Batch**: Procesamiento masivo con lógica de reintento/salto.
+- **WebSockets**: Comunicación bidireccional y seguridad en tópicos.
+- **Envers**: Auditoría histórica y consultas de revisión complejas.
+- **WireMock**: Simulación avanzada de fallos externos y verificación.
+
+### Nivel 29-32: Lógica de Élite
+- **JUnit 5**: Pruebas parametrizadas, dinámicas y ordenadas.
+- **Orquestación**: Patrones Saga, Outbox y TCC (Transacciones).
+- **Reactive**: Operadores de transformación y Backpressure.
+- **Proactive Security**: Detectores de Fuerza Bruta, SQLi y XSS.
 
 ---
 *¿Listo para el desafío? Escoge un nivel del catálogo y empieza a programar.*

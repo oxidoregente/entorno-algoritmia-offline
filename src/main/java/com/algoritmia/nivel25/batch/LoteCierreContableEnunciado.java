@@ -19,10 +19,24 @@ import org.springframework.transaction.PlatformTransactionManager;
 import java.util.Map;
 
 /**
- * RETO: Lote de Cierre Contable.
+ * 🎓 RETO: Lote de Cierre Contable (Spring Batch).
+ * <b>Dificultad: Difícil</b>
  * 
- * Implementa un Job de procesamiento masivo.
- * El estudiante debe definir el Step y el Job vinculando los componentes.
+ * <p>Spring Batch es un framework para el procesamiento por lotes (Batch processing). 
+ * Es ideal para tareas que manejan volúmenes masivos de datos sin intervención 
+ * humana (ej: generar reportes mensuales, procesar miles de transacciones).</p>
+ * 
+ * <p><b>💡 Conceptos Clave:</b></p>
+ * <ul>
+ *   <li><b>Job:</b> El proceso completo (ej: "Cierre Contable").</li>
+ *   <li><b>Step:</b> Una fase del Job. Un Job puede tener varios pasos.</li>
+ *   <li><b>Chunk:</b> Indica cuántos registros se procesan juntos antes de hacer commit en la DB.</li>
+ *   <li><b>Reader-Processor-Writer:</b> El patrón estándar para cada paso.</li>
+ * </ul>
+ * 
+ * <p><b>Tarea:</b> Implementa el procesamiento masivo de transacciones. Debes 
+ * leer todas las transacciones de la DB, cambiar su estado a "PROCESADO_POR_LOTE" 
+ * y guardarlas de vuelta en grupos de 10.</p>
  */
 @Configuration
 public class LoteCierreContableEnunciado {
