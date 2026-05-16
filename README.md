@@ -7,48 +7,34 @@ Este proyecto permite a desarrolladores de todos los niveles fortalecer su lógi
 
 ---
 
-## 🏗️ Estructura de Aprendizaje (32 Niveles)
+## 🗺️ Rutas de Aprendizaje Sugeridas
 
-El laboratorio está organizado en **32 niveles técnicos** que contienen **más de 150 retos interactivos**. Cada ejercicio sigue el **Patrón Reto-Solución**:
-1.  **Enunciado:** Clase con métodos vacíos y documentación Javadoc detallada (incluyendo ejemplos y pistas algorítmicas).
-2.  **Solución:** Referencia optimizada y pedagógica con la implementación completa.
-3.  **Test:** Prueba unitaria profesional que valida automáticamente tu progreso.
+Para facilitar tu progreso, hemos categorizado los niveles en tres rutas de aprendizaje según tu experiencia actual y objetivos:
 
-### 🧩 Fase 1: Fundamentos y Lógica Core
-*   **Nivel 00: Testing Inverso** -> Domina el patrón AAA (Arrange-Act-Assert) escribiendo pruebas para código funcional.
-*   **Nivel 01: Algoritmia Base** -> Lógica pura, estructuras de datos (Arrays, Strings), árboles y recursión.
-*   **Nivel 02: Java Funcional** -> Dominio de Streams API, Lambdas y procesamiento de colecciones avanzado.
-*   **Nivel 03: Lógica de Negocio** -> Creación de servicios Spring (`@Service`), inyección de dependencias y Mocking.
-*   **Nivel 04: Persistencia JPA** -> Modelado relacional, Query Methods y relaciones `@ManyToOne`.
-*   **Nivel 05: API REST** -> Exposición de controladores, estándares HTTP y códigos de estado.
-*   **Nivel 06: Arquitectura Avanzada** -> Uso de `records` de Java 21, mappers y manejo global de excepciones.
-*   **Nivel 07: Observabilidad AOP** -> Programación Orientada a Aspectos para auditoría y validación transversal.
+### 🟢 Ruta 1: Explorador de Lógica (Principiante)
+*Enfocada en dominar Java puro, algoritmos y mentalidad de testing.*
+- **Nivel 00: Testing Inverso** (Aprende a leer y probar código).
+- **Nivel 01: Algoritmia Base** (Arrays, Strings, Recursión).
+- **Nivel 02: Java Funcional** (Streams y Lambdas - Esencial para Java moderno).
+- **Meta:** Ser capaz de resolver problemas lógicos complejos y escribir código limpio y testeable.
 
-### 🏗️ Fase 2: Infraestructura y Modernización
-*   **Nivel 08: Documentación Dinámica** -> Autodocumentación de APIs con **Swagger UI / OpenAPI**.
-*   **Nivel 09: Dockerización** -> Empaquetado de aplicaciones en contenedores Docker.
-*   **Nivel 10: Orquestación** -> Gestión de ecosistemas multi-contenedor con **Docker Compose**.
-*   **Nivel 11: Testing de Élite** -> Pruebas de integración contra bases de datos reales usando **Testcontainers**.
-*   **Nivel 12: Seguridad Industrial** -> Protección con **Spring Security + JWT** (Roles y Autorización).
-*   **Nivel 13: Optimización con Redis** -> Estrategias de caché distribuido (Manual y Declarativo).
-*   **Nivel 14: Arquitectura de Eventos** -> Comunicación asíncrona mediante **RabbitMQ (AMQP)**.
-*   **Nivel 15: Monitorización 360°** -> Métricas con **Actuator + Prometheus**.
+### 🟡 Ruta 2: Constructor de Servicios (Intermedio)
+*Enfocada en el ecosistema Spring Boot y arquitectura de aplicaciones.*
+- **Nivel 03: Lógica de Negocio** (Servicios e Inyección de Dependencias).
+- **Nivel 04: Persistencia JPA** (Bases de datos relacionales y Hibernate).
+- **Nivel 05: API REST** (Controladores y estándares HTTP).
+- **Nivel 06: Arquitectura Avanzada** (DTOs, Records y Mappers).
+- **Nivel 07: Observabilidad AOP** (Programación Orientada a Aspectos).
+- **Nivel 16: Gestión de Entornos** (Perfiles de Spring).
+- **Meta:** Construir aplicaciones backend robustas, siguiendo patrones de diseño y estándares industriales.
 
-### ⚡ Fase 3: Ingeniería de Avanzada y Resiliencia
-*   **Nivel 16-18:** Gestión de entornos (Profiles), Flyway (Migraciones) y Automatización (Scheduler).
-*   **Nivel 19-21:** Consumo de APIs (WebClient), Notificaciones (Mail) y Diseño (Mermaid).
-*   **Nivel 22-24:** APIs modernas (GraphQL), Resiliencia (Circuit Breaker) y Trazabilidad (Zipkin).
-
-### 🏆 Fase 4: Especialización y Cierre Maestro
-*   **Nivel 25-28:** Procesamiento masivo (Batch), Tiempo Real (WebSockets), Auditoría (Envers) y Simulación (WireMock).
-*   **Nivel 29-32:** JUnit 5 Avanzado, Orquestación Global, Programación Reactiva y Seguridad Proactiva.
-
----
-
-## 🛠️ Requisitos del Sistema
-- **Java 21 LTS** (Mandatorio)
-- **Maven 3.8+**
-- **Docker & Docker Compose** (Para niveles 09-11 y superior)
+### 🔴 Ruta 3: Arquitecto de Infraestructura y Élite (Profesional)
+*Enfocada en sistemas distribuidos, despliegue, seguridad y alto rendimiento.*
+- **Nivel 08-11: Ecosistema Docker** (Swagger, Docker, Compose, Testcontainers).
+- **Nivel 12-14: Seguridad y Mensajería** (Spring Security, JWT, Redis, RabbitMQ).
+- **Nivel 17-21: Evolución y Diseño** (Flyway, Scheduler, WebClient, Mermaid).
+- **Nivel 22-32: Tecnologías Avanzadas** (GraphQL, Resilience4j, Batch, WebSockets, Programación Reactiva).
+- **Meta:** Diseñar y mantener arquitecturas escalables, resilientes y seguras listas para producción.
 
 ---
 
