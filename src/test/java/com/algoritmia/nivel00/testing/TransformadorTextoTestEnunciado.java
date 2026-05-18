@@ -12,10 +12,16 @@ class TransformadorTextoTestEnunciado {
     void testFormateo() {
         // --- 1️⃣ ARRANGE ---
         // Texto: "  java  " -> Resultado esperado: "JAVA"
+    	String texto = "   java   ";
+    	String textoEsperado = "JAVA";
+    	TransformadorTextoSolucion transformador = new TransformadorTextoSolucion();
         
         // --- 2️⃣ ACT ---
+    	
+    	String resultado = transformador.formatear(texto);
         
         // --- 3️⃣ ASSERT ---
         // TODO: Implementa el test usando assertEquals
+    	assertEquals(textoEsperado, resultado);
     }
 }

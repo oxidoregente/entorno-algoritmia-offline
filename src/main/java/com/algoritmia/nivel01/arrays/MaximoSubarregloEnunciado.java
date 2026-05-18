@@ -20,6 +20,15 @@ public class MaximoSubarregloEnunciado {
 	public int encontrarSumaMaxima(int[] nums) {
 		// TODO: Implementa tu lógica aquí usando el Algoritmo de Kadane
 
-		return 0;
+		int sumaMaxima = nums[0];
+		int sumaActual = nums[0];
+
+		for (int i = 1; i < nums.length; i++) {
+			sumaActual = Math.max(nums[i], sumaActual + nums[i]);
+
+			sumaMaxima = Math.max(sumaMaxima, sumaActual);
+		}
+
+		return sumaMaxima;
 	}
 }

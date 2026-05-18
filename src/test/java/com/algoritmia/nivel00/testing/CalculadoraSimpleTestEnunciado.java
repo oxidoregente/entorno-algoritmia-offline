@@ -8,8 +8,15 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class CalculadoraSimpleTestEnunciado {
 
-    @Test
-    void testSuma() {
-        // TODO: Prueba que 2 + 2 sea 4 usando el patrón AAA
-    }
+	@Test
+	void testSuma() {
+		// TODO: Prueba que 2 + 2 sea 4 usando el patrón AAA
+
+		int n1 = 2;
+		int n2 = 2;
+
+		CalculadoraSimpleSolucion calcular = new CalculadoraSimpleSolucion();
+
+		assertEquals(4, calcular.sumar(n1, n2));
+	}
 }
