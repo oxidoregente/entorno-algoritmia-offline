@@ -7,6 +7,10 @@ import java.time.LocalDateTime;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Test para ejercicio de Repositorio de Pedido.
+ * Valida consultas por fecha y estado.
+ */
 @DataJpaTest
 class PedidoRepositoryTest {
 

@@ -7,6 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import com.algoritmia.nivel04.repositorios.CartaTarotEnunciado.Arcano;
 
+/**
+ * Test para ejercicio de Repositorio de Carta de Tarot.
+ * Valida consultas por arcano y energía.
+ */
 @DataJpaTest
 class CartaTarotRepositoryTest {
 

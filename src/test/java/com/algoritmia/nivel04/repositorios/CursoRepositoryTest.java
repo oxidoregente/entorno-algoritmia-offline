@@ -6,6 +6,10 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Test para ejercicio de Repositorio de Curso.
+ * Valida consultas por categoría y duración.
+ */
 @DataJpaTest
 class CursoRepositoryTest {
 

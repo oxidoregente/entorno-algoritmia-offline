@@ -6,6 +6,10 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
+/**
+ * Test para ejercicio de Repositorio de Jugador.
+ * Valida consultas por estadísticas y nivel.
+ */
 @DataJpaTest
 class JugadorRepositoryTest {
 
