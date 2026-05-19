@@ -8,10 +8,20 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 /**
- * RETO: Pago Controller.
- * 
- * Implementa el endpoint REST para calcular comisiones.
- * El estudiante debe definir las anotaciones de mapeo (@GetMapping, @RequestParam).
+ * 🎓 RETO: Controlador de Pagos (Comisiones).
+ * <b>Dificultad: Fácil</b>
+ *
+ * <p>Implementa un endpoint REST para calcular comisiones de transacciones
+ * utilizando el servicio `ProcesadorPagosFintechEnunciado`.</p>
+ *
+ * <h3>Endpoint:</h3>
+ * <p><code>GET /api/v1/pagos/comision?monto=1000&tipo=CREDITO</code></p>
+ *
+ * <p><b>Pistas:</b></p>
+ * <ul>
+ *   <li>Usa @GetMapping y @RequestParam para capturar los parámetros.</li>
+ *   <li>Invoca al procesador y devuelve un Map con los resultados (monto, tipo, comisión calculada).</li>
+ * </ul>
  */
 @RestController
 @RequestMapping("/api/v1/pagos")
@@ -29,8 +39,8 @@ public class PagoControllerEnunciado {
     public Map<String, Object> obtenerComision(
             @RequestParam double monto,
             @RequestParam TipoTarjeta tipo) {
-        
-        // TODO: Invocar al procesador y devolver un Mapa con los resultados
+
+        // TODO: Invocar al procesador y devolver un Map con los resultados
         return null;
     }
 }

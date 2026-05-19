@@ -8,16 +8,28 @@ import java.util.List;
 /**
  * 🎓 RETO: Orquestador de Mappers de Historial.
  * <b>Dificultad: Difícil</b>
- * 
- * <p>Implementa un servicio que mapee una LISTA de entidades a una LISTA de DTOs 
- * realizando un cálculo de "impuesto proyectado" en cada objeto.</p>
+ *
+ * <p>Implementa un servicio que mapee una lista de entidades `TransaccionEnunciado`
+ * a una lista de DTOs `TransaccionDTO`, calculando un "impuesto proyectado"
+ * para cada transacción.</p>
+ *
+ * <p><b>Requerimientos:</b></p>
+ * <ol>
+ *   <li>Mapear cada entidad a TransaccionDTO usando streams.</li>
+ *   <li>El mensaje informativo del DTO debe incluir: "Impuesto: " + (monto * 0.15).</li>
+ * </ol>
  */
 @Service
 public class OrquestadorHistorialEnunciado {
 
+    /**
+     * Procesa una lista de entidades y las mapea a DTOs con impuesto proyectado.
+     *
+     * @param entidades Lista de entidades TransaccionEnunciado.
+     * @return Lista de TransaccionDTO con el impuesto calculado.
+     */
     public List<TransaccionDTO> procesarHistorial(List<TransaccionEnunciado> entidades) {
-        // TODO: Mapear lista usando streams
-        // TODO: El mensaje informativo del DTO debe decir "Impuesto: " + (monto * 0.15)
+        // TODO: Mapear lista usando streams con cálculo de impuesto
         return null;
     }
 }

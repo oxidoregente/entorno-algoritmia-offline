@@ -18,6 +18,6 @@ public class InterceptadorErroresEnunciado {
 
     @AfterThrowing(pointcut = "execution(* com.algoritmia.nivel05.api.*.*(..))", throwing = "ex")
     public void logearError(Exception ex) {
-        // TODO: Muestra el nombre del método y el mensaje de la excepción por consola.
+        // TODO: Registra la excepción con el nombre del método y su mensaje
     }
 }

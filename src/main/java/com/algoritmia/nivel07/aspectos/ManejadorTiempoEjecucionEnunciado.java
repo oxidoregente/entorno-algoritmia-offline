@@ -19,8 +19,7 @@ public class ManejadorTiempoEjecucionEnunciado {
 
     @Around("execution(* com.algoritmia.nivel03.servicios.*.*(..))")
     public Object medirTiempo(ProceedingJoinPoint joinPoint) throws Throwable {
-        // TODO: Registra el tiempo de inicio, ejecuta el método, 
-        // registra el tiempo de fin y muestra la duración por consola.
+        // TODO: Mide y registra el tiempo de ejecución del método
         return joinPoint.proceed();
     }
 }
