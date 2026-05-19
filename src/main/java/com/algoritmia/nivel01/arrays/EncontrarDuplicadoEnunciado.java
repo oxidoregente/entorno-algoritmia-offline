@@ -1,18 +1,29 @@
 package com.algoritmia.nivel01.arrays;
 
+import java.util.HashMap;
+
 /**
- * 🎓 RETO: Encontrar Duplicado.
- * <b>Dificultad: Media</b>
+ * 🎓 RETO: Encontrar Duplicado. <b>Dificultad: Media</b>
  * 
- * <p>Dado un array de enteros 'nums' que contiene 'n + 1' enteros donde cada entero 
- * está en el rango [1, n] inclusive. Tu tarea es encontrar el único número duplicado 
- * en 'nums' sin modificar el array y usando solo espacio extra constante O(1).</p>
+ * <p>
+ * Dado un array de enteros 'nums' que contiene 'n + 1' enteros donde cada
+ * entero está en el rango [1, n] inclusive. Tu tarea es encontrar el único
+ * número duplicado en 'nums' sin modificar el array y usando solo espacio extra
+ * constante O(1).
+ * </p>
  * 
- * <p><b>💡 Algoritmo de la Tortuga y la Liebre (Floyd's Cycle-Finding):</b></p>
- * <p>Este algoritmo visualiza el array como una lista enlazada donde cada valor 
- * apunta al índice de ese valor. Si hay un duplicado, se formará un ciclo.</p>
+ * <p>
+ * <b>💡 Algoritmo de la Tortuga y la Liebre (Floyd's Cycle-Finding):</b>
+ * </p>
+ * <p>
+ * Este algoritmo visualiza el array como una lista enlazada donde cada valor
+ * apunta al índice de ese valor. Si hay un duplicado, se formará un ciclo.
+ * </p>
  * 
- * <p><b>Ejemplo Visual:</b></p>
+ * <p>
+ * <b>Ejemplo Visual:</b>
+ * </p>
+ * 
  * <pre>
  * Array: [1, 3, 4, 2, 2]
  * Índices: 0  1  2  3  4
@@ -26,8 +37,19 @@ package com.algoritmia.nivel01.arrays;
  */
 public class EncontrarDuplicadoEnunciado {
 
-    public int buscar(int[] nums) {
-        // TODO: Implementa tu lógica aquí.
-        return 0;
-    }
+	public int buscar(int[] nums) {
+		// TODO: Implementa tu lógica aquí.
+
+		HashMap<Integer, Integer> mapa = new HashMap<>();
+
+		for (int i = 0; i < nums.length; i++) {
+			if (mapa.get(nums[i]) != null) {
+				return nums[i];
+			} else {
+				mapa.put(nums[i], 1);
+			}
+		}
+
+		return 0;
+	}
 }
