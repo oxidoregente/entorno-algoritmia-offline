@@ -4,10 +4,13 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * RETO: Agrupamiento Jerárquico.
+ * 🎓 RETO: Agrupamiento Jerárquico.
+ * <b>Dificultad: Media</b>
  * 
- * Dada una lista de 'Transaccion', agrúpalas por año y luego por mes.
- * Devuelve un Mapa de Mapas: Map<Año, Map<Mes, List<Transaccion>>>.
+ * <p>Dada una lista de 'Transaccion', agrúpalas por año y luego por mes.
+ * Devuelve un Mapa de Mapas: Map&lt;Año, Map&lt;Mes, List&lt;Transaccion&gt;&gt;&gt;.</p>
+ * 
+ * <p><b>Pista:</b> Usa Collectors.groupingBy anidado.</p>
  */
 public class AgrupadorJerarquicoEnunciado {
 

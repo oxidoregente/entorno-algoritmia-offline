@@ -4,12 +4,15 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * RETO: Estadísticas de Ventas con Streams.
+ * 🎓 RETO: Estadísticas de Ventas con Streams.
+ * <b>Dificultad: Media</b>
  * 
- * Recibes una lista de objetos 'Venta'. Debes:
- * 1. Agrupar las ventas por su campo 'categoria'.
- * 2. Calcular la suma total de los montos por cada categoría.
- * 3. Devolver un Mapa donde la llave es la categoría y el valor es el total.
+ * <p>Recibes una lista de objetos 'Venta'. Debes:</p>
+ * <ol>
+ *   <li>Agrupar las ventas por su campo 'categoria'.</li>
+ *   <li>Calcular la suma total de los montos por cada categoría.</li>
+ *   <li>Devolver un Mapa donde la llave es la categoría y el valor es el total.</li>
+ * </ol>
  */
 public class EstadisticasVentasEnunciado {
 
