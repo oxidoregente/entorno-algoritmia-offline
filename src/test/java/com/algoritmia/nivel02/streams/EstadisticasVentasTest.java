@@ -6,6 +6,10 @@ import java.util.Map;
 import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel02.streams.EstadisticasVentasEnunciado.Venta;
 
+/**
+ * Test para ejercicio de Estadísticas de Ventas.
+ * Valida cálculo de totales por categoría.
+ */
 class EstadisticasVentasTest {
 
     @Test

@@ -5,6 +5,10 @@ import java.util.List;
 import java.util.Map;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Frecuencia de Palabras.
+ * Valida cálculo de frecuencia de palabras en una lista.
+ */
 class FrecuenciaPalabrasTest {
 
     @Test

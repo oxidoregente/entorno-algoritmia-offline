@@ -5,6 +5,10 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel02.streams.ProcesadorPedidosEnunciado.*;
 
+/**
+ * Test para ejercicio de Procesador de Pedidos.
+ * Valida extracción de items únicos sin duplicados.
+ */
 class ProcesadorPedidosTest {
 
     @Test

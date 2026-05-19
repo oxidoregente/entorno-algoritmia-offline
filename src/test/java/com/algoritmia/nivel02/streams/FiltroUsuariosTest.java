@@ -5,6 +5,10 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel02.streams.FiltroUsuariosEnunciado.Usuario;
 
+/**
+ * Test para ejercicio de Filtro de Usuarios.
+ * Valida filtrado de usuarios mayores de edad y obtención de emails.
+ */
 class FiltroUsuariosTest {
 
     @Test

@@ -6,6 +6,10 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel02.streams.FiltroEcommerceEnunciado.Producto;
 
+/**
+ * Test para ejercicio de Filtro Ecommerce.
+ * Valida filtrado de productos con descuento aplicado.
+ */
 class FiltroEcommerceTest {
 
     @Test
