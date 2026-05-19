@@ -9,6 +9,12 @@ package com.algoritmia.nivel10;
  */
 public class ComposeBasicoEnunciado {
 
+    /**
+     * Genera el contenido del archivo docker-compose.yml definiendo los
+     * servicios 'app' (aplicación Java) y 'db' (PostgreSQL 15).
+     *
+     * @return String con el contenido YAML del docker-compose
+     */
     public String generarCompose() {
         // TODO: Retorna un YAML con:
         // services:

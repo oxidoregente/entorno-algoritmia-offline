@@ -3,6 +3,10 @@ package com.algoritmia.nivel23.resiliencia;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Test para ejercicio de Reintentador de Servicio.
+ * Valida lógica de reintentos manuales.
+ */
 class ReintentadorServicioTest {
 
     @Test

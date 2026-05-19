@@ -9,6 +9,10 @@ import java.io.PrintStream;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
+/**
+ * Test para ejercicio de Filtro de Mensajes Prioritarios.
+ * Valida filtrado de mensajes por prioridad.
+ */
 @ExtendWith(MockitoExtension.class)
 class FiltroMensajesPrioritariosTest {
 

@@ -19,9 +19,7 @@ public class ValidadorArgumentosEnunciado {
 
     @Around("execution(* com.algoritmia.*.servicios.*.*(..))")
     public Object validar(ProceedingJoinPoint joinPoint) throws Throwable {
-        // TODO: Obtén los argumentos con joinPoint.getArgs()
-        // TODO: Si hay algún nulo, lanza IllegalArgumentException
-        // TODO: De lo contrario, permite la ejecución con joinPoint.proceed()
+        // TODO: Valida argumentos nulos, lanza excepción o permite ejecución
         return null;
     }
 }

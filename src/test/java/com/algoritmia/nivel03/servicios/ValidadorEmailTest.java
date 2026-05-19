@@ -3,6 +3,10 @@ package com.algoritmia.nivel03.servicios;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Validador de Email.
+ * Valida formato de emails con regex.
+ */
 class ValidadorEmailTest {
 
     @Test

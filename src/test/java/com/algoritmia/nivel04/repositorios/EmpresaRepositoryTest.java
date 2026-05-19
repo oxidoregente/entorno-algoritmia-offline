@@ -6,6 +6,10 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
+/**
+ * Test para ejercicio de Repositorio de Empresa.
+ * Valida consultas por sector y empleados.
+ */
 @DataJpaTest
 class EmpresaRepositoryTest {
 

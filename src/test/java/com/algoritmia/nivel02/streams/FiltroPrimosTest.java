@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Filtro de Primos.
+ * Valida filtrado de números primos usando streams.
+ */
 class FiltroPrimosTest {
 
     @Test

@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel03.servicios.GestorMovimientosAjedrezEnunciado.Pieza;
 
+/**
+ * Test para ejercicio de Gestor de Movimientos de Ajedrez.
+ * Valida movimientos válidos por tipo de pieza.
+ */
 class GestorMovimientosAjedrezTest {
 
     @Test

@@ -6,9 +6,11 @@ import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
 
 /**
- * RETO: Aspecto de Auditoría (AOP).
- * 
- * Intercepta las llamadas a los servicios para medir tiempos.
+ * 🎓 RETO: Aspecto de Auditoría (AOP).
+ * <b>Dificultad: Fácil</b>
+ *
+ * <p>Intercepta las llamadas a los servicios para medir y registrar tiempos de ejecución.
+ * Registra el tiempo antes y después de ejecutar el método objetivo.</p>
  */
 @Aspect
 @Component

@@ -4,22 +4,48 @@ import org.springframework.stereotype.Service;
 import java.util.Map;
 
 /**
- * RETO: Sistema de Reservas de Vuelos.
- * 
- * Calcula el precio final de un ticket basándose en el destino y la clase.
- * 
- * Reglas:
- * 1. Destinos soportados: "MADRID" (500$), "PARIS" (600$), "LONDRES" (700$).
- * 2. Si el destino no está soportado, debe lanzar una IllegalArgumentException.
- * 3. Clase "EJECUTIVA": Incrementa el precio base en un 50%.
- * 4. Clase "TURISTA": Mantiene el precio base.
- * 5. Tasa Aeroportuaria: Añade un valor fijo de 45$ al final.
+ * 🎓 RETO: Sistema de Reservas de Vuelos.
+ * <b>Dificultad: Fácil</b>
+ *
+ * <p>Calcula el precio final de un ticket de avión basándose en el destino y la clase seleccionada.</p>
+ *
+ * <p><b>Destinos soportados y precios base:</b></p>
+ * <ul>
+ *   <li>"MADRID" -> $500</li>
+ *   <li>"PARIS" -> $600</li>
+ *   <li>"LONDRES" -> $700</li>
+ * </ul>
+ *
+ * <p><b>Reglas:</b></p>
+ * <ol>
+ *   <li>Si el destino no está soportado, lanza una `IllegalArgumentException`.</li>
+ *   <li>Clase "EJECUTIVA": incrementa el precio base en un 50%.</li>
+ *   <li>Clase "TURISTA": mantiene el precio base.</li>
+ *   <li>Al final, añade una tasa aeroportuaria fija de $45.</li>
+ * </ol>
+ *
+ * <h3>Ejemplo:</h3>
+ * <pre>
+ * destino="PARIS", clase="EJECUTIVA"
+ * Precio base: 600
+ * Incremento: 600 * 0.5 = 300
+ * Tasa: 45
+ * Total: 945
+ * </pre>
  */
 @Service
 public class SistemaReservasVuelosEnunciado {
 
+    /**
+     * Calcula el precio final de un ticket según destino y clase.
+     *
+     * @param destino El destino del vuelo (MADRID, PARIS, LONDRES).
+     * @param clase   La clase del ticket (TURISTA, EJECUTIVA).
+     * @return El precio final del ticket.
+     * @throws IllegalArgumentException Si el destino no está soportado.
+     */
     public double calcularPrecioTicket(String destino, String clase) {
-        // TODO: Implementa la lógica de búsqueda de base y cálculo de extras
+        // TODO: Implementa la lógica de cálculo del ticket
         return 0;
     }
 }

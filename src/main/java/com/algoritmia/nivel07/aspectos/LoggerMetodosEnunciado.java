@@ -16,8 +16,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class LoggerMetodosEnunciado {
 
-    // TODO: Define el @Before para capturar ejecuciones en com.algoritmia.*.servicios.*
+    // TODO: Define el @Before con pointcut para servicios
     public void registrarLlamada(JoinPoint joinPoint) {
-        // TODO: Imprime el nombre del método usando joinPoint.getSignature().getName()
+        // TODO: Registra el nombre del método ejecutado
     }
 }

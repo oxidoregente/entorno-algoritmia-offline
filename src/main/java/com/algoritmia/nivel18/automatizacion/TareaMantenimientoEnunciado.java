@@ -7,7 +7,15 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 /**
- * RETO: Tarea de Mantenimiento Programada.
+ * 🎓 RETO: Tarea de Mantenimiento Programada.
+ * <b>Dificultad: Difícil</b>
+ *
+ * <p>Implementa una tarea programada que lance un Job de Spring Batch
+ * ({@link org.springframework.batch.core.Job}) cada 10 minutos usando
+ * {@link org.springframework.batch.core.launch.JobLauncher}.</p>
+ *
+ * <p>Esta tarea simula un cierre contable masivo ejecutado de forma
+ * periódica sin intervención humana.</p>
  */
 @Service
 public class TareaMantenimientoEnunciado {
@@ -20,7 +28,11 @@ public class TareaMantenimientoEnunciado {
         this.jobCierreContable = jobCierreContable;
     }
 
-    @Scheduled(fixedRate = 600000) 
+    /**
+     * Ejecuta el Job de cierre contable de forma periódica.
+     * Se lanza automáticamente cada 10 minutos (600.000 ms).
+     */
+    @Scheduled(fixedRate = 600000)
     public void ejecutarCierreMasivo() {
         // TODO: Ejecutar el job usando jobLauncher.run()
     }

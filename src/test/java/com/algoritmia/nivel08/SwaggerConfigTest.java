@@ -9,6 +9,10 @@ import org.springframework.context.ApplicationContext;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Test para ejercicio de Swagger Config.
+ * Valida configuración de OpenAPI y grupos.
+ */
 @SpringBootTest
 class SwaggerConfigTest {
 

@@ -21,6 +21,11 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class DeadLetterQueueEnunciado {
 
+    /**
+     * Crea la cola principal con configuración de Dead Letter Exchange.
+     *
+     * @return cola configurada con dlx-exchange y fallo-routing-key
+     */
     @Bean
     public Queue mainQueue() {
         // TODO: Crea una cola que tenga configurado:
@@ -29,6 +34,11 @@ public class DeadLetterQueueEnunciado {
         return null;
     }
 
+    /**
+     * Crea el exchange encargado de recibir mensajes fallidos.
+     *
+     * @return DirectExchange "dlx-exchange"
+     */
     @Bean
     public DirectExchange deadLetterExchange() {
         // TODO: Crea un DirectExchange llamado "dlx-exchange"

@@ -7,6 +7,10 @@ import java.util.Map;
 import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel02.streams.CalculadoraRecetasEnunciado.Ingrediente;
 
+/**
+ * Test para ejercicio de Calculadora de Recetas.
+ * Valida ajuste de cantidades por factor de escala.
+ */
 class CalculadoraRecetasTest {
 
     @Test

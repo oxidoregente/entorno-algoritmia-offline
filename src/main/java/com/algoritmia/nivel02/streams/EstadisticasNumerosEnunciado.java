@@ -4,10 +4,11 @@ import java.util.List;
 import java.util.DoubleSummaryStatistics;
 
 /**
- * RETO: Estadísticas de Números.
+ * 🎓 RETO: Estadísticas de Números.
+ * <b>Dificultad: Fácil</b>
  * 
- * Dada una lista de dobles, utiliza DoubleSummaryStatistics para obtener
- * el mínimo, el máximo y el promedio en una sola operación de stream.
+ * <p>Dada una lista de dobles, utiliza DoubleSummaryStatistics para obtener
+ * el mínimo, el máximo y el promedio en una sola operación de stream.</p>
  */
 public class EstadisticasNumerosEnunciado {
 

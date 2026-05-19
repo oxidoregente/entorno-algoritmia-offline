@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel06.servicios.CategorizadorErroresEnunciado.ErrorRespuesta;
 
+/**
+ * Test para ejercicio de Categorizador de Errores.
+ * Valida categorización de excepciones.
+ */
 class CategorizadorErroresTest {
 
     @Test

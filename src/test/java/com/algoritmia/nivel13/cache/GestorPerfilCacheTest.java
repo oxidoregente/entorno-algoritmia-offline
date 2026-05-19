@@ -9,6 +9,10 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 
+/**
+ * Test para ejercicio de Gestor de Perfil con Cache.
+ * Valida operaciones con Redis.
+ */
 @ExtendWith(MockitoExtension.class)
 class GestorPerfilCacheTest {
 

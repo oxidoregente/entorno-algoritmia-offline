@@ -3,6 +3,10 @@ package com.algoritmia.nivel01.recursion;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Fibonacci recursivo.
+ * Valida secuencia de Fibonacci para casos base y términos mayores.
+ */
 class FibonacciTest {
 
     @Test

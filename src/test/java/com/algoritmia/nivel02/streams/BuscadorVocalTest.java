@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Buscador de Vocal.
+ * Valida búsqueda de palabras que contienen la vocal 'a'.
+ */
 class BuscadorVocalTest {
 
     @Test

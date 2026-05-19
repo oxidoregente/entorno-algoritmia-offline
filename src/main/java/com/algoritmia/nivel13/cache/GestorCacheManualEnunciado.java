@@ -20,10 +20,22 @@ public class GestorCacheManualEnunciado {
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;
 
+    /**
+     * Guarda un valor en Redis asociado a una clave.
+     *
+     * @param clave clave bajo la que se almacenará el valor
+     * @param valor objeto a almacenar en caché
+     */
     public void guardar(String clave, Object valor) {
         // TODO: Guarda el valor en Redis usando la clave.
     }
 
+    /**
+     * Recupera un valor de Redis por su clave.
+     *
+     * @param clave clave del valor a recuperar
+     * @return el objeto almacenado, o null si no existe
+     */
     public Object recuperar(String clave) {
         // TODO: Recupera el valor asociado a la clave.
         return null;

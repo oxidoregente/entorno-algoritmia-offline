@@ -9,6 +9,12 @@ package com.algoritmia.nivel10;
  */
 public class ComposeEnvFileEnunciado {
 
+    /**
+     * Genera el contenido del docker-compose.yml que utiliza variables
+     * externas desde un archivo .env para las credenciales de la BD.
+     *
+     * @return String con el contenido YAML del docker-compose
+     */
     public String generarCompose() {
         // TODO: Retorna un YAML que use ${VARIABLE} para DB_NAME, DB_USER, etc.
         return "";

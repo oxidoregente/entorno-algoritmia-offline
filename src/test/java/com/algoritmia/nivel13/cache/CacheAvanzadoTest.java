@@ -7,6 +7,10 @@ import org.springframework.context.ApplicationContext;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+/**
+ * Test para ejercicio de Cache Avanzado.
+ * Valida configuración de caché en Spring.
+ */
 @SpringBootTest
 class CacheAvanzadoTest {
 

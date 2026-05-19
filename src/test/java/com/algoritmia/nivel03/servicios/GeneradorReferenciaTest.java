@@ -3,6 +3,10 @@ package com.algoritmia.nivel03.servicios;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Generador de Referencia.
+ * Valida generación de códigos de referencia únicos.
+ */
 class GeneradorReferenciaTest {
 
     @Test

@@ -3,10 +3,11 @@ package com.algoritmia.nivel04.repositorios;
 import jakarta.persistence.*;
 
 /**
- * 🎓 RETO: Repositorio de Coches.
+ * 🎓 RETO: Entidad Coche.
  * <b>Dificultad: Fácil</b>
- * 
- * <p>Implementa un Query Method para CONTAR cuántos coches hay de una marca específica.</p>
+ *
+ * <p>Modela un coche con marca y modelo. El repositorio asociado deberá contar
+ * cuántos coches existen de una marca específica.</p>
  */
 @Entity
 public class CocheEnunciado {

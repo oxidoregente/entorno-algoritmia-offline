@@ -4,12 +4,13 @@ import java.util.List;
 import java.util.OptionalDouble;
 
 /**
- * RETO: Buscador de Empleados de IT.
+ * 🎓 RETO: Buscador de Empleados de IT.
+ * <b>Dificultad: Fácil</b>
  * 
- * Dado un record Empleado(String nombre, String departamento, double salario),
- * encuentra el salario más alto de los empleados que pertenecen al departamento "IT".
+ * <p>Dado un record Empleado(nombre, departamento, salario),
+ * encuentra el salario más alto de los empleados que pertenecen al departamento "IT".</p>
  * 
- * Si no hay empleados en IT, debe devolver un Optional vacío.
+ * <p>Si no hay empleados en IT, debe devolver un Optional vacío.</p>
  */
 public class BuscadorEmpleadosEnunciado {
 

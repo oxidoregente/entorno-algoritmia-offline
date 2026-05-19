@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para Analizador de Logs con Regex.
+ * Valida filtrado por nivel (ERROR, INFO, WARN).
+ */
 class AnalizadorLogsTest {
 
     @Test

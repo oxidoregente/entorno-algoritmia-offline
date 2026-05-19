@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Calculadora de IVA.
+ * Valida cálculo de total con IVA aplicado.
+ */
 class CalculadoraIVATest {
 
     @Test

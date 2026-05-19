@@ -5,6 +5,10 @@ import java.util.List;
 import java.util.DoubleSummaryStatistics;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Estadísticas de Números.
+ * Valida cálculo de estadísticas con DoubleSummaryStatistics.
+ */
 class EstadisticasNumerosTest {
 
     @Test

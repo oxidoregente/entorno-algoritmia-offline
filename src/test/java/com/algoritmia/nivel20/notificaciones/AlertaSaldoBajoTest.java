@@ -7,6 +7,10 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+/**
+ * Test para ejercicio de Alerta de Saldo Bajo.
+ * Valida notificaciones por email con mocks.
+ */
 @ExtendWith(MockitoExtension.class)
 class AlertaSaldoBajoTest {
 

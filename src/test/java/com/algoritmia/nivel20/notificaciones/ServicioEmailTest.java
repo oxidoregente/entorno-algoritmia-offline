@@ -2,6 +2,10 @@ package com.algoritmia.nivel20.notificaciones;
 
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Servicio de Email.
+ * Valida envío de emails simulados.
+ */
 class ServicioEmailTest {
 
     @Test

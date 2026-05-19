@@ -9,6 +9,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.test.web.servlet.MockMvc;
 
+/**
+ * Test para ejercicio de Controller de Matemáticas.
+ * Valida operaciones aritméticas vía API REST.
+ */
 @WebMvcTest(MatematicasControllerEnunciado.class)
 class MatematicasControllerTest {
 

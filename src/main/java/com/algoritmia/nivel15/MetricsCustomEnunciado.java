@@ -19,6 +19,9 @@ public class MetricsCustomEnunciado {
         this.meterRegistry = meterRegistry;
     }
 
+    /**
+     * Incrementa el contador de métricas para registrar una venta.
+     */
     public void registrarVenta() {
         // TODO: Incrementa un contador llamado "ventas.totales" 
         // usando el meterRegistry.

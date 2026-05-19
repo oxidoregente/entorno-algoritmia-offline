@@ -4,11 +4,12 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * RETO: Agrupamiento de Ciudades por País.
+ * 🎓 RETO: Agrupamiento de Ciudades por País.
+ * <b>Dificultad: Fácil</b>
  * 
- * Recibes una lista de 'Ciudad' (con nombre y país).
+ * <p>Recibes una lista de 'Ciudad' (con nombre y país).
  * Debes devolver un Mapa donde la llave es el País y el valor es 
- * la CANTIDAD de ciudades de ese país en la lista.
+ * la CANTIDAD de ciudades de ese país en la lista.</p>
  */
 public class FiltroCiudadesStreamEnunciado {
 

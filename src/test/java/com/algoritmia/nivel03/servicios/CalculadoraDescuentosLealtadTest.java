@@ -3,6 +3,10 @@ package com.algoritmia.nivel03.servicios;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Calculadora de Descuentos por Lealtad.
+ * Valida cálculo de descuentos combinados por volumen y antigüedad.
+ */
 class CalculadoraDescuentosLealtadTest {
 
     @Test

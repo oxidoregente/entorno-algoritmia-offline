@@ -5,6 +5,10 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel02.streams.BuscadorEmpleadosEnunciado.Empleado;
 
+/**
+ * Test para ejercicio de Buscador de Empleados.
+ * Valida búsqueda de salario máximo en departamento IT.
+ */
 class BuscadorEmpleadosTest {
 
     @Test

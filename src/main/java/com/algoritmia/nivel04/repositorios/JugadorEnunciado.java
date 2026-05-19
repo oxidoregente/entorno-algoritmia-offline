@@ -3,9 +3,11 @@ package com.algoritmia.nivel04.repositorios;
 import jakarta.persistence.*;
 
 /**
- * RETO: Ranking de Jugadores.
- * 
- * Implementa una consulta personalizada para obtener el Top de jugadores.
+ * 🎓 RETO: Entidad Jugador.
+ * <b>Dificultad: Media</b>
+ *
+ * <p>Modela un jugador con nickname y puntaje. El repositorio asociado deberá
+ * implementar una consulta personalizada para obtener el Top 3 de jugadores con mayor puntaje.</p>
  */
 @Entity
 public class JugadorEnunciado {

@@ -6,6 +6,10 @@ import java.util.Map;
 import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel02.streams.AgrupadorJerarquicoEnunciado.Transaccion;
 
+/**
+ * Test para ejercicio de Agrupamiento Jerárquico con Streams.
+ * Valida groupingBy anidado por año y mes.
+ */
 class AgrupadorJerarquicoTest {
 
     @Test

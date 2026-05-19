@@ -3,9 +3,11 @@ package com.algoritmia.nivel04.repositorios;
 import jakarta.persistence.*;
 
 /**
- * RETO: Mazo de Tarot.
- * 
- * Modela una carta de tarot y su arcano.
+ * 🎓 RETO: Entidad Carta de Tarot.
+ * <b>Dificultad: Fácil</b>
+ *
+ * <p>Modela una carta de tarot con nombre y tipo de arcano (MAYOR/MENOR).
+ * El repositorio asociado deberá buscar cartas por tipo de arcano ordenadas por nombre.</p>
  */
 @Entity
 @Table(name = "cartas_tarot_enunciado")

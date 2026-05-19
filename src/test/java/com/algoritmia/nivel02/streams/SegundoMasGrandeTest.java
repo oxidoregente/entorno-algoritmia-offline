@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Segundo Más Grande.
+ * Valida encontrar el segundo elemento más grande en una lista.
+ */
 class SegundoMasGrandeTest {
 
     @Test

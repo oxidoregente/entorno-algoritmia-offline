@@ -7,6 +7,10 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+/**
+ * Test para ejercicio de Servicio de Bienvenida.
+ * Valida envío de email de bienvenida con mocks.
+ */
 @ExtendWith(MockitoExtension.class)
 class ServicioBienvenidaTest {
 

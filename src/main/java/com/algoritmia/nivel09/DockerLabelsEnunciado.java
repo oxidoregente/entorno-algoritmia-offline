@@ -9,6 +9,12 @@ package com.algoritmia.nivel09;
  */
 public class DockerLabelsEnunciado {
 
+    /**
+     * Genera el contenido del Dockerfile añadiendo metadatos con la
+     * instrucción LABEL (autor y descripción del proyecto).
+     *
+     * @return String con el contenido completo del Dockerfile
+     */
     public String generarDockerfile() {
         // TODO: Retorna un String con:
         // LABEL maintainer="tu-nombre@example.com"

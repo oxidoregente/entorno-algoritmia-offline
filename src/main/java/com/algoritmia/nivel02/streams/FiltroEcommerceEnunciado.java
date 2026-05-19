@@ -3,12 +3,15 @@ package com.algoritmia.nivel02.streams;
 import java.util.List;
 
 /**
- * RETO: Filtro de E-commerce con Streams.
+ * 🎓 RETO: Filtro de E-commerce con Streams.
+ * <b>Dificultad: Media</b>
  * 
- * Recibes una lista de objetos 'Producto'. Debes:
- * 1. Filtrar los productos cuyo precio sea mayor a 'precioMinimo'.
- * 2. Aplicar un 10% de descuento al precio.
- * 3. Devolver una lista de Strings con el formato: "Nombre (Oferta: $PrecioFinal)".
+ * <p>Recibes una lista de objetos 'Producto'. Debes:</p>
+ * <ol>
+ *   <li>Filtrar los productos cuyo precio sea mayor a 'precioMinimo'.</li>
+ *   <li>Aplicar un 10% de descuento al precio.</li>
+ *   <li>Devolver una lista de Strings con el formato: "Nombre (Oferta: $PrecioFinal)".</li>
+ * </ol>
  */
 public class FiltroEcommerceEnunciado {
 

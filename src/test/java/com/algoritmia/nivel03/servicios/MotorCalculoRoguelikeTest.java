@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.Random;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Motor de Cálculo Roguelike.
+ * Valida cálculo de daño con probabilidad crítica.
+ */
 class MotorCalculoRoguelikeTest {
 
     @Test

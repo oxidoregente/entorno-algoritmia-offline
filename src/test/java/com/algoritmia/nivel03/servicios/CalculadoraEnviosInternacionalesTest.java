@@ -3,6 +3,10 @@ package com.algoritmia.nivel03.servicios;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Calculadora de Envíos Internacionales.
+ * Valida cálculo de costos por zona y peso.
+ */
 class CalculadoraEnviosInternacionalesTest {
 
     @Test

@@ -3,10 +3,11 @@ package com.algoritmia.nivel04.repositorios;
 import jakarta.persistence.*;
 
 /**
- * RETO: Búsqueda por Atributos Embebidos.
- * 
- * Implementa una entidad 'Empresa' que tenga una '@Embedded' direccion.
- * El estudiante debe definir el Query Method para buscar empresas por Ciudad.
+ * 🎓 RETO: Entidad Empresa con Atributo Embebido (@Embedded).
+ * <b>Dificultad: Media</b>
+ *
+ * <p>Modela una empresa con una dirección embebida. El repositorio asociado deberá
+ * buscar empresas por el nombre de la ciudad usando la sintaxis de atributos embebidos.</p>
  */
 @Embeddable
 class DireccionEnunciado {

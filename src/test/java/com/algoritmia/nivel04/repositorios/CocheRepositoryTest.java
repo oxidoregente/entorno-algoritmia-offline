@@ -5,6 +5,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Test para ejercicio de Repositorio de Coche.
+ * Valida consultas por marca y precio.
+ */
 @DataJpaTest
 class CocheRepositoryTest {
 

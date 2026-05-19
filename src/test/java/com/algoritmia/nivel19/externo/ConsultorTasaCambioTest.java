@@ -6,6 +6,10 @@ import org.junit.jupiter.api.Test;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.test.StepVerifier;
 
+/**
+ * Test para ejercicio de Consultor de Tasa de Cambio.
+ * Valida consulta de tasas con WireMock.
+ */
 @WireMockTest(httpPort = 8090)
 class ConsultorTasaCambioTest {
 

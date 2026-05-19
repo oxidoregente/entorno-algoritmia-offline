@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel03.servicios.CalculadoraSuscripcionEnunciado.*;
 
+/**
+ * Test para ejercicio de Calculadora de Suscripción.
+ * Valida cálculo de costos por plan y período.
+ */
 class CalculadoraSuscripcionTest {
 
     @Test

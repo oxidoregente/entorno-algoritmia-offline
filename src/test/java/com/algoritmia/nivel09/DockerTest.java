@@ -3,6 +3,10 @@ package com.algoritmia.nivel09;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Test para ejercicio de Docker Básico.
+ * Valida generación de Dockerfile.
+ */
 class DockerTest {
 
     @Test

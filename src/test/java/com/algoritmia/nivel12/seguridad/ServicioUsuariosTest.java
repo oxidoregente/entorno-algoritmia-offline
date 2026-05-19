@@ -8,6 +8,10 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Test para ejercicio de Servicio de Usuarios.
+ * Valida carga de usuarios con Spring Security.
+ */
 @SpringBootTest
 class ServicioUsuariosTest {
 

@@ -6,6 +6,10 @@ import java.util.Map;
 import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel02.streams.FiltroCiudadesStreamEnunciado.Ciudad;
 
+/**
+ * Test para ejercicio de Filtro de Ciudades con Streams.
+ * Valida conteo de ciudades por país usando groupingBy.
+ */
 class FiltroCiudadesStreamTest {
 
     @Test

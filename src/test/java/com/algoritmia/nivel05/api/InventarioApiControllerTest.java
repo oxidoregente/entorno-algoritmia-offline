@@ -10,6 +10,10 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
+/**
+ * Test para ejercicio de Controller de Inventario API.
+ * Valida gestión de inventario vía REST.
+ */
 @WebMvcTest(InventarioApiControllerEnunciado.class)
 class InventarioApiControllerTest {
 

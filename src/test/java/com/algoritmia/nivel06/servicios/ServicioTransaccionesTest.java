@@ -12,6 +12,10 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import java.util.List;
 
+/**
+ * Test para ejercicio de Servicio de Transacciones.
+ * Valida lógica de negocio con mocks.
+ */
 @ExtendWith(MockitoExtension.class)
 class ServicioTransaccionesTest {
 

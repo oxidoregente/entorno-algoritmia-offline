@@ -3,6 +3,10 @@ package com.algoritmia.nivel01.arrays;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para el ejercicio de Rotar Array.
+ * Rota el array k posiciones a la derecha.
+ */
 class RotarArrayTest {
 
     @Test

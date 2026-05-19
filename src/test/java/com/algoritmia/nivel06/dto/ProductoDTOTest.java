@@ -4,6 +4,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import java.lang.reflect.RecordComponent;
 
+/**
+ * Test para ejercicio de Producto DTO.
+ * Valida que sea un Record de Java 21.
+ */
 class ProductoDTOTest {
 
     @Test

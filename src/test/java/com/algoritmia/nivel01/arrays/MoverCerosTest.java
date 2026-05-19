@@ -3,6 +3,10 @@ package com.algoritmia.nivel01.arrays;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para el ejercicio de Mover Ceros.
+ * Valida que todos los ceros se muevan al final manteniendo el orden de los demás.
+ */
 class MoverCerosTest {
 
     @Test

@@ -7,6 +7,10 @@ import java.util.Map;
 import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel02.streams.AgrupadorRangosEdadEnunciado.Persona;
 
+/**
+ * Test para Agrupador por Rangos de Edad.
+ * Valida groupingBy con categorías JOVEN/ADULTO/SENIOR.
+ */
 class AgrupadorRangosEdadTest {
 
     @Test

@@ -8,6 +8,10 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+/**
+ * Test para ejercicio de Manejador de Tokens JWT.
+ * Valida generación y validación de tokens.
+ */
 @ExtendWith(MockitoExtension.class)
 class ManejadorTokensTest {
 

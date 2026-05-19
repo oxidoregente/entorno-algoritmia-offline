@@ -5,6 +5,8 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 /**
+ * Test para ejercicio de Validador de Edad.
+ * Valida pruebas parametrizadas.
  * 🎓 TUTORIAL DE TESTING - PARTE 3: Pruebas Parametrizadas
  * 
  * A veces queremos probar un método con muchos datos diferentes. En lugar de escribir

@@ -3,7 +3,11 @@ package com.algoritmia.nivel04.repositorios;
 import jakarta.persistence.*;
 
 /**
- * RETO: Gestor de Tareas Relacionales.
+ * 🎓 RETO: Entidad Tarea (Relación Many-to-One).
+ * <b>Dificultad: Media</b>
+ *
+ * <p>Modela una tarea asociada a un proyecto mediante una relación @ManyToOne.
+ * Debes añadir la relación y el repositorio deberá consultar tareas por ID de proyecto.</p>
  */
 @Entity
 public class TareaEnunciado {

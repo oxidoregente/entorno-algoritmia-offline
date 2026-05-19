@@ -6,6 +6,10 @@ import java.util.Map;
 import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel02.streams.AgrupadorMontoVentasEnunciado.Venta;
 
+/**
+ * Test para ejercicio de Agrupador de Monto por Ventas.
+ * Valida groupingBy con summingDouble.
+ */
 class AgrupadorMontoVentasTest {
 
     @Test

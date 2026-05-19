@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel01.arrays.InvertirListaEnunciado.Nodo;
 
+/**
+ * Test para el ejercicio de Invertir Lista.
+ * Valida la inversión de nodos en una lista enlazada simple.
+ */
 class InvertirListaTest {
 
     @Test

@@ -10,6 +10,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
 
+/**
+ * Test para ejercicio de Seguridad.
+ * Valida autenticación y autorización.
+ */
 @SpringBootTest
 @AutoConfigureMockMvc
 class SecurityTest {

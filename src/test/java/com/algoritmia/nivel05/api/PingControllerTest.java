@@ -9,6 +9,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.test.web.servlet.MockMvc;
 
+/**
+ * Test para ejercicio de Ping Controller.
+ * Valida endpoint de salud del servicio.
+ */
 @WebMvcTest(PingControllerEnunciado.class)
 class PingControllerTest {
 

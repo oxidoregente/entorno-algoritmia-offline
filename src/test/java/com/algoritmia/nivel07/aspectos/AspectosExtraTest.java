@@ -7,6 +7,10 @@ import org.springframework.context.ApplicationContext;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+/**
+ * Test para ejercicio de Aspectos Extra.
+ * Valida carga de aspectos en contexto Spring.
+ */
 @SpringBootTest
 class AspectosExtraTest {
 

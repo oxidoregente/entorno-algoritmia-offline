@@ -7,6 +7,10 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+/**
+ * Test para ejercicio de Batch Avanzado.
+ * Valida jobs de Spring Batch.
+ */
 @SpringBootTest
 class BatchAvanzadoTest {
 

@@ -8,6 +8,12 @@ package com.algoritmia.nivel11;
  * de mensajería asíncrona.</p>
  */
 public class TestcontainersRabbitEnunciado {
+    /**
+     * Obtiene las instrucciones para configurar un contenedor RabbitMQ
+     * con Testcontainers para pruebas de mensajería asíncrona.
+     *
+     * @return String con las instrucciones del reto
+     */
     public String getInstrucciones() {
         return "Usa RabbitMQContainer(\"rabbitmq:3-management-alpine\")";
     }
