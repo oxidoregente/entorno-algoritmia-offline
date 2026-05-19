@@ -8,6 +8,10 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+/**
+ * Test para ejercicio de Logger de Métodos.
+ * Valida logging de ejecución de métodos con AOP.
+ */
 @ExtendWith(MockitoExtension.class)
 class LoggerMetodosTest {
 

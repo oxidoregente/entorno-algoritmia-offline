@@ -9,6 +9,10 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.launch.JobLauncher;
 
+/**
+ * Test para ejercicio de Tarea de Mantenimiento.
+ * Valida ejecución de jobs de Spring Batch.
+ */
 @ExtendWith(MockitoExtension.class)
 class TareaMantenimientoTest {
 

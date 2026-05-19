@@ -6,6 +6,10 @@ import com.algoritmia.nivel04.repositorios.ClienteEnunciado;
 import com.algoritmia.nivel06.dto.ClienteDTO;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Mapper de Cliente.
+ * Valida mapeo entre entidad y DTO.
+ */
 class ClienteMapperTest {
 
     @Test

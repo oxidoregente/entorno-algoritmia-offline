@@ -7,6 +7,10 @@ import org.springframework.test.context.ActiveProfiles;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+/**
+ * Test para ejercicio de Profiles.
+ * Valida configuración por profile.
+ */
 @SpringBootTest
 @ActiveProfiles("prod")
 class ProfileTest {

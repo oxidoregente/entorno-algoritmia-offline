@@ -8,6 +8,10 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 
+/**
+ * Test para ejercicio de Reenviador de Eventos.
+ * Valida reenvío de mensajes entre colas.
+ */
 @ExtendWith(MockitoExtension.class)
 class ReenviadorEventosTest {
 

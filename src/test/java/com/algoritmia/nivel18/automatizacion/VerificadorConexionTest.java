@@ -8,6 +8,10 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
+/**
+ * Test para ejercicio de Verificador de Conexión.
+ * Valida verificación de conectividad.
+ */
 @ExtendWith(MockitoExtension.class)
 class VerificadorConexionTest {
 

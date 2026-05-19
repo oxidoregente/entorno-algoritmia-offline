@@ -8,6 +8,10 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 
+/**
+ * Test para ejercicio de Productor de Mensajes.
+ * Valida envío de mensajes a RabbitMQ.
+ */
 @ExtendWith(MockitoExtension.class)
 class ProductorMensajesTest {
 

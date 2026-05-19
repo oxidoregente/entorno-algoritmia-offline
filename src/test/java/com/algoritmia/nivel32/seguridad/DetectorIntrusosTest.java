@@ -12,6 +12,10 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import java.time.LocalDateTime;
 import java.util.List;
 
+/**
+ * Test para ejercicio de Detector de Intrusos.
+ * Valida detección de accesos sospechosos.
+ */
 @ExtendWith(MockitoExtension.class)
 class DetectorIntrusosTest {
 

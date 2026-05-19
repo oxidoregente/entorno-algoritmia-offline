@@ -5,6 +5,10 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+/**
+ * Test para ejercicio de Lote de Cierre Batch.
+ * Valida jobs de cierre contable.
+ */
 @SpringBootTest
 class LoteCierreBatchTest {
 

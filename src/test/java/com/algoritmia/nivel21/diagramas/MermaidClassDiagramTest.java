@@ -5,6 +5,10 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Test para ejercicio de Mermaid Class Diagram.
+ * Valida generación de diagramas de clases.
+ */
 class MermaidClassDiagramTest {
 
     @Test

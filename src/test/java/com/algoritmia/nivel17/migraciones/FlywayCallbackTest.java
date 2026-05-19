@@ -5,6 +5,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 import org.flywaydb.core.api.callback.Event;
 
+/**
+ * Test para ejercicio de Flyway Callback.
+ * Valida implementación de callbacks de Flyway.
+ */
 class FlywayCallbackTest {
 
     @Test

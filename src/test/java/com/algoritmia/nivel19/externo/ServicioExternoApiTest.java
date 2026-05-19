@@ -7,6 +7,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import reactor.core.publisher.Mono;
 import java.util.Map;
 
+/**
+ * Test para ejercicio de Servicio Externo API.
+ * Valida integración con APIs externas.
+ */
 @SpringBootTest
 class ServicioExternoApiTest {
 

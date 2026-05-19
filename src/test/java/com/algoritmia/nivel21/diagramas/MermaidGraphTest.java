@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 import java.util.List;
 
+/**
+ * Test para ejercicio de Mermaid Graph.
+ * Valida generación de grafos directed/undirected.
+ */
 class MermaidGraphTest {
 
     @Test

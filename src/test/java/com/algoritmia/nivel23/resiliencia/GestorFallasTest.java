@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 import java.util.function.Supplier;
 
+/**
+ * Test para ejercicio de Gestor de Fallas.
+ * Valida manejo de operaciones inestables.
+ */
 class GestorFallasTest {
 
     @Test

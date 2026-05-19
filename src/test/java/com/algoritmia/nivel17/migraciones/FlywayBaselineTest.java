@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Flyway Baseline.
+ * Valida configuración de baseline.
+ */
 class FlywayBaselineTest {
 
     @Test

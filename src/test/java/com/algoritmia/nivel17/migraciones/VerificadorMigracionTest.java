@@ -6,6 +6,10 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.mockito.Mockito.*;
 
+/**
+ * Test para ejercicio de Verificador de Migración.
+ * Valida existencia de columnas de auditoría.
+ */
 class VerificadorMigracionTest {
 
     @Test

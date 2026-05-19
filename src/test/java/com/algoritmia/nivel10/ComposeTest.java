@@ -3,6 +3,10 @@ package com.algoritmia.nivel10;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Test para ejercicio de Docker Compose Básico.
+ * Valida generación de docker-compose.yml.
+ */
 class ComposeTest {
 
     @Test

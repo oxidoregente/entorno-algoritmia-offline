@@ -6,6 +6,10 @@ import com.algoritmia.nivel06.dto.TransaccionDTO;
 import org.junit.jupiter.api.Test;
 import java.util.List;
 
+/**
+ * Test para ejercicio de Orquestador de Historial.
+ * Valida procesamiento masivo de transacciones.
+ */
 class OrquestadorHistorialTest {
 
     @Test

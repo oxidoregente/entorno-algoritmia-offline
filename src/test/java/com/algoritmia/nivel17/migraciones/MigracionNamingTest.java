@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Migración Naming.
+ * Valida formato de nombres de migraciones.
+ */
 class MigracionNamingTest {
 
     @Test

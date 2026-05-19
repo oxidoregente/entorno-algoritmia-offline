@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import com.algoritmia.nivel06.excepciones.ErrorDeNegocioException;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Validador de Transacción de Negocio.
+ * Valida reglas de negocio con excepciones.
+ */
 class ValidadorTransaccionNegocioTest {
 
     @Test

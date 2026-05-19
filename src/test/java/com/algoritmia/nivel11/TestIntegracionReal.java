@@ -14,13 +14,9 @@ import com.algoritmia.nivel04.repositorios.TransaccionEnunciado;
 import com.algoritmia.nivel04.repositorios.TransaccionRepositoryEnunciado;
 
 /**
- * Nivel 11: Testing de Integración con Testcontainers.
- * 
- * <p>Este test levanta un contenedor real de PostgreSQL usando Docker.
- * Es la forma más fiable de probar que nuestra aplicación funciona con la base de datos de producción.</p>
+ * Test para ejercicio de Integración Real con Testcontainers.
+ * Valida persistencia en PostgreSQL real.
  */
-@SpringBootTest
-@Testcontainers
 class TestIntegracionReal {
 
     // Definimos el contenedor de PostgreSQL

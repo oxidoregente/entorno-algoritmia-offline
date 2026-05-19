@@ -8,6 +8,10 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+/**
+ * Test para ejercicio de Validador de Argumentos.
+ * Valida interceptación de argumentos con AOP.
+ */
 @ExtendWith(MockitoExtension.class)
 class ValidadorArgumentosTest {
 

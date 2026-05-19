@@ -3,6 +3,10 @@ package com.algoritmia.nivel17.migraciones;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Migración Repeatable.
+ * Valida nomenclatura de migraciones repetibles.
+ */
 class MigracionRepeatableTest {
 
     @Test

@@ -6,6 +6,10 @@ import org.springframework.boot.test.autoconfigure.graphql.tester.AutoConfigureH
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.graphql.test.tester.HttpGraphQlTester;
 
+/**
+ * Test para ejercicio de GraphQL Tester.
+ * Valida queries GraphQL con tester HTTP.
+ */
 @SpringBootTest
 @AutoConfigureHttpGraphQlTester
 class TransaccionGraphQlTesterTest {

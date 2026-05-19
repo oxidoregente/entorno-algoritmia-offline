@@ -12,6 +12,10 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import java.util.Optional;
 
+/**
+ * Test para ejercicio de Orquestador Global.
+ * Valida orquestación de múltiples servicios con mocks.
+ */
 @ExtendWith(MockitoExtension.class)
 class OrquestadorGlobalTest {
 

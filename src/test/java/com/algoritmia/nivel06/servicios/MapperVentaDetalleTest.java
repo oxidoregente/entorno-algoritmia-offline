@@ -6,6 +6,10 @@ import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel06.dto.VentaResumenDTO;
 import com.algoritmia.nivel06.servicios.MapperVentaDetalleEnunciado.ItemVenta;
 
+/**
+ * Test para ejercicio de Mapper de Venta Detalle.
+ * Valida transformación de venta a DTO.
+ */
 class MapperVentaDetalleTest {
 
     @Test

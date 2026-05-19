@@ -3,6 +3,10 @@ package com.algoritmia.nivel12.seguridad;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Cifrador de Password.
+ * Valida cifrado y verificación de contraseñas.
+ */
 class CifradorPasswordTest {
 
     @Test

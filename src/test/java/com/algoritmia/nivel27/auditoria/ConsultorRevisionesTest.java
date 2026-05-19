@@ -6,6 +6,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import jakarta.persistence.EntityManager;
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Test para ejercicio de Consultor de Revisiones.
+ * Valida consultas de auditoría con JPA.
+ */
 @SpringBootTest
 class ConsultorRevisionesTest {
 

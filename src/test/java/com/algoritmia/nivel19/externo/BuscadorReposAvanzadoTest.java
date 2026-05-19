@@ -5,6 +5,10 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
 import java.util.Map;
 
+/**
+ * Test para ejercicio de Buscador de Repos Avanzado.
+ * Valida búsqueda reactiva de repositorios.
+ */
 class BuscadorReposAvanzadoTest {
 
     @Test

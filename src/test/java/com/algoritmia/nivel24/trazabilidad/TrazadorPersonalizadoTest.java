@@ -8,6 +8,10 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import static org.mockito.Mockito.*;
 
+/**
+ * Test para ejercicio de Trazador Personalizado.
+ * Valida tracers de Micrometer.
+ */
 @ExtendWith(MockitoExtension.class)
 class TrazadorPersonalizadoTest {
 
