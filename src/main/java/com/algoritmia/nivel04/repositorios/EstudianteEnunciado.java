@@ -3,11 +3,11 @@ package com.algoritmia.nivel04.repositorios;
 import jakarta.persistence.*;
 
 /**
- * 🎓 RETO: Repositorio de Estudiantes con Pattern Matching.
- * <b>Dificultad: Media</b>
- * 
- * <p>Implementa un Query Method para buscar estudiantes cuyo correo termine 
- * en un dominio específico.</p>
+ * 🎓 RETO: Entidad Estudiante (Pattern Matching).
+ * <b>Dificultad: Fácil</b>
+ *
+ * <p>Modela un estudiante con email. El repositorio asociado deberá buscar
+ * estudiantes cuyo correo termine en un dominio específico (pattern matching).</p>
  */
 @Entity
 public class EstudianteEnunciado {

@@ -4,7 +4,11 @@ import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
 /**
- * RETO: Repositorio de Tickets de Soporte.
+ * 🎓 RETO: Entidad Ticket de Soporte.
+ * <b>Dificultad: Fácil</b>
+ *
+ * <p>Modela un ticket de soporte con descripción, prioridad y fecha de creación.
+ * El repositorio asociado deberá consultar tickets por prioridad ordenados por fecha descendente.</p>
  */
 @Entity
 public class TicketEnunciado {

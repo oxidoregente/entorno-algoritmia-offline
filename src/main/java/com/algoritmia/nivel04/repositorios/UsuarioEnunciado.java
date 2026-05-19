@@ -4,7 +4,11 @@ import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
 /**
- * RETO: Repositorio de Usuarios Activos.
+ * 🎓 RETO: Entidad Usuario.
+ * <b>Dificultad: Fácil</b>
+ *
+ * <p>Modela un usuario del sistema con email, estado de actividad y fecha de registro.
+ * El repositorio asociado deberá consultar usuarios activos registrados después de una fecha.</p>
  */
 @Entity
 public class UsuarioEnunciado {

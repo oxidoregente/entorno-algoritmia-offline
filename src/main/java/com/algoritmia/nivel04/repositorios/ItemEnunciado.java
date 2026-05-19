@@ -3,9 +3,11 @@ package com.algoritmia.nivel04.repositorios;
 import jakarta.persistence.*;
 
 /**
- * RETO C: Sistema de Inventario.
- * 
- * Modela un item del inventario con su stock y categoría.
+ * 🎓 RETO: Entidad Item de Inventario.
+ * <b>Dificultad: Fácil</b>
+ *
+ * <p>Modela un item del inventario con nombre, stock y categoría.
+ * El repositorio asociado deberá buscar items con stock menor a un valor dado (agotados).</p>
  */
 @Entity
 public class ItemEnunciado {

@@ -3,10 +3,11 @@ package com.algoritmia.nivel04.repositorios;
 import jakarta.persistence.*;
 
 /**
- * 🎓 RETO: Repositorio de Clientes.
+ * 🎓 RETO: Entidad Cliente.
  * <b>Dificultad: Fácil</b>
- * 
- * <p>Implementa un Query Method para buscar clientes por su nombre exacto.</p>
+ *
+ * <p>Modela un cliente con nombre. El repositorio asociado deberá buscar
+ * clientes por su nombre exacto.</p>
  */
 @Entity
 public class ClienteEnunciado {

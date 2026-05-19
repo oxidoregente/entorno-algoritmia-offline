@@ -5,11 +5,12 @@ import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
 /**
- * RETO: Gestión de Transacciones.
- * 
- * Implementa la persistencia para una entidad financiera.
- * El estudiante debe definir las anotaciones JPA básicas y 
- * el Query Method en el repositorio.
+ * 🎓 RETO: Entidad Transacción Financiera.
+ * <b>Dificultad: Fácil</b>
+ *
+ * <p>Modela una transacción financiera con estado, monto y fecha.
+ * Incluye auditoría automática con Hibernate Envers (@Audited).
+ * El repositorio asociado deberá consultar transacciones por estado.</p>
  */
 @Entity
 @Audited

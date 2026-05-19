@@ -4,9 +4,11 @@ import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
 /**
- * RETO D: Historial de Logueos.
- * 
- * Registra los accesos al sistema por IP y fecha.
+ * 🎓 RETO: Entidad Log de Acceso.
+ * <b>Dificultad: Fácil</b>
+ *
+ * <p>Registra los accesos al sistema con dirección IP y fecha.
+ * El repositorio asociado deberá buscar logs entre dos fechas.</p>
  */
 @Entity
 public class LogAccesoEnunciado {
