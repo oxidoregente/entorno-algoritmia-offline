@@ -3,6 +3,10 @@ package com.algoritmia.nivel01.arrays;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para el ejercicio de Contar Islas.
+ * Valida el algoritmo DFS/BFS para contar componentes conectados en una matriz.
+ */
 class ContarIslasTest {
 
     @Test

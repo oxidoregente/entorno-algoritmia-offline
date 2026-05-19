@@ -3,6 +3,10 @@ package com.algoritmia.nivel01.arrays;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para el ejercicio de Producto Excepto Él Mismo.
+ * Calcula el producto de todos los elementos excepto el actual.
+ */
 class ProductoExceptoPropioTest {
 
     @Test

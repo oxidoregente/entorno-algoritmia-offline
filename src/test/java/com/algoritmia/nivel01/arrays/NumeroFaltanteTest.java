@@ -3,6 +3,10 @@ package com.algoritmia.nivel01.arrays;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para el ejercicio de Número Faltante.
+ * Encuentra el número que falta en una secuencia de 0 a n.
+ */
 class NumeroFaltanteTest {
 
     @Test

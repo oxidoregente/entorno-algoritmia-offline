@@ -3,6 +3,10 @@ package com.algoritmia.nivel01.arrays;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para el ejercicio de Encontrar Duplicado.
+ * Valida que se encuentre el número que aparece dos veces en un array.
+ */
 class EncontrarDuplicadoTest {
 
     @Test

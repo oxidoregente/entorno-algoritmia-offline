@@ -3,6 +3,10 @@ package com.algoritmia.nivel01.arrays;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para el ejercicio de Búsqueda Binaria.
+ * Valida que el algoritmo encuentre el índice correcto de un elemento.
+ */
 class BusquedaBinariaTest {
 
     @Test

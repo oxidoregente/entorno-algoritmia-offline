@@ -3,6 +3,10 @@ package com.algoritmia.nivel01.strings;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para el ejercicio de Invertir Palabras.
+ * Invierte el orden de las palabras en una oración.
+ */
 class InvertirPalabrasTest {
 
     @Test
