@@ -6,6 +6,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+/**
+ * Test para ejercicio extra de Mensajería.
+ * Valida existencia de beans de cola de mensajes.
+ */
 @SpringBootTest
 class MessagingExtraTest {
     @Autowired

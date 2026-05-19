@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Validar Paréntesis.
+ * Valida si los paréntesis/corchetes/llaves están balanceados.
+ */
 class ValidarParentesisTest {
 
     @Test

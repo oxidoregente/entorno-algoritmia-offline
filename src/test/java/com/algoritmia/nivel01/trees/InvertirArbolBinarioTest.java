@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel01.trees.InvertirArbolBinarioEnunciado.TreeNode;
 
+/**
+ * Test para ejercicio de Invertir Árbol Binario.
+ * Valida inversión de nodos левый/derecho en árbol binario.
+ */
 class InvertirArbolBinarioTest {
 
     @Test

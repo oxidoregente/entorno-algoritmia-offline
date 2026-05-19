@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Factorial recursivo.
+ * Valida cálculo de factorial para números pequeños y grandes.
+ */
 class FactorialTest {
 
     @Test

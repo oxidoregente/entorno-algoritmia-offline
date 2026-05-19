@@ -10,6 +10,10 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+/**
+ * Test para ejercicio de Testcontainers Redis.
+ * Valida integración con contenedor Redis real.
+ */
 @SpringBootTest
 @Testcontainers
 class TestcontainersRedisTest {

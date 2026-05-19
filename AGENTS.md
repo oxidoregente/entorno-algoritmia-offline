@@ -1,42 +1,45 @@
-# Guía para Agentes - Entorno de Algoritmia Offline
+# AGENTS.md — Entorno de Algoritmia Offline
 
-Este documento contiene información crucial para que los agentes de OpenCode trabajen eficientemente en este repositorio, evitando errores y acelerando la adaptación.
+## Comandos
 
-## 🛠 Comandos Esenciales
+| Propósito | Comando |
+|-----------|---------|
+| Compilar (sin tests) | `mvn clean package -DskipTests` |
+| Test completo | `mvn -B clean test` |
+| Test individual | `mvn test -Dtest=NombreTest` |
+| Docker infra | `docker-compose up -d` (requiere compilar primero) |
 
-> **⚠️ Importante:** Antes de ejecutar Maven, asegúrate de que JAVA_HOME apunte a JDK 21.
-> En Windows: `$env:JAVA_HOME = "C:\Program Files\Eclipse Adoptium\jdk-21.0.11.10-hotspot"`
-> O verifica con: `java -version` (debe mostrar 21.x)
+> ⚠️ **JAVA_HOME debe apuntar a JDK 21.** Windows: `$env:JAVA_HOME = "C:\Program Files\Eclipse Adoptium\jdk-21.0.11.10-hotspot"`
 
-*   **Compilar Proyecto (saltando tests):** `mvn clean package -DskipTests`
-    *   *Uso:* Necesario antes de levantar la infraestructura con Docker, ya que los tests completos dependen de ella.
-*   **Levantar Servicios de Infraestructura (Docker):** `docker-compose up -d`
-    *   *Requisito:* Docker debe estar instalado y ejecutándose.
-*   **Ejecutar Todos los Tests:** `mvn -B clean test`
-    *   *Verificación:* Este comando es usado en el flujo de CI.
-*   **Ejecutar Test Individual:** `mvn test -Dtest=[NombreDelTest]`
-    *   *Ejemplo:* Para `MiClaseTest.java`, usar `mvn test -Dtest=MiClaseTest`.
+## Estructura
 
-## 🏛 Arquitectura y Convenciones
+- **33 niveles** (nivel00–nivel32) en `src/main/java/com/algoritmia/`
+- **Triada por ejercicio**: `*Enunciado.java` (implementar) → `*Test.java` (validar) → `*Solucion.java` (referencia)
+- Tests en `src/test/java/` replicando la estructura de main
 
-*   **Tecnología Principal:** Java y Spring Boot con Maven.
-*   **Propósito:** Repositorio de práctica de algoritmia y desarrollo con Spring Boot, enfocado en un flujo de trabajo TDD (Test-Driven Development).
-*   **Estructura de Ejercicios:**
-    *   Los retos se organizan en paquetes por nivel (ej. `src/main/java/com/algoritmia/nivel01/arrays`).
-    *   Cada reto incluye:
-        *   `[Nombre]Enunciado.java`: Donde se debe implementar la solución.
-        *   `[Nombre]Test.java`: El archivo de pruebas asociado.
-        *   `[Nombre]Solucion.java`: Una solución de referencia.
-*   **Requisito de Docker:** La ejecución de la suite completa de tests y el ecosistema de servicios (Postgres, Redis, RabbitMQ, etc.) dependen de Docker y `docker-compose`.
-*   **Versión de Java:** El proyecto requiere **Java 21**.
+## Convenciones Críticas
 
-## 🔄 Flujo de Trabajo TDD
+- **Solución sin anotaciones Spring** — Las clases `*Solucion.java` no tienen `@Service`/`@Component` para evitar colisiones de beans con `*Enunciado.java`
+- **Inyección por constructor** — Prohibido `@Autowired` en campos. Usar constructor con `final`
+- **Perfiles Spring**:
+  - `dev` (default): H2 en memoria (`application-dev.properties`)
+  - `prod`: PostgreSQL + Redis + RabbitMQ + Zipkin + Prometheus (`application-prod.properties`)
+- **Flyway**: Migraciones en `src/main/resources/db/migration/`
 
-El flujo de trabajo estándar para abordar un reto es:
+## Stack
 
-1.  **Selecciona un Reto:** Navega al paquete correspondiente (ej: `nivel01.arrays`).
-2.  **Lee la Documentación:** Revisa los Javadocs en `[Nombre]Enunciado.java` para entender el problema.
-3.  **Corre el Test:** Ejecuta `[Nombre]Test.java` y espera que falle (Rojo).
-4.  **Implementa:** Escribe tu código en `[Nombre]Enunciado.java`.
-5.  **Refactoriza y Valida:** Vuelve a ejecutar el test hasta que pase (Verde).
-6.  **Compara:** Revisa `[Nombre]Solucion.java` para ver una implementación de referencia.
+- Java 21, Spring Boot 3.2.5, Maven
+- PostgreSQL, Redis, RabbitMQ (Docker)
+- JUnit 5, Testcontainers, WireMock
+
+## Estándares Técnicos
+
+Consultar `GEMINI.md` para: patrones de código, nomenclatura, estrategia de testing, y arquitectura.
+
+## TDD Flow
+
+1. Leer Javadoc en `*Enunciado.java`
+2. Ejecutar test → falla (Rojo)
+3. Implementar en `*Enunciado.java`
+4. Ejecutar test → pasa (Verde)
+5. Comparar con `*Solucion.java`
