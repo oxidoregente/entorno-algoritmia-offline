@@ -12,6 +12,12 @@ public class TestcontainersPostgresEnunciado {
     // En este reto, el estudiante debe implementar la lógica en una clase de Test, 
     // pero aquí definimos la estructura de lo que se busca.
     
+    /**
+     * Obtiene las instrucciones para configurar un contenedor PostgreSQL
+     * con Testcontainers e inyectar sus propiedades en Spring.
+     *
+     * @return String con las instrucciones del reto
+     */
     public String getInstrucciones() {
         return "Usa @Container y @DynamicPropertySource para configurar PostgreSQLContainer";
     }

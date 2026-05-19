@@ -10,6 +10,12 @@ package com.algoritmia.nivel09;
  */
 public class DockerBasicoEnunciado {
 
+    /**
+     * Genera el contenido del Dockerfile con las instrucciones necesarias
+     * para construir la imagen de la aplicación Spring Boot.
+     *
+     * @return String con el contenido completo del Dockerfile
+     */
     public String generarDockerfile() {
         // TODO: Retorna un String con las instrucciones:
         // FROM openjdk:21-jdk-slim

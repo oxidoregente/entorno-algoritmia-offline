@@ -10,6 +10,12 @@ package com.algoritmia.nivel10;
  */
 public class ComposeNetworksEnunciado {
 
+    /**
+     * Genera el contenido del docker-compose.yml definiendo dos redes
+     * separadas ('backend' y 'frontend') y asignándolas a los servicios.
+     *
+     * @return String con el contenido YAML del docker-compose
+     */
     public String generarCompose() {
         // TODO: Retorna un YAML que defina las redes y las asigne a los servicios.
         return "";

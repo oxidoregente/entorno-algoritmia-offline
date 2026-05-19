@@ -9,6 +9,12 @@ package com.algoritmia.nivel10;
  */
 public class ComposeDependsOnEnunciado {
 
+    /**
+     * Genera el contenido del docker-compose.yml configurando depends_on
+     * con condition: service_healthy para esperar a que la BD esté lista.
+     *
+     * @return String con el contenido YAML del docker-compose
+     */
     public String generarCompose() {
         // TODO: Retorna un YAML usando depends_on con condition: service_healthy.
         // Debes añadir el healthcheck al servicio db.

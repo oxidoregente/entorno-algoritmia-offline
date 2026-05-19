@@ -9,6 +9,12 @@ package com.algoritmia.nivel09;
  */
 public class DockerMultiStageEnunciado {
 
+    /**
+     * Genera el contenido del Dockerfile multi-etapa que compila la
+     * aplicación con Maven y copia solo el artefacto a una imagen ligera.
+     *
+     * @return String con el contenido completo del Dockerfile
+     */
     public String generarDockerfile() {
         // TODO: Retorna un String con:
         // 1. Etapa de build: FROM maven:3.9-eclipse-temurin-21 AS build
