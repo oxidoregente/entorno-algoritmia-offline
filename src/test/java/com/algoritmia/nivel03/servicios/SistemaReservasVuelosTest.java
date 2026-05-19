@@ -3,6 +3,10 @@ package com.algoritmia.nivel03.servicios;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Sistema de Reservas de Vuelos.
+ * Valida cálculo de precios por destino y clase.
+ */
 class SistemaReservasVuelosTest {
 
     @Test

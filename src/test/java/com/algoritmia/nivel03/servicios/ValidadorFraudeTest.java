@@ -6,6 +6,10 @@ import java.time.LocalTime;
 import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel03.servicios.ValidadorFraudeEnunciado.Transaccion;
 
+/**
+ * Test para ejercicio de Validador de Fraude.
+ * Valida detección de transacciones sospechosas por monto y hora.
+ */
 class ValidadorFraudeTest {
 
     @Test

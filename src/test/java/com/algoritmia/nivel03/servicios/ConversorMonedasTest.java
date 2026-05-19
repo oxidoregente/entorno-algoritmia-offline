@@ -3,6 +3,10 @@ package com.algoritmia.nivel03.servicios;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test para ejercicio de Conversor de Monedas.
+ * Valida conversión entre divisas.
+ */
 class ConversorMonedasTest {
 
     @Test

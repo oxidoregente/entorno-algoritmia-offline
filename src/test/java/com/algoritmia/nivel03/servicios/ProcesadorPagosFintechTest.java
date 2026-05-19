@@ -13,6 +13,8 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 /**
+ * Test para ejercicio de Procesador de Pagos Fintech.
+ * Valida procesamiento de pagos con tarjetas usando mocks.
  * 🎓 TUTORIAL DE TESTING - PARTE 2: Mocks y Aislamiento
  * 
  * En sistemas reales (como Spring Boot), las clases suelen depender de otras (Bases de datos, 

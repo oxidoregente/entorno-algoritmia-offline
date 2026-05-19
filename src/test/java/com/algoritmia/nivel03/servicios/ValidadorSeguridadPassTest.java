@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel03.servicios.ValidadorSeguridadPassEnunciado.NivelSeguridad;
 
+/**
+ * Test para ejercicio de Validador de Seguridad de Password.
+ * Valida evaluación de nivel de seguridad de contraseñas.
+ */
 class ValidadorSeguridadPassTest {
 
     @Test

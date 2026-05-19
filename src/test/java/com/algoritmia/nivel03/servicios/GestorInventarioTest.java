@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel03.servicios.GestorInventarioEnunciado.EstatusOrden;
 
+/**
+ * Test para ejercicio de Gestor de Inventario.
+ * Valida procesamiento de órdenes y gestión de stock.
+ */
 class GestorInventarioTest {
 
     @Test

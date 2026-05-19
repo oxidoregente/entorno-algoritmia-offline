@@ -12,7 +12,10 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-@ExtendWith(MockitoExtension.class)
+/**
+ * Test para ejercicio de Orquestador de Pedidos.
+ * Valida integración de inventario, pagos y mensajería con mocks.
+ */
 class OrquestadorPedidosTest {
 
     @Mock private GestorInventarioEnunciado inventario;

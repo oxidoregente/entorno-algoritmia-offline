@@ -5,6 +5,10 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel03.servicios.CalculadoraNominaEnunciado.Deduccion;
 
+/**
+ * Test para ejercicio de Calculadora de Nómina.
+ * Valida cálculo de salario neto con deducciones.
+ */
 class CalculadoraNominaTest {
 
     @Test

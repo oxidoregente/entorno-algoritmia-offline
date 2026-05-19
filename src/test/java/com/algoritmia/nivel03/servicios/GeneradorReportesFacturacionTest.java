@@ -5,6 +5,10 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel03.servicios.GeneradorReportesFacturacionEnunciado.*;
 
+/**
+ * Test para ejercicio de Generador de Reportes de Facturación.
+ * Valida generación de resumen de facturas.
+ */
 class GeneradorReportesFacturacionTest {
 
     @Test

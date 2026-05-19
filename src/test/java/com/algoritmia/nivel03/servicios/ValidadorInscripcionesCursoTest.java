@@ -6,6 +6,10 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel03.servicios.ValidadorInscripcionesCursoEnunciado.Estudiante;
 
+/**
+ * Test para ejercicio de Validador de Inscripciones a Cursos.
+ * Valida requisitos de GPA y cursos previos.
+ */
 class ValidadorInscripcionesCursoTest {
 
     @Test
