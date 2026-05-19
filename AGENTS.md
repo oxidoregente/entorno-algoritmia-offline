@@ -4,6 +4,10 @@ Este documento contiene información crucial para que los agentes de OpenCode tr
 
 ## 🛠 Comandos Esenciales
 
+> **⚠️ Importante:** Antes de ejecutar Maven, asegúrate de que JAVA_HOME apunte a JDK 21.
+> En Windows: `$env:JAVA_HOME = "C:\Program Files\Eclipse Adoptium\jdk-21.0.11.10-hotspot"`
+> O verifica con: `java -version` (debe mostrar 21.x)
+
 *   **Compilar Proyecto (saltando tests):** `mvn clean package -DskipTests`
     *   *Uso:* Necesario antes de levantar la infraestructura con Docker, ya que los tests completos dependen de ella.
 *   **Levantar Servicios de Infraestructura (Docker):** `docker-compose up -d`
