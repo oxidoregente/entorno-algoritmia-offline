@@ -20,6 +20,11 @@ public class ReenviadorEventosEnunciado {
         this.rabbitTemplate = rabbitTemplate;
     }
 
+    /**
+     * Procesa un mensaje añadiendo un prefijo y lo reenvía a la cola de auditoría.
+     *
+     * @param mensajeOriginal mensaje a procesar y reenviar
+     */
     public void procesarYReenviar(String mensajeOriginal) {
         // TODO: Modifica el string añadiendo el prefijo
         // TODO: Usa rabbitTemplate para enviar el nuevo mensaje

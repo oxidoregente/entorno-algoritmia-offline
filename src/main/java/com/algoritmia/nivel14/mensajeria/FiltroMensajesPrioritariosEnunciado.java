@@ -13,6 +13,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class FiltroMensajesPrioritariosEnunciado {
 
+    /**
+     * Escucha la cola y registra solo los mensajes que contienen "URGENTE".
+     *
+     * @param mensaje mensaje recibido de la cola de auditoría
+     */
     @RabbitListener(queues = ConfiguracionRabbit.COLA_AUDITORIA)
     public void procesar(String mensaje) {
         // TODO: Filtra mensajes que contengan "URGENTE" (ignorando mayúsculas)

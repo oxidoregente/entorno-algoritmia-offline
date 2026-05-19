@@ -20,11 +20,23 @@ public class GestorPerfilCacheEnunciado {
         this.redisTemplate = redisTemplate;
     }
 
+    /**
+     * Guarda el perfil de un usuario en Redis con un TTL de 10 minutos.
+     *
+     * @param userId identificador del usuario
+     * @param perfil objeto perfil a almacenar en caché
+     */
     public void guardarPerfil(String userId, Object perfil) {
         // TODO: Guarda el perfil en Redis con la clave "user:profile:{userId}" 
         // TODO: Establece un tiempo de expiración de 10 minutos
     }
 
+    /**
+     * Recupera el perfil de un usuario desde Redis.
+     *
+     * @param userId identificador del usuario
+     * @return el perfil almacenado, o null si no existe o expiró
+     */
     public Object obtenerPerfil(String userId) {
         // TODO: Recupera el objeto desde Redis
         return null;

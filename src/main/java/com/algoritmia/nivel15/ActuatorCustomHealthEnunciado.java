@@ -14,6 +14,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class ActuatorCustomHealthEnunciado implements HealthIndicator {
 
+    /**
+     * Evalúa y reporta el estado de salud del servicio externo simulado.
+     *
+     * @return Health.up() si el servicio responde, Health.down() en caso contrario
+     */
     @Override
     public Health health() {
         // TODO: Retorna Health.up() si el servicio es alcanzable, 

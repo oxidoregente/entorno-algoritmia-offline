@@ -15,6 +15,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class SistemaSaludEnunciado implements HealthIndicator {
 
+    /**
+     * Evalúa la salud del sistema en función del espacio en disco simulado.
+     *
+     * @return Health.up() si el espacio >= 10, Health.down() en caso contrario
+     */
     @Override
     public Health health() {
         // TODO: Implementa la lógica de salud personalizada

@@ -16,6 +16,11 @@ import java.util.Map;
 @Endpoint(id = "resumen")
 public class ActuatorCustomEndpointEnunciado {
 
+    /**
+     * Expone un resumen del estado y versión de la aplicación.
+     *
+     * @return mapa con clave-valor (ej: estado, version)
+     */
     @ReadOperation
     public Map<String, String> obtenerResumen() {
         // TODO: Retorna un mapa con información como "estado: activo" 
