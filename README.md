@@ -218,32 +218,56 @@ mvn test -Dtest=CalculadoraSimpleTest
 
 ## 🗺️ Rutas de Aprendizaje Sugeridas
 
-Para facilitar tu progreso, hemos categorizado los niveles en tres rutas de aprendizaje según tu experiencia actual y objetivos:
+Para facilitar tu progreso, hemos categorizado los niveles en cuatro rutas de aprendizaje progresivas, ordenadas por dificultad:
 
 ### 🟢 Ruta 1: Explorador de Lógica (Principiante)
 *Enfocada en dominar Java puro, algoritmos y mentalidad de testing.*
-- **Nivel 00: Testing Inverso** (Aprende a leer y probar código).
-- **Nivel 01: Algoritmia Base** (Arrays, Strings, Recursión).
-- **Nivel 02: Java Funcional** (Streams y Lambdas - Esencial para Java moderno).
-- **Meta:** Ser capaz de resolver problemas lógicos complejos y escribir código limpio y testeable.
+- **Nivel 00:** Testing Inverso (Aprende a leer y probar código).
+- **Nivel 01:** Algoritmia Base (Arrays, Strings, Recursión).
+- **Nivel 02:** Java Funcional (Streams y Lambdas).
+- **Meta:** Resolver problemas lógicos y escribir código limpio y testeable.
 
 ### 🟡 Ruta 2: Constructor de Servicios (Intermedio)
 *Enfocada en el ecosistema Spring Boot y arquitectura de aplicaciones.*
-- **Nivel 03: Lógica de Negocio** (Servicios e Inyección de Dependencias).
-- **Nivel 04: Persistencia JPA** (Bases de datos relacionales y Hibernate).
-- **Nivel 05: API REST** (Controladores y estándares HTTP).
-- **Nivel 06: Arquitectura Avanzada** (DTOs, Records y Mappers).
-- **Nivel 07: Observabilidad AOP** (Programación Orientada a Aspectos).
-- **Nivel 16: Gestión de Entornos** (Perfiles de Spring).
-- **Meta:** Construir aplicaciones backend robustas, siguiendo patrones de diseño y estándares industriales.
+- **Nivel 03:** Lógica de Negocio (Servicios e Inyección de Dependencias).
+- **Nivel 04:** Persistencia JPA (Bases de datos relacionales y Hibernate).
+- **Nivel 05:** API REST (Controladores y estándares HTTP).
+- **Nivel 06:** Arquitectura Avanzada (DTOs, Records y Mappers).
+- **Nivel 07:** Observabilidad AOP (Programación Orientada a Aspectos).
+- **Meta:** Construir aplicaciones backend robustas con patrones de diseño industriales.
 
-### 🔴 Ruta 3: Arquitecto de Infraestructura y Élite (Profesional)
-*Enfocada en sistemas distribuidos, despliegue, seguridad y alto rendimiento.*
-- **Nivel 08-11: Ecosistema Docker** (Swagger, Docker, Compose, Testcontainers).
-- **Nivel 12-14: Seguridad y Mensajería** (Spring Security, JWT, Redis, RabbitMQ).
-- **Nivel 17-21: Evolución y Diseño** (Flyway, Scheduler, WebClient, Mermaid).
-- **Nivel 22-32: Tecnologías Avanzadas** (GraphQL, Resilience4j, Batch, WebSockets, Programación Reactiva).
-- **Meta:** Diseñar y mantener arquitecturas escalables, resilientes y seguras listas para producción.
+### 🔴 Ruta 3: Arquitecto de Infraestructura (Profesional)
+*Enfocada en contenedores, seguridad, mensajería y monitorización.*
+- **Nivel 08:** Documentación Dinámica (Swagger/OpenAPI).
+- **Nivel 09:** Dockerización (Dockerfile y multi-etapa).
+- **Nivel 10:** Orquestación (Docker Compose).
+- **Nivel 11:** Testing de Élite (Testcontainers).
+- **Nivel 12:** Seguridad Industrial (Spring Security y JWT).
+- **Nivel 13:** Optimización con Redis (Caché).
+- **Nivel 14:** Arquitectura de Eventos (RabbitMQ).
+- **Nivel 15:** Monitorización 360° (Actuator y Prometheus).
+- **Meta:** Diseñar sistemas escalables, resilientes y listos para producción.
+
+### ⚫ Ruta 4: Ingeniería de Élite (Avanzado)
+*Enfocada en automatización, integración, trazabilidad y especialización.*
+- **Nivel 16:** Gestión de Entornos (Perfiles y Properties de Spring).
+- **Nivel 17:** Migraciones de Base de Datos (Flyway).
+- **Nivel 18:** Automatización (Scheduler y tareas programadas).
+- **Nivel 19:** Clientes HTTP Reactivos (WebClient).
+- **Nivel 20:** Notificaciones (Spring Mail).
+- **Nivel 21:** Diagramas de Arquitectura (Mermaid).
+- **Nivel 22:** APIs Modernas (GraphQL).
+- **Nivel 23:** Resiliencia (Resilience4j).
+- **Nivel 24:** Trazabilidad Distribuida (Tracing y Zipkin).
+- **Nivel 25:** Procesamiento Masivo (Spring Batch).
+- **Nivel 26:** Comunicación Bidireccional (WebSockets).
+- **Nivel 27:** Auditoría Histórica (Hibernate Envers).
+- **Nivel 28:** Simulación de Fallos (WireMock).
+- **Nivel 29:** Testing Avanzado (JUnit 5 Dinámico y Parametrizado).
+- **Nivel 30:** Patrones de Orquestación (Saga y Outbox).
+- **Nivel 31:** Programación Reactiva (Project Reactor).
+- **Nivel 32:** Seguridad Proactiva (Detección de Intrusos y CSRF).
+- **Meta:** Dominar arquitecturas distribuidas, reactivas y seguras a escala empresarial.
 
 ---
 
