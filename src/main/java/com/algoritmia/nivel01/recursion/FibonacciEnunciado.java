@@ -1,5 +1,7 @@
 package com.algoritmia.nivel01.recursion;
 
+import java.util.ArrayList;
+
 /**
  * 🎓 RETO: Serie de Fibonacci. <b>Dificultad: Fácil</b>
  *
@@ -46,13 +48,18 @@ public class FibonacciEnunciado {
 	 */
 	public int calcular(int n) {
 		// TODO: Implementa la lógica recursiva
+		if (lista.contains(n))
+			return lista.get(n);
 		if (n <= 0)
 			return 0;
 		if (n == 1)
 			return 1;
-		
-		return calcular(n-1) + calcular(n-2);
 
-		//return 0;
+		int calculo = calcular(n - 1) + calcular(n - 2);
+		lista.add(calculo);
+		return calculo;
+
 	}
+	// Almacena las sumas ya realizadas para evitar sobre-recursión
+	ArrayList<Integer> lista = new ArrayList<>();
 }
