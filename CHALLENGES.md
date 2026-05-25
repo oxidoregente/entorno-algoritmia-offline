@@ -4,8 +4,8 @@ Este laboratorio contiene **más de 150 componentes y retos interactivos** dise�
 
 ## 🟢 Fase 1: Fundamentos y Lógica Core
 
-### Nivel 00: Iniciación al Testing (AAA)
-*Aprende a escribir pruebas unitarias para código existente.*
+### Nivel 00: Testing Inverso (AAA)
+*Aplica el patrón Arrange-Act-Assert escribiendo tests unitarios para código fuente dado.*
 - **Calculadora Financiera**: Interés compuesto.
 - **Calculadora Simple**: Sumas básicas.
 - **Contador Elementos**: Manejo de nulos en listas.
@@ -34,6 +34,24 @@ Este laboratorio contiene **más de 150 componentes y retos interactivos** dise�
 ### Nivel 04: Persistencia Relacional (Spring Data JPA)
 - **Entidades**: Cliente, Coche, Curso, Empresa, Estudiante, Item, Jugador, Pedido, Producto, Proyecto, Tarea, Ticket, Transacción, Usuario.
 - **Consultas**: Búsquedas por atributos, TopN (Rankings), Rangos de fecha, Filtros complejos, Relaciones @ManyToOne, Atributos @Embedded.
+
+### Nivel 05: API REST (Controladores)
+- **Básicos**: Ping, Hola Mundo.
+- **Operaciones CRUD**: Inventario, Pagos.
+- **Cálculos**: MatematicasController con operaciones vía GET/POST.
+
+### Nivel 06: Arquitectura Avanzada (DTOs y Mappers)
+- **DTOs**: Cliente, Producto, Transaccion con records de Java 21.
+- **Mappers**: Mapeo de entidades a DTOs y viceversa.
+- **Validación**: Reglas de negocio y manejo de excepciones global.
+- **Orquestación**: Historial de transacciones con múltiples servicios.
+
+### Nivel 07: Observabilidad con AOP (Aspectos)
+- **Logging**: Logger automático de métodos mediante aspectos.
+- **Rendimiento**: Medición de tiempo de ejecución con @Around.
+- **Validación**: Interceptor de argumentos inválidos.
+- **Auditoría**: Registro de accesos a métodos críticos.
+- **Errores**: Manejo centralizado de excepciones con aspectos.
 
 ## 🏗️ Fase 2: Infraestructura y Modernización
 
@@ -95,35 +113,101 @@ Este laboratorio contiene **más de 150 componentes y retos interactivos** dise�
 
 ## ⚡ Fase 3: Ingeniería de Avanzada y Resiliencia
 
-### Nivel 16-18: Gestión y Automatización
+### Nivel 16: Gestión de Entornos (Spring Profiles)
 - **Profiles**: Beans condicionales y negación de perfiles (!).
 - **Properties**: Carga de archivos application-{env}.properties.
-- **Flyway**: Migraciones versionadas, Repeatable y Baseline.
-- **Scheduler**: Tareas fijas, retardadas y dinámicas.
+- **Extra**: Integración con propiedades personalizadas y tests.
 
-### Nivel 19-21: Integración y Diseño
-- **WebClient**: Peticiones GET/POST reactivas y reintentos.
-- **Spring Mail**: Envío de HTML profesional y archivos adjuntos.
-- **Mermaid**: Documentación visual de arquitectura (C4 Model).
+### Nivel 17: Migraciones de Base de Datos (Flyway)
+- **Baseline**: Inicialización de migraciones sobre bases existentes.
+- **Versionado**: Migraciones con naming convencional y repetible.
+- **Callbacks**: Ejecución de lógica antes/después de migrar.
+- **Verificación**: Estado y validación de migraciones aplicadas.
 
-### Nivel 22-24: APIs y Trazabilidad
-- **GraphQL**: Query, Mutation y Subscriptions (Real-time).
-- **Resilience4j**: Circuit Breaker, Rate Limiter y Bulkhead.
-- **Tracing**: Spans personalizados, Baggage y TraceID en logs.
+### Nivel 18: Automatización de Tareas (Scheduler)
+- **Fijo vs Tasa**: Diferencia entre fixedDelay y fixedRate.
+- **Dinámico**: Programación de tareas en tiempo de ejecución.
+- **Mantenimiento**: Backup diario y verificación de conexión.
+
+### Nivel 19: Clientes HTTP Reactivos (WebClient)
+- **GET/POST**: Consultas y envíos a servicios externos.
+- **Reintentos**: Política de retry con backoff.
+- **Avanzado**: Búsqueda de repositorios y tasas de cambio.
+
+### Nivel 20: Notificaciones (Spring Mail)
+- **Bienvenida**: Emails transaccionales con templates.
+- **Adjuntos**: Envío de archivos adjuntos.
+- **Alertas**: Notificaciones de saldo bajo y templates HTML.
+
+### Nivel 21: Diagramas de Arquitectura (Mermaid)
+- **Diagramas de Flujo**: Procesos y algoritmos.
+- **Diagramas de Clase**: Modelado de dominio y relaciones.
+- **Secuencia**: Interacciones entre componentes.
+- **Gantt**: Planificación temporal de tareas.
+- **Gráficos**: Visualización de datos y métricas.
+
+### Nivel 22: APIs Modernas (GraphQL)
+- **Query**: Consultas con filtros y proyecciones.
+- **Mutation**: Operaciones de escritura (cálculo de IVA).
+- **Filtros**: Búsqueda por rangos de monto.
+
+### Nivel 23: Resiliencia (Resilience4j)
+- **Circuit Breaker**: Protección contra fallos en cascada.
+- **Rate Limiter**: Control de tasa de peticiones.
+- **Bulkhead**: Aislamiento de recursos por concurrencia.
+
+### Nivel 24: Trazabilidad Distribuida (Tracing)
+- **Spans Personalizados**: Creación de trazas con Micrometer.
+- **Baggage**: Propagación de metadatos entre servicios.
+- **Async**: Trazado en operaciones asíncronas.
+- **Filtros**: Extracción de TraceID en logs.
 
 ## 🏆 Fase 4: Especialización y Cierre Maestro
 
-### Nivel 25-28: Datos y Simulación
-- **Batch**: Procesamiento masivo con lógica de reintento/salto.
-- **WebSockets**: Comunicación bidireccional y seguridad en tópicos.
-- **Envers**: Auditoría histórica y consultas de revisión complejas.
-- **WireMock**: Simulación avanzada de fallos externos y verificación.
+### Nivel 25: Procesamiento Masivo (Spring Batch)
+- **Processor**: Transformación de datos con ItemProcessor.
+- **Reintentos**: Saltos y reintentos en fallos de chunks.
+- **Importación**: Carga masiva de clientes desde CSV.
 
-### Nivel 29-32: Lógica de Élite
-- **JUnit 5**: Pruebas parametrizadas, dinámicas y ordenadas.
-- **Orquestación**: Patrones Saga, Outbox y TCC (Transacciones).
-- **Reactive**: Operadores de transformación y Backpressure.
-- **Proactive Security**: Detectores de Fuerza Bruta, SQLi y XSS.
+### Nivel 26: Comunicación Bidireccional (WebSockets)
+- **Configuración**: Handshake y registro de interceptores.
+- **Broadcast**: Envío de mensajes a todos los suscriptores.
+- **Seguridad**: Autenticación y autorización en tópicos.
+- **Notificador**: Servicio de notificaciones push.
+
+### Nivel 27: Auditoría Histórica (Hibernate Envers)
+- **Entidades Auditables**: Seguimiento de cambios @Audited.
+- **Usuario**: Registro del usuario que realizó cada cambio.
+- **Consultas**: Búsquedas complejas de revisiones.
+- **Consultor**: Servicio de consulta de auditoría.
+
+### Nivel 28: Simulación de Fallos (WireMock)
+- **Básico**: Stubs de respuestas HTTP simuladas.
+- **Fallos**: Simulación de timeouts y errores 5xx.
+- **Prioridad**: Jerarquía de reglas de stub.
+- **Dinámico**: Respuestas basadas en request matching.
+- **Verificación**: Validación de interacciones realizadas.
+
+### Nivel 29: Testing Avanzado (JUnit 5)
+- **Parametrizado**: Tests con CSV y Enum sources.
+- **Dinámico**: Generación de tests en tiempo de ejecución.
+- **Orden**: Ejecución controlada de casos de prueba.
+
+### Nivel 30: Patrones de Orquestación (Saga y Outbox)
+- **Saga**: Transacciones distribuidas con compensación.
+- **Outbox**: Patrón de escritura en tabla de eventos.
+- **Composición**: Agregación de respuestas de múltiples APIs.
+
+### Nivel 31: Programación Reactiva (Project Reactor)
+- **Mono/Zip**: Combinación de resultados asíncronos.
+- **Flux**: Transformaciones con operadores reactivos.
+- **Backpressure**: Control de contrapresión.
+- **Errores**: Manejo reactivo de excepciones.
+
+### Nivel 32: Seguridad Proactiva
+- **Fuerza Bruta**: Detector de intentos fallidos de login.
+- **CSRF**: Configuración avanzada de protección.
+- **Intrusos**: Sistema de detección de accesos sospechosos.
 
 ---
 *¿Listo para el desafío? Escoge un nivel del catálogo y empieza a programar.*
