@@ -37,7 +37,7 @@ public class ContarVocalesEnunciado {
 	public int contar(String texto) {
 		// TODO: Implementa el conteo de vocales
 
-		if (texto.trim() == "")
+		if (texto.trim().equals("") || texto == null)
 			return 0;
 
 		int count = 0;
