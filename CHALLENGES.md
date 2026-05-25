@@ -4,8 +4,8 @@ Este laboratorio contiene **más de 150 componentes y retos interactivos** dise�
 
 ## 🟢 Fase 1: Fundamentos y Lógica Core
 
-### Nivel 00: Iniciación al Testing (AAA)
-*Aprende a escribir pruebas unitarias para código existente.*
+### Nivel 00: Testing Inverso (AAA)
+*Aplica el patrón Arrange-Act-Assert escribiendo tests unitarios para código fuente dado.*
 - **Calculadora Financiera**: Interés compuesto.
 - **Calculadora Simple**: Sumas básicas.
 - **Contador Elementos**: Manejo de nulos en listas.

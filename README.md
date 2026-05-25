@@ -10,7 +10,7 @@
 
 ### ¿Qué es "LeetCode Local"?
 
-Es un entorno de práctica de algoritmia y arquitectura de software donde resuelves ejercicios organizados por **niveles** (00 a 32), cada uno enfocando una tecnología o concepto específico de Java/Spring Boot.
+Es un entorno de práctica de algoritmia y arquitectura de software donde resuelves ejercicios organizados en **33 niveles progresivos** (nivel00 a nivel32), cada uno enfocando una tecnología o concepto específico de Java/Spring Boot.
 
 **Características principales:**
 - 🌱 **Enfoque TDD:** Cada ejercicio tiene tests que guían tu solución
@@ -222,7 +222,7 @@ Para facilitar tu progreso, hemos categorizado los niveles en cuatro rutas de ap
 
 ### 🟢 Ruta 1: Explorador de Lógica (Principiante)
 *Enfocada en dominar Java puro, algoritmos y mentalidad de testing.*
-- **Nivel 00:** Testing Inverso (Aprende a leer y probar código).
+- **Nivel 00:** Testing Inverso (Aprende a escribir tests unitarios partiendo del código ya implementado).
 - **Nivel 01:** Algoritmia Base (Arrays, Strings, Recursión).
 - **Nivel 02:** Java Funcional (Streams y Lambdas).
 - **Meta:** Resolver problemas lógicos y escribir código limpio y testeable.
