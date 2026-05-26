@@ -20,8 +20,8 @@ class InvertirArbolBinarioTest {
         TreeNode invertido = solver.invertir(root);
 
         // Debería fallar hasta que se implemente
-        // assertNotNull(invertido);
-        // assertEquals(7, invertido.left.val);
-        // assertEquals(2, invertido.right.val);
+        assertNotNull(invertido);
+        assertEquals(7, invertido.left.val);
+        assertEquals(2, invertido.right.val);
     }
 }
