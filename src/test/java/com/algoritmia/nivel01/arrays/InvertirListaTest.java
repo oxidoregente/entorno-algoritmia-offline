@@ -5,24 +5,24 @@ import org.junit.jupiter.api.Test;
 import com.algoritmia.nivel01.arrays.InvertirListaEnunciado.Nodo;
 
 /**
- * Test para el ejercicio de Invertir Lista.
- * Valida la inversión de nodos en una lista enlazada simple.
+ * Test para el ejercicio de Invertir Lista. Valida la inversión de nodos en una
+ * lista enlazada simple.
  */
 class InvertirListaTest {
 
-    @Test
-    void testInvertirLista() {
-        Nodo n1 = new Nodo(1);
-        Nodo n2 = new Nodo(2);
-        Nodo n3 = new Nodo(3);
-        n1.siguiente = n2;
-        n2.siguiente = n3;
+	@Test
+	void testInvertirLista() {
+		Nodo n1 = new Nodo(1);
+		Nodo n2 = new Nodo(2);
+		Nodo n3 = new Nodo(3);
+		n1.siguiente = n2;
+		n2.siguiente = n3;
 
-        InvertirListaEnunciado solver = new InvertirListaEnunciado();
-        Nodo nuevaCabeza = solver.invertir(n1);
+		InvertirListaEnunciado solver = new InvertirListaEnunciado();
+		Nodo nuevaCabeza = solver.invertir(n1);
 
-        // assertNotNull(nuevaCabeza);
-        // assertEquals(3, nuevaCabeza.valor);
-        // assertEquals(2, nuevaCabeza.siguiente.valor);
-    }
+		assertNotNull(nuevaCabeza);
+		assertEquals(3, nuevaCabeza.valor);
+		assertEquals(2, nuevaCabeza.siguiente.valor);
+	}
 }
