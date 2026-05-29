@@ -1,5 +1,6 @@
 package com.algoritmia.nivel02.streams;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -15,6 +16,9 @@ public class AnalizadorPalabrasFrecuentesEnunciado {
     public List<String> obtenerTop3Palabras(String texto) {
         // TODO: Implementa usando .stream(), .groupingBy(), Collectors.counting() 
         // TODO: Ordena por frecuencia descendente y limita a 3.
+    	
+    	if(texto.trim().equals("")) return null;
+    	
         return null;
     }
 }

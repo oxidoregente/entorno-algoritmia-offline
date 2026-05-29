@@ -4,16 +4,22 @@ import java.util.List;
 import java.util.DoubleSummaryStatistics;
 
 /**
- * 🎓 RETO: Estadísticas de Números.
- * <b>Dificultad: Fácil</b>
+ * 🎓 RETO: Estadísticas de Números. <b>Dificultad: Fácil</b>
  * 
- * <p>Dada una lista de dobles, utiliza DoubleSummaryStatistics para obtener
- * el mínimo, el máximo y el promedio en una sola operación de stream.</p>
+ * <p>
+ * Dada una lista de dobles, utiliza DoubleSummaryStatistics para obtener el
+ * mínimo, el máximo y el promedio en una sola operación de stream.
+ * </p>
  */
 public class EstadisticasNumerosEnunciado {
 
-    public DoubleSummaryStatistics obtenerEstadisticas(List<Double> numeros) {
-        // TODO: Implementa usando .stream().mapToDouble().summaryStatistics()
-        return null;
-    }
+	public DoubleSummaryStatistics obtenerEstadisticas(List<Double> numeros) {
+		// TODO: Implementa usando .stream().mapToDouble().summaryStatistics()
+
+		var nums = numeros.stream().mapToDouble(e -> e.doubleValue()).summaryStatistics();
+
+		System.out.println(nums.toString());
+
+		return nums;
+	}
 }

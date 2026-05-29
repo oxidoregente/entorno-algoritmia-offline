@@ -7,12 +7,14 @@ import java.util.List;
  * <b>Dificultad: Fácil</b>
  * 
  * <p>Determina si en una lista de palabras existe al menos una que empiece 
- * con la letra 'A' (ignorando mayúsculas/minúsculas).</p>
+ * con la letra 'Á' (ignorando mayúsculas/minúsculas).</p>
  */
 public class BuscadorVocalEnunciado {
 
     public boolean existePalabraConA(List<String> palabras) {
         // TODO: Implementa usando .stream() y .anyMatch()
-        return false;
+    	
+        return palabras.stream()
+        		.anyMatch(e-> e!= null && e.toLowerCase().startsWith("á"));
     }
 }

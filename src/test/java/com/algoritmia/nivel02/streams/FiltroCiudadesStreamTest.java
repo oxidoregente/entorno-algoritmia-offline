@@ -25,7 +25,7 @@ class FiltroCiudadesStreamTest {
 
         Map<String, Long> resultado = solver.contarCiudadesPorPais(ciudades);
 
-        // assertEquals(2L, resultado.get("Colombia"));
-        // assertEquals(3L, resultado.get("España"));
+        assertEquals(2L, resultado.get("Colombia"));
+        assertEquals(3L, resultado.get("España"));
     }
 }
