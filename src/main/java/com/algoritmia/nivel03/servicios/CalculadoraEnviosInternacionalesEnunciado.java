@@ -39,7 +39,28 @@ public class CalculadoraEnviosInternacionalesEnunciado {
      * @throws IllegalArgumentException Si la zona no es soportada.
      */
     public double calcularCosto(double peso, String zona) {
+    	int recargo = 0;
+    	if(peso > 20) recargo = 50;
+    	
+    	int tarifa = 0;
+    	
+    	switch(zona) {
+    	case "AMERICA_SUR":
+    		tarifa = 10;
+    		break;
+    		
+    	case "AMERICA_NORTE":
+    		tarifa = 15;
+    		break;
+    		
+    	case "EUROPA":
+    		tarifa = 20;
+    		break;
+    	
+    	}
+    	
+    	
         // TODO: Implementa la tarifación por zona y peso
-        return 0;
+        return (peso * tarifa) + recargo;
     }
 }

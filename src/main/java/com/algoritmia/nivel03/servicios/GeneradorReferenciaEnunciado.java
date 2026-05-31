@@ -23,15 +23,18 @@ import org.springframework.stereotype.Service;
 @Service
 public class GeneradorReferenciaEnunciado {
 
-    /**
-     * Genera un código de referencia único para una transacción.
-     *
-     * @param clienteId ID del cliente (debe ser mayor a 0).
-     * @return String con formato "REF-{clienteId}-{timestamp}".
-     * @throws IllegalArgumentException Si el clienteId es <= 0.
-     */
-    public String generar(long clienteId) {
-        // TODO: Implementa la generación del código de referencia
-        return null;
-    }
+  /**
+   * Genera un código de referencia único para una transacción.
+   *
+   * @param clienteId ID del cliente (debe ser mayor a 0).
+   * @return String con formato "REF-{clienteId}-{timestamp}".
+   * @throws IllegalArgumentException Si el clienteId es <= 0.
+   */
+  public String generar(long clienteId) {
+    // TODO: Implementa la generación del código de referencia
+
+    if (clienteId <= 0) throw new IllegalArgumentException();
+    
+    return null;
+  }
 }

@@ -38,6 +38,13 @@ public class CalculadoraDescuentosLealtadEnunciado {
      */
     public double calcularPrecioFinal(double montoCompra, int añosAntiguedad) {
         // TODO: Implementa los descuentos progresivos
-        return 0;
+    	double descuento = 1;
+    	
+    	if(montoCompra > 1000) descuento -= 0.02;
+    	
+    	if(añosAntiguedad > 1 && añosAntiguedad < 5) descuento -= 0.05; 
+    	else if(añosAntiguedad > 5) descuento -= 0.1;
+    	
+        return Math.round(montoCompra * descuento);
     }
 }
