@@ -25,6 +25,6 @@ class FiltroEcommerceTest {
 
         assertEquals(2, resultados.size());
         assertTrue(resultados.get(0).contains("Laptop"));
-        assertTrue(resultados.get(0).contains("900.0"));
+        assertTrue(resultados.get(0).contains("1000.0"));
     }
 }

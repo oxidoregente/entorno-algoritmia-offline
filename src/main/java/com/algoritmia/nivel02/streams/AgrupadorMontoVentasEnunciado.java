@@ -3,6 +3,7 @@ package com.algoritmia.nivel02.streams;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * 🎓 RETO: Agrupador de Monto por Moneda. <b>Dificultad: Media</b>
@@ -20,6 +21,7 @@ public class AgrupadorMontoVentasEnunciado {
 	public Map<String, Double> calcularTotalesPorMoneda(List<Venta> ventas) {
 		// TODO: Implementa usando groupingBy y summingDouble
 
-		return null;
+		return ventas.stream()
+				.collect(Collectors.groupingBy(Venta::moneda, Collectors.summingDouble(Venta::monto)));
 	}
 }

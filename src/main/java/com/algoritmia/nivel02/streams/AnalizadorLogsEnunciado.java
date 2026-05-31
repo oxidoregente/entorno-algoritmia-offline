@@ -22,7 +22,10 @@ public class AnalizadorLogsEnunciado {
 	public long contarLogsPorNivel(List<String> logs, String nivelBuscado) {
 		// TODO: Usa .stream(), .filter() y una validación de texto para contar.
 
-		long cantNiveles = logs.stream().filter(e -> e.contains(nivelBuscado)).map(e -> e.toString()).count();
+		long cantNiveles = logs.stream()
+				.filter(e -> e.contains(nivelBuscado))
+				.map(e -> e.toString())
+				.count();
 
 		return cantNiveles;
 	}

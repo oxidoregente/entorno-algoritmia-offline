@@ -1,6 +1,7 @@
 package com.algoritmia.nivel02.streams;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * 🎓 RETO: Unión de Nombres.
@@ -31,6 +32,8 @@ public class UnionNombresEnunciado {
      */
     public String unir(List<String> nombres) {
         // TODO: Implementa usando stream, map y Collectors.joining
-        return null;
+        return nombres.stream()
+        		.map(String::toUpperCase)
+        		.collect(Collectors.joining(", "));
     }
 }

@@ -1,6 +1,7 @@
 package com.algoritmia.nivel02.streams;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * 🎓 RETO: Filtro de Nombres Únicos.
@@ -41,6 +42,17 @@ public class FiltroNombresUnicosEnunciado {
      */
     public List<String> formatearNombres(List<String> nombres) {
         // TODO: Implementa el pipeline de streams
-        return null;
+    	
+    	List<String> salida = nombres.stream()
+    			.filter(e -> e!=null && !e.trim().equals(""))
+    			.map(e -> e.toLowerCase())
+    			.distinct()
+    			.map(e -> Character.toUpperCase(e.charAt(0)) + e.substring(1))
+    			.sorted()
+    			.collect(Collectors.toList());
+    	
+    	System.out.println(salida.toString());
+    	
+        return salida;
     }
 }

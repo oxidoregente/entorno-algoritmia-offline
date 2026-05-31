@@ -37,7 +37,9 @@ public class CalculadoraIVAEnunciado {
 	public double calcularTotalConIVA(List<Double> precios) {
 		// TODO: Implementa usando stream, mapToDouble y sum
 
-		double precioTotal = precios.stream().mapToDouble(e -> e.doubleValue() * 1.21).reduce(0, (a, b) -> a + b);
+		double precioTotal = precios.stream()
+				.mapToDouble(e -> e.doubleValue() * 1.21)
+				.reduce(0, (a, b) -> a + b);
 
 		return precioTotal;
 	}

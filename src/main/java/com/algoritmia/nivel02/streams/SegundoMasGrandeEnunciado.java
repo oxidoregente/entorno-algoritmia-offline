@@ -1,5 +1,6 @@
 package com.algoritmia.nivel02.streams;
 
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -34,6 +35,11 @@ public class SegundoMasGrandeEnunciado {
      */
     public Integer encontrar(List<Integer> numeros) {
         // TODO: Implementa usando distinct, sorted, skip y findFirst
-        return null;
+        return numeros.stream()
+        		.distinct()
+        		.sorted(Comparator.reverseOrder())
+        		.skip(1)
+        		.findFirst()
+        		.get();
     }
 }

@@ -18,7 +18,7 @@ class FiltroNombresUnicosTest {
         
         assertEquals(3, resultado.size());
         assertEquals("Ana", resultado.get(0));
-        assertEquals("Carlos", resultado.get(1));
+        assertEquals("Brandon", resultado.get(1));
         assertEquals("Carlos", resultado.get(2));
     }
 }

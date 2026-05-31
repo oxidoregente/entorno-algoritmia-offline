@@ -21,7 +21,7 @@ class ProcesadorPedidosTest {
 
         // Expected: ["Laptop", "Mouse", "Teclado"] (sin duplicados, ordenados)
         // assertNotNull(resultado);
-        // assertEquals(3, resultado.size());
-        // assertEquals("Laptop", resultado.get(0));
+        assertEquals(3, resultado.size());
+        assertEquals("Laptop", resultado.get(0));
     }
 }

@@ -1,5 +1,6 @@
 package com.algoritmia.nivel02.streams;
 
+import static org.junit.Assert.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.List;
 import java.util.Map;
@@ -23,7 +24,7 @@ class AgrupadorJerarquicoTest {
 
         Map<Integer, Map<String, List<Transaccion>>> resultado = solver.agrupar(datos);
 
-        // assertNotNull(resultado);
-        // assertEquals(2, resultado.size()); // 2023 y 2024
+        assertNotNull(resultado);
+        assertEquals(2, resultado.size()); // 2023 y 2024
     }
 }

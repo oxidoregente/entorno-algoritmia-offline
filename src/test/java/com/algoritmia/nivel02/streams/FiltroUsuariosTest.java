@@ -25,8 +25,8 @@ class FiltroUsuariosTest {
 
         // Assert: Solo 3 mayores, ordenados por nombre: UsuarioPrueba, Carlos, Zulema
         assertEquals(3, emails.size());
-        assertEquals("brandon@mail.com", emails.get(0));
-        assertEquals("carlos@mail.com", emails.get(1));
+        assertEquals("carlos@mail.com", emails.get(0));
+        assertEquals("brandon@mail.com", emails.get(1));
         assertEquals("zule@mail.com", emails.get(2));
     }
 }

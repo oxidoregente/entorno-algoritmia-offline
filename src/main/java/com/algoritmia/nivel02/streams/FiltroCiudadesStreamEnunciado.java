@@ -22,7 +22,9 @@ public class FiltroCiudadesStreamEnunciado {
 		// TODO: Implementa usando .stream(), .collect() y Collectors.groupingBy()
 
 		Map<String, Long> paises = ciudades.stream()
-				.collect(Collectors.toSet(Ciudad::pais, Ciudad::nombre));
+				.collect(Collectors.groupingBy(Ciudad::pais, Collectors.counting()));
+		
+		System.out.println(paises.toString());
 
 		return paises;
 	}

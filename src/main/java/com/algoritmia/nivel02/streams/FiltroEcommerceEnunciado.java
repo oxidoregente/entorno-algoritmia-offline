@@ -1,6 +1,7 @@
 package com.algoritmia.nivel02.streams;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * 🎓 RETO: Filtro de E-commerce con Streams.
@@ -19,6 +20,14 @@ public class FiltroEcommerceEnunciado {
 
     public List<String> obtenerNombresConDescuento(List<Producto> productos, double precioMinimo) {
         // TODO: Implementa tu lógica aquí usando la API de Streams
-        return null;
+    	
+    	List<String> precios = productos.stream()
+    			.filter(p -> p.precio > precioMinimo)
+    			.map(e-> e.nombre + " (Oferta: $" + e.precio + ")" )
+    			.collect(Collectors.toList());
+    	
+    	System.out.println(precios.toString());
+    	
+        return precios;
     }
 }
