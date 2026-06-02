@@ -22,7 +22,7 @@ class UsuarioRepositoryTest {
         repository.save(new UsuarioEnunciado("test@mail.com", true, LocalDateTime.now()));
 
         // Act
-        // Object resultado = repository.findByActivoTrueAndFechaRegistroAfter(ayer);
-        // assertNotNull(resultado);
+        Object resultado = repository.findByActivoTrueAndFechaRegistroAfter(ayer);
+        assertNotNull(resultado);
     }
 }

@@ -35,7 +35,7 @@ class OrquestadorGlobalTest {
         orquestador.procesarConsultaMaestra(1L);
 
         // Debería guardarse en caché y notificarse
-        // verify(cache).guardarPerfil(eq("1"), any());
-        // verify(productor).enviarEvento(anyString());
+        verify(cache).guardarPerfil(eq("1"), any());
+        verify(productor).enviarEvento(anyString());
     }
 }

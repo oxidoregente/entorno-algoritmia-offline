@@ -22,8 +22,8 @@ class ItemRepositoryTest {
         repository.save(new ItemEnunciado("Mouse", 0, "Accesorios"));
 
         // Act
-        // List<ItemEnunciado> agotados = repository.findByStockLessThan(1);
-        // assertNotNull(agotados);
-        // assertEquals(1, agotados.size());
+        List<ItemEnunciado> agotados = repository.findByStockLessThan(1);
+        assertNotNull(agotados);
+        assertEquals(1, agotados.size());
     }
 }

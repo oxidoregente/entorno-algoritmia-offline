@@ -17,6 +17,6 @@ class FiltroPrimosTest {
         
         List<Integer> resultado = solver.filtrar(numeros);
         
-        // assertEquals(List.of(2, 3, 5, 7), resultado);
+        assertEquals(List.of(2, 3, 5, 7), resultado);
     }
 }

@@ -25,6 +25,6 @@ class ProductorMensajesTest {
     void testEnvioEvento() {
         productor.enviarEvento("Test");
         // Debería invocar al template si el estudiante implementa la lógica
-        // verify(rabbitTemplate, times(1)).convertAndSend(anyString(), anyString());
+        verify(rabbitTemplate, times(1)).convertAndSend(anyString(), anyString());
     }
 }

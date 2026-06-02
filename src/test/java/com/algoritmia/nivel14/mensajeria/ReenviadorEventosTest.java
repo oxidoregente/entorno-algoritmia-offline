@@ -26,6 +26,6 @@ class ReenviadorEventosTest {
         reenviador.procesarYReenviar("Hola");
         
         // Verificamos que se llamó al reenvío con el formato esperado
-        // verify(rabbitTemplate).convertAndSend(eq(ConfiguracionRabbit.COLA_AUDITORIA), contains("PROCESADO"));
+        verify(rabbitTemplate).convertAndSend(eq(ConfiguracionRabbit.COLA_AUDITORIA), contains("PROCESADO"));
     }
 }

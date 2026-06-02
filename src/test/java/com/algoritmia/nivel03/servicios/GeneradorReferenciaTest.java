@@ -14,8 +14,8 @@ class GeneradorReferenciaTest {
         GeneradorReferenciaEnunciado gen = new GeneradorReferenciaEnunciado();
         String ref = gen.generar(500L);
         
-        // assertNotNull(ref);
-        // assertTrue(ref.startsWith("REF-500-"));
+        assertNotNull(ref);
+        assertTrue(ref.startsWith("REF-500-"));
     }
 
     @Test

@@ -17,7 +17,7 @@ class AnalizadorPalabrasFrecuentesTest {
         List<String> top = analizador.obtenerTop3Palabras(texto);
         
         // Java (3 veces), Es (3 veces), Genial/Potente... (1 vez)
-        // assertEquals(3, top.size());
-        // assertEquals("java", top.get(0));
+        assertEquals(3, top.size());
+        assertEquals("java", top.get(0));
     }
 }

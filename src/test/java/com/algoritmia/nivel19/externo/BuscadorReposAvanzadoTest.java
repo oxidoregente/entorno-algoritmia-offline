@@ -16,6 +16,6 @@ class BuscadorReposAvanzadoTest {
         BuscadorReposAvanzadoEnunciado buscador = new BuscadorReposAvanzadoEnunciado(WebClient.builder());
         Flux<Map> flux = buscador.buscarPorLenguaje("Java");
         
-        // assertNull(flux, "Por defecto el enunciado devuelve null");
+        assertNull(flux, "Por defecto el enunciado devuelve null");
     }
 }

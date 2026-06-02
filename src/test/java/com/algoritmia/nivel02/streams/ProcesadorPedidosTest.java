@@ -20,8 +20,8 @@ class ProcesadorPedidosTest {
         List<String> resultado = solver.obtenerNombresItemsUnicos(List.of(p1, p2));
 
         // Expected: ["Laptop", "Mouse", "Teclado"] (sin duplicados, ordenados)
-        // assertNotNull(resultado);
-        // assertEquals(3, resultado.size());
-        // assertEquals("Laptop", resultado.get(0));
+        assertNotNull(resultado);
+        assertEquals(3, resultado.size());
+        assertEquals("Laptop", resultado.get(0));
     }
 }

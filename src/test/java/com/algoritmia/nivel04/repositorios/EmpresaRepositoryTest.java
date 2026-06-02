@@ -18,10 +18,10 @@ class EmpresaRepositoryTest {
 
     @Test
     void testBuscarPorCiudad() {
-        // repository.save(new EmpresaEnunciado("Tech", new DireccionEnunciado("Calle 1", "Medellin")));
+        repository.save(new EmpresaEnunciado("Tech", new DireccionEnunciado("Calle 1", "Medellin")));
         
         // Act
-        // List<EmpresaEnunciado> resultado = repository.findByDireccionCiudad("Medellin");
-        // assertNotNull(resultado);
+        List<EmpresaEnunciado> resultado = repository.findByDireccionCiudad("Medellin");
+        assertNotNull(resultado);
     }
 }

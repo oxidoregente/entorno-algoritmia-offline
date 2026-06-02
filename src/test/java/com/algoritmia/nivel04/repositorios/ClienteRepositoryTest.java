@@ -19,7 +19,7 @@ class ClienteRepositoryTest {
     @Test
     void testBuscarPorNombre() {
         repository.save(new ClienteEnunciado("UsuarioPrueba"));
-        // List<ClienteEnunciado> list = repository.findByNombre("UsuarioPrueba");
-        // assertNotNull(list);
+        List<ClienteEnunciado> list = repository.findByNombre("UsuarioPrueba");
+        assertNotNull(list);
     }
 }

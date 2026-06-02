@@ -21,8 +21,8 @@ class InvertirListaTest {
         InvertirListaEnunciado solver = new InvertirListaEnunciado();
         Nodo nuevaCabeza = solver.invertir(n1);
 
-        // assertNotNull(nuevaCabeza);
-        // assertEquals(3, nuevaCabeza.valor);
-        // assertEquals(2, nuevaCabeza.siguiente.valor);
+        assertNotNull(nuevaCabeza);
+        assertEquals(3, nuevaCabeza.valor);
+        assertEquals(2, nuevaCabeza.siguiente.valor);
     }
 }

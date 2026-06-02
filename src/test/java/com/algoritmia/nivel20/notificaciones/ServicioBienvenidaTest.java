@@ -25,6 +25,6 @@ class ServicioBienvenidaTest {
         bienvenida.darBienvenida("UsuarioPrueba", "brandon@ingenieria.com");
         
         // Verificamos que se delegó el envío al servicio de infraestructura
-        // verify(emailService).enviarNotificacionSimple(eq("brandon@ingenieria.com"), anyString(), anyString());
+        verify(emailService).enviarNotificacionSimple(eq("brandon@ingenieria.com"), anyString(), anyString());
     }
 }

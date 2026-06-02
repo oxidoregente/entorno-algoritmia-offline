@@ -19,7 +19,7 @@ class TicketRepositoryTest {
     void testTicketsPrioritarios() {
         repository.save(new TicketEnunciado("Error base", "ALTA"));
         // Act
-        // List<TicketEnunciado> tickets = repository.findByPrioridadOrderByFechaCreacionDesc("ALTA");
-        // assertNotNull(tickets);
+        List<TicketEnunciado> tickets = repository.findByPrioridadOrderByFechaCreacionDesc("ALTA");
+        assertNotNull(tickets);
     }
 }

@@ -18,7 +18,7 @@ class TransaccionGraphQlTest {
     @Test
     void testQueryTodasLasTransacciones() {
         // Act
-        // Object resultado = controller.todasLasTransacciones();
-        // assertNotNull(resultado);
+        Object resultado = controller.todasLasTransacciones();
+        assertNotNull(resultado);
     }
 }

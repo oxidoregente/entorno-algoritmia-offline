@@ -32,6 +32,6 @@ class GestorPerfilCacheTest {
         gestor.guardarPerfil("123", "perfil-datos");
         
         // Verificamos que se intentó usar el set de Redis
-        // verify(valueOperations).set(eq("user:profile:123"), any(), any());
+        verify(valueOperations).set(eq("user:profile:123"), any(), any());
     }
 }

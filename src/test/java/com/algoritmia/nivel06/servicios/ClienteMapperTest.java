@@ -19,7 +19,7 @@ class ClienteMapperTest {
         
         ClienteDTO dto = mapper.mapear(entidad);
         
-        // assertNotNull(dto);
-        // assertEquals("BRANDON", dto.nombreMayusculas());
+        assertNotNull(dto);
+        assertEquals("BRANDON", dto.nombreMayusculas());
     }
 }

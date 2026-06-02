@@ -13,7 +13,7 @@ class SistemaSaludTest {
     @Test
     void testEstadoSalud() {
         SistemaSaludEnunciado indicador = new SistemaSaludEnunciado();
-        // Health h = indicador.health();
-        // assertNotNull(h);
+        Health h = indicador.health();
+        assertNotNull(h);
     }
 }

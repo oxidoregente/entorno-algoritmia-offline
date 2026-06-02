@@ -13,6 +13,6 @@ class ProductoDTOTest {
     @Test
     void testEsUnRecord() {
         // Este test fallará si el estudiante no lo convierte en Record
-        // assertTrue(ProductoDTOEnunciado.class.isRecord(), "La clase debe ser un 'record' de Java 21");
+        assertTrue(ProductoDTOEnunciado.class.isRecord(), "La clase debe ser un 'record' de Java 21");
     }
 }

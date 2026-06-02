@@ -23,7 +23,7 @@ class AgrupadorJerarquicoTest {
 
         Map<Integer, Map<String, List<Transaccion>>> resultado = solver.agrupar(datos);
 
-        // assertNotNull(resultado);
-        // assertEquals(2, resultado.size()); // 2023 y 2024
+        assertNotNull(resultado);
+        assertEquals(2, resultado.size()); // 2023 y 2024
     }
 }

@@ -18,8 +18,8 @@ class EstadisticasNumerosTest {
 
         DoubleSummaryStatistics resultado = stats.obtenerEstadisticas(notas);
 
-        // assertEquals(5.0, resultado.getMin());
-        // assertEquals(10.0, resultado.getMax());
-        // assertEquals(7.5, resultado.getAverage());
+        assertEquals(5.0, resultado.getMin());
+        assertEquals(10.0, resultado.getMax());
+        assertEquals(7.5, resultado.getAverage());
     }
 }
