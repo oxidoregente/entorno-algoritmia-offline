@@ -35,6 +35,12 @@ public class GeneradorReferenciaEnunciado {
 
     if (clienteId <= 0) throw new IllegalArgumentException();
     
-    return null;
+    var result = String.format("REF-%d-%d", clienteId, System.currentTimeMillis());    
+    
+    // var resultado = "REF-" + clienteId + "-" + System.currentTimeMillis();  
+
+    System.out.println(result);
+    
+    return result;
   }
 }
