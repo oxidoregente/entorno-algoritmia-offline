@@ -29,6 +29,6 @@ class TareaMantenimientoTest {
     void testDisparoDeTarea() throws Exception {
         tarea.ejecutarCierreMasivo();
         // Debería invocar al launcher si el estudiante implementa la lógica
-        // verify(jobLauncher, atLeastOnce()).run(any(), any());
+        verify(jobLauncher, atLeastOnce()).run(any(), any());
     }
 }

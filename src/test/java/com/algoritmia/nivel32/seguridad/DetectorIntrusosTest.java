@@ -33,6 +33,6 @@ class DetectorIntrusosTest {
         detector.analizarAmenazas();
 
         // Debería alertar si hay más de 3
-        // verify(emailService).enviarNotificacionSimple(anyString(), anyString(), anyString());
+        verify(emailService).enviarNotificacionSimple(anyString(), anyString(), anyString());
     }
 }

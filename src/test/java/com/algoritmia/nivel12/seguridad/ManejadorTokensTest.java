@@ -28,7 +28,7 @@ class ManejadorTokensTest {
         when(jwtUtil.obtenerUsuario(token)).thenReturn("admin");
 
         boolean esAdmin = manejador.esAdminValido(token);
-        // assertTrue(esAdmin);
+        assertTrue(esAdmin);
     }
 
     @Test

@@ -20,7 +20,7 @@ class CocheRepositoryTest {
         repository.save(new CocheEnunciado("Toyota", "Corolla"));
         repository.save(new CocheEnunciado("Toyota", "Yaris"));
         
-        // long count = repository.countByMarca("Toyota");
-        // assertEquals(2, count);
+        long count = repository.countByMarca("Toyota");
+        assertEquals(2, count);
     }
 }

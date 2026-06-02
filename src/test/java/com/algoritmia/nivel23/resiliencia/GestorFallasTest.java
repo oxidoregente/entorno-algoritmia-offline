@@ -14,7 +14,7 @@ class GestorFallasTest {
     void testExitoOperacion() {
         GestorFallasEnunciado gestor = new GestorFallasEnunciado();
         String resultado = gestor.llamarServicioInestable(() -> "OK");
-        // assertEquals("OK", resultado);
+        assertEquals("OK", resultado);
     }
 
     @Test
@@ -22,6 +22,6 @@ class GestorFallasTest {
         GestorFallasEnunciado gestor = new GestorFallasEnunciado();
         // Simulamos una falla lanzando excepción
         String resultado = gestor.metodoDeRespaldo(() -> { throw new RuntimeException(); }, new RuntimeException());
-        // assertEquals("Respuesta de Emergencia", resultado);
+        assertEquals("Respuesta de Emergencia", resultado);
     }
 }

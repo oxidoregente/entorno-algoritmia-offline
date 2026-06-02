@@ -26,6 +26,6 @@ class ConsultorTasaCambioTest {
         // Este test fallará hasta que el estudiante implemente el WebClient
         // StepVerifier.create(servicio.obtenerTasaUSD())
         //         .expectNext(0.92)
-        //         .verifyComplete();
+        .verifyComplete();
     }
 }

@@ -18,6 +18,6 @@ class ConsultorRevisionesTest {
 
     @Test
     void testServicioCargado() {
-        // assertNotNull(consultor);
+        assertNotNull(consultor);
     }
 }

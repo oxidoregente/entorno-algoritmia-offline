@@ -21,6 +21,6 @@ class BatchAvanzadoTest {
     @Test
     void testJobsCargados() {
         // El test fallará si el estudiante no define los Beans correctamente
-        // assertNotNull(jobLimpieza);
+        assertNotNull(jobLimpieza);
     }
 }

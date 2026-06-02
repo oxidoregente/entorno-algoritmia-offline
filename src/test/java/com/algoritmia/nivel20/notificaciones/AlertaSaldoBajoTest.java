@@ -25,7 +25,7 @@ class AlertaSaldoBajoTest {
         alerta.verificarYNotificar("UsuarioPrueba", "brandon@test.com", 5.0);
         
         // Solo debería enviarse si es menor a 10
-        // verify(emailService).enviarNotificacionSimple(anyString(), anyString(), anyString());
+        verify(emailService).enviarNotificacionSimple(anyString(), anyString(), anyString());
     }
 
     @Test

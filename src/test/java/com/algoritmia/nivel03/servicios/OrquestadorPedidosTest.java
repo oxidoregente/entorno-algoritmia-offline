@@ -16,6 +16,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
  * Test para ejercicio de Orquestador de Pedidos.
  * Valida integración de inventario, pagos y mensajería con mocks.
  */
+@ExtendWith(MockitoExtension.class)
 class OrquestadorPedidosTest {
 
     @Mock private GestorInventarioEnunciado inventario;
@@ -35,12 +36,12 @@ class OrquestadorPedidosTest {
         boolean resultado = orquestador.procesarPedido("Laptop", 1, 1000.0, "CREDITO");
 
         // ASSERT
-        // assertTrue(resultado);
+        assertTrue(resultado);
         
         // Verificamos que se llamó a los tres servicios
-        // verify(inventario).procesarOrden(anyInt(), anyInt(), anyBoolean());
-        // verify(pagos).calcularComision(anyDouble(), any());
-        // verify(productor).enviarEvento(anyString());
+        verify(inventario).procesarOrden(anyInt(), anyInt(), anyBoolean());
+        verify(pagos).calcularComision(anyDouble(), any());
+        verify(productor).enviarEvento(anyString());
     }
 
     @Test
@@ -50,11 +51,11 @@ class OrquestadorPedidosTest {
             .thenReturn(EstatusOrden.RECHAZADO_SIN_STOCK);
 
         // ACT & ASSERT: El orquestador debería fallar
-        // assertThrows(RuntimeException.class, () -> {
-        //    orquestador.procesarPedido("Laptop", 1, 1000.0, "CREDITO");
-        // });
+        assertThrows(RuntimeException.class, () -> {
+            orquestador.procesarPedido("Laptop", 1, 1000.0, "CREDITO");
+        });
         
         // El pago y la notificación NUNCA deberían haberse llamado
-        // verifyNoInteractions(pagos, productor);
+        verifyNoInteractions(pagos, productor);
     }
 }

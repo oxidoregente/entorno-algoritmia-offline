@@ -19,7 +19,7 @@ class CursoRepositoryTest {
     @Test
     void testCursosPopulares() {
         // Act
-        // List<CursoEnunciado> list = repository.encontrarCursosPopulares(5);
-        // assertNotNull(list);
+        List<CursoEnunciado> list = repository.encontrarCursosPopulares(5);
+        assertNotNull(list);
     }
 }

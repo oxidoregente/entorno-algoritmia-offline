@@ -16,8 +16,8 @@ class CifradorPasswordTest {
         String encoded = cifrador.cifrar(pass);
         
         // El test fallará si el estudiante no implementa la lógica
-        // assertNotNull(encoded);
-        // assertNotEquals(pass, encoded);
-        // assertTrue(cifrador.coinciden(pass, encoded));
+        assertNotNull(encoded);
+        assertNotEquals(pass, encoded);
+        assertTrue(cifrador.coinciden(pass, encoded));
     }
 }

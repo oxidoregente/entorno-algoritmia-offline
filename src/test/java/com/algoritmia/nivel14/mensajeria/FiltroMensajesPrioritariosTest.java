@@ -27,7 +27,7 @@ class FiltroMensajesPrioritariosTest {
         consumidor.procesar("URGENTE: Fallo de sistema");
         
         // El test fallará si el estudiante no imprime el mensaje filtrado
-        // assertTrue(outContent.toString().contains("URGENTE"));
+        assertTrue(outContent.toString().contains("URGENTE"));
         
         System.setOut(System.out);
     }

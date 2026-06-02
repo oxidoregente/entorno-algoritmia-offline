@@ -20,7 +20,7 @@ class PedidoRepositoryTest {
     @Test
     void testBusquedaAvanzada() {
         repository.save(new PedidoEnunciado(100.0, LocalDateTime.now()));
-        // List<PedidoEnunciado> list = repository.findByMontoGreaterThanOrderByFechaDesc(50.0);
-        // assertNotNull(list);
+        List<PedidoEnunciado> list = repository.findByMontoGreaterThanOrderByFechaDesc(50.0);
+        assertNotNull(list);
     }
 }

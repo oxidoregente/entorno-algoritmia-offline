@@ -23,6 +23,6 @@ class ServicioExternoApiTest {
         Mono<Map> resultado = servicio.obtenerInfoRepositorio("google", "gson");
         
         // Assert
-        // assertNotNull(resultado);
+        assertNotNull(resultado);
     }
 }

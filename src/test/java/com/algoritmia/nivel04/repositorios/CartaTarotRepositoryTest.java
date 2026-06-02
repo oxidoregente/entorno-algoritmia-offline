@@ -23,7 +23,7 @@ class CartaTarotRepositoryTest {
         repository.save(new CartaTarotEnunciado("El Mago", Arcano.MAYOR));
 
         // Act
-        // List<CartaTarotEnunciado> mayores = repository.findByArcanoOrderByNombreAsc(Arcano.MAYOR);
-        // assertNotNull(mayores);
+        List<CartaTarotEnunciado> mayores = repository.findByArcanoOrderByNombreAsc(Arcano.MAYOR);
+        assertNotNull(mayores);
     }
 }

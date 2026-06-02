@@ -17,6 +17,6 @@ class LoteCierreBatchTest {
 
     @Test
     void testConfiguracionBatchCargada() {
-        // assertNotNull(batchConfig, "La configuración de Batch debería estar definida");
+        assertNotNull(batchConfig, "La configuración de Batch debería estar definida");
     }
 }

@@ -19,7 +19,7 @@ class OrquestadorHistorialTest {
         
         List<TransaccionDTO> dtos = orquestador.procesarHistorial(List.of(t1));
         
-        // assertEquals(1, dtos.size());
-        // assertEquals("Impuesto: 15.0", dtos.get(0).mensajeInformativo());
+        assertEquals(1, dtos.size());
+        assertEquals("Impuesto: 15.0", dtos.get(0).mensajeInformativo());
     }
 }

@@ -24,7 +24,7 @@ class LogAccesoRepositoryTest {
         repository.save(new LogAccesoEnunciado("10.0.0.1", ahora));
 
         // Act
-        // List<LogAccesoEnunciado> logs = repository.findByFechaAccesoBetween(ahora.minusHours(1), ahora.plusHours(1));
-        // assertNotNull(logs);
+        List<LogAccesoEnunciado> logs = repository.findByFechaAccesoBetween(ahora.minusHours(1), ahora.plusHours(1));
+        assertNotNull(logs);
     }
 }

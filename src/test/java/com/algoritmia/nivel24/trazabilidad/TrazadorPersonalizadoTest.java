@@ -25,6 +25,6 @@ class TrazadorPersonalizadoTest {
     void testCreacionDeSpan() {
         // Simplemente verificamos que el servicio inyectado interactúe con el tracer
         trazador.ejecutarOperacionTrazada();
-        // verify(tracer, atLeastOnce()).nextSpan();
+        verify(tracer, atLeastOnce()).nextSpan();
     }
 }

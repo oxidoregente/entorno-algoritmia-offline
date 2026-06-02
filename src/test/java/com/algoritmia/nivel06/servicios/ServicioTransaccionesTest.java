@@ -32,7 +32,7 @@ class ServicioTransaccionesTest {
 
         List<TransaccionDTO> resultados = servicio.obtenerHistorialSeguro();
 
-        // assertNotNull(resultados);
-        // assertEquals(1, resultados.size());
+        assertNotNull(resultados);
+        assertEquals(1, resultados.size());
     }
 }

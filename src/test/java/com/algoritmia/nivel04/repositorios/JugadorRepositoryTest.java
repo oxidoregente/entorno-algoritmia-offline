@@ -24,8 +24,8 @@ class JugadorRepositoryTest {
         repository.save(new JugadorEnunciado("Zulema", 900));
 
         // Act
-        // List<JugadorEnunciado> top = repository.findTop3ByOrderByPuntajeDesc();
-        // assertEquals(3, top.size());
-        // assertEquals("Zulema", top.get(0).getNickname());
+        List<JugadorEnunciado> top = repository.findTop3ByOrderByPuntajeDesc();
+        assertEquals(3, top.size());
+        assertEquals("Zulema", top.get(0).getNickname());
     }
 }
