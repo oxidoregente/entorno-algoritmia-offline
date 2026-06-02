@@ -19,8 +19,8 @@ class TareaRepositoryTest {
     @Test
     void testTareasPorProyecto() {
         // Arrange
-        // ProyectoEnunciado p = new ProyectoEnunciado("Ecommerce");
-        // TareaEnunciado t = new TareaEnunciado("Crear API");
+        ProyectoEnunciado p = new ProyectoEnunciado("Ecommerce");
+        TareaEnunciado t = new TareaEnunciado("Crear API");
         repository.save(t);
 
         // Act

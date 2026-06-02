@@ -13,8 +13,8 @@ class ValidadorReactivoTest {
     void testValidacionParalela() {
         ValidadorReactivoEnunciado validador = new ValidadorReactivoEnunciado();
         // El test fallará hasta que el estudiante use Mono.zip
-        // StepVerifier.create(validador.validarTodo(1L, 1L))
-        //         .expectNext(true)
-        .verifyComplete();
+        StepVerifier.create(validador.validarTodo(1L, 1L))
+                .expectNext(true)
+                .verifyComplete();
     }
 }

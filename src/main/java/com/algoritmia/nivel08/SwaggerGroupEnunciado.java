@@ -16,6 +16,6 @@ public class SwaggerGroupEnunciado {
     public GroupedOpenApi publicApi() {
         // TODO: Crea y retorna un GroupedOpenApi con nombre "Public-API" 
         // y filtro de rutas por el patrón indicado.
-        return null;
+        return GroupedOpenApi.builder().group("Public-API").pathsToMatch("/api/v1/public/**").build();
     }
 }

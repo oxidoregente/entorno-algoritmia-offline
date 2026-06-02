@@ -7,6 +7,10 @@ import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import org.springframework.batch.core.Step;
+import org.springframework.batch.core.step.builder.StepBuilder;
+import org.springframework.transaction.PlatformTransactionManager;
+
 /**
  * 🎓 RETO: Job de Limpieza de Logs.
  * <b>Dificultad: Difícil</b>
@@ -17,8 +21,17 @@ import org.springframework.context.annotation.Configuration;
 public class LimpiadorLogsBatchEnunciado {
 
     @Bean
-    public Job jobLimpieza(JobRepository jobRepository) {
+    public Job jobLimpieza(JobRepository jobRepository, Step stepStub) {
         // TODO: Construye un Job con nombre "jobLimpiezaHistorico" que inicie con un Step (simulado)
-        return null;
+        return new JobBuilder("jobLimpiezaHistorico", jobRepository)
+                .start(stepStub)
+                .build();
+    }
+
+    @Bean
+    public Step stepStub(JobRepository jobRepository, PlatformTransactionManager transactionManager) {
+        return new StepBuilder("stepStub", jobRepository)
+                .tasklet((contribution, chunkContext) -> null, transactionManager)
+                .build();
     }
 }

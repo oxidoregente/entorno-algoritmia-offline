@@ -12,4 +12,5 @@ import java.util.List;
  */
 public interface CartaTarotRepositoryEnunciado extends JpaRepository<CartaTarotEnunciado, Long> {
     // TODO: Buscar por arcano ordenado por nombre ascendente
+    List<CartaTarotEnunciado> findByArcanoOrderByNombreAsc(CartaTarotEnunciado.Arcano arcano);
 }

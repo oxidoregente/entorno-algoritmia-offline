@@ -12,4 +12,5 @@ import java.util.List;
  */
 public interface ProductoRepositoryEnunciado extends JpaRepository<ProductoEnunciado, Long> {
     // TODO: Busca productos con precio menor a X y stock mayor a 0
+    List<ProductoEnunciado> findByPrecioLessThanAndStockGreaterThan(double precio, int stock);
 }

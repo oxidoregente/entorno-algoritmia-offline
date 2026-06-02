@@ -17,8 +17,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class GestorCacheManualEnunciado {
 
-    @Autowired
-    private RedisTemplate<String, Object> redisTemplate;
+    private final RedisTemplate<String, Object> redisTemplate;
+
+    public GestorCacheManualEnunciado(RedisTemplate<String, Object> redisTemplate) {
+        this.redisTemplate = redisTemplate;
+    }
 
     /**
      * Guarda un valor en Redis asociado a una clave.

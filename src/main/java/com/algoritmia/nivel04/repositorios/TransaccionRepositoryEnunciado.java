@@ -14,4 +14,5 @@ import java.util.List;
 @Repository
 public interface TransaccionRepositoryEnunciado extends JpaRepository<TransaccionEnunciado, Long> {
     // TODO: Implementa un Query Method para buscar por estado
+    List<TransaccionEnunciado> findByEstado(String estado);
 }

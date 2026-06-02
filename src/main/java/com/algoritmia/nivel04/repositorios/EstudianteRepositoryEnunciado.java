@@ -12,4 +12,5 @@ import java.util.List;
  */
 public interface EstudianteRepositoryEnunciado extends JpaRepository<EstudianteEnunciado, Long> {
     // TODO: Buscar estudiantes cuyo email termine en un dominio
+    List<EstudianteEnunciado> findByEmailEndingWith(String dominio);
 }

@@ -14,8 +14,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class ProfileConfigEnunciado {
 
-    @Autowired
-    private Environment env;
+    private final Environment env;
+
+    public ProfileConfigEnunciado(Environment env) {
+        this.env = env;
+    }
 
     public boolean esProduccion() {
         // TODO: Verifica si el arreglo env.getActiveProfiles() contiene "prod"

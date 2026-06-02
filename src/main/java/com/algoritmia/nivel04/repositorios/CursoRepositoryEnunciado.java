@@ -14,4 +14,6 @@ import java.util.List;
  */
 public interface CursoRepositoryEnunciado extends JpaRepository<CursoEnunciado, Long> {
     // TODO: Consulta JPQL para encontrar cursos populares
+    @Query("SELECT c FROM CursoEnunciado c")
+    List<CursoEnunciado> encontrarCursosPopulares(int limite);
 }

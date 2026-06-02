@@ -17,10 +17,13 @@ public class TareaEnunciado {
     private String descripcion;
 
     // TODO: Añadir relación @ManyToOne con ProyectoEnunciado
-    // private ProyectoEnunciado proyecto;
+    @ManyToOne
+    private ProyectoEnunciado proyecto;
 
     public TareaEnunciado() {}
     public TareaEnunciado(String descripcion) { this.descripcion = descripcion; }
     public Long getId() { return id; }
     public String getDescripcion() { return descripcion; }
+    public ProyectoEnunciado getProyecto() { return proyecto; }
+    public void setProyecto(ProyectoEnunciado proyecto) { this.proyecto = proyecto; }
 }

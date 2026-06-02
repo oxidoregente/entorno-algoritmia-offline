@@ -13,4 +13,5 @@ import java.util.List;
  */
 public interface LogAccesoRepositoryEnunciado extends JpaRepository<LogAccesoEnunciado, Long> {
     // TODO: Buscar logs entre dos fechas
+    List<LogAccesoEnunciado> findByFechaAccesoBetween(java.time.LocalDateTime inicio, java.time.LocalDateTime fin);
 }

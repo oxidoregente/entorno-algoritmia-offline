@@ -22,6 +22,6 @@ public class ImportadorClientesBatchEnunciado {
     @Bean
     public ItemProcessor<ClienteEnunciado, ClienteEnunciado> clienteProcessor() {
         // TODO: Implementa la lógica de limpieza de nombres
-        return null;
+        return item -> item;
     }
 }

@@ -12,4 +12,5 @@ import java.util.List;
  */
 public interface EmpresaRepositoryEnunciado extends JpaRepository<EmpresaEnunciado, Long> {
     // TODO: Encontrar empresas por ciudad del objeto embebido
+    List<EmpresaEnunciado> findByDireccionCiudad(String ciudad);
 }

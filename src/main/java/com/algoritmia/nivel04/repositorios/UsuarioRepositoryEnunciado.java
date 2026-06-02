@@ -13,4 +13,5 @@ import java.util.List;
  */
 public interface UsuarioRepositoryEnunciado extends JpaRepository<UsuarioEnunciado, Long> {
     // TODO: Busca usuarios activos registrados después de una fecha
+    List<UsuarioEnunciado> findByActivoTrueAndFechaRegistroAfter(java.time.LocalDateTime fecha);
 }

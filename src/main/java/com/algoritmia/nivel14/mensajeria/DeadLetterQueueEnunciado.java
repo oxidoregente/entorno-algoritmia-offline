@@ -31,7 +31,10 @@ public class DeadLetterQueueEnunciado {
         // TODO: Crea una cola que tenga configurado:
         // x-dead-letter-exchange: "dlx-exchange"
         // x-dead-letter-routing-key: "fallo-routing-key"
-        return null;
+        return QueueBuilder.durable("main-queue-enunciado")
+                .withArgument("x-dead-letter-exchange", "dlx-exchange")
+                .withArgument("x-dead-letter-routing-key", "fallo-routing-key")
+                .build();
     }
 
     /**
@@ -42,6 +45,6 @@ public class DeadLetterQueueEnunciado {
     @Bean
     public DirectExchange deadLetterExchange() {
         // TODO: Crea un DirectExchange llamado "dlx-exchange"
-        return null;
+        return new DirectExchange("dlx-exchange");
     }
 }

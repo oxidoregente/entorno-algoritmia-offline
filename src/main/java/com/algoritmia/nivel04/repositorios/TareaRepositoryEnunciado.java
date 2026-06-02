@@ -12,4 +12,5 @@ import java.util.List;
  */
 public interface TareaRepositoryEnunciado extends JpaRepository<TareaEnunciado, Long> {
     // TODO: Encontrar tareas por ID del proyecto
+    List<TareaEnunciado> findByProyectoId(long proyectoId);
 }

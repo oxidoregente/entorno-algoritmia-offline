@@ -12,4 +12,5 @@ import java.util.List;
  */
 public interface TicketRepositoryEnunciado extends JpaRepository<TicketEnunciado, Long> {
     // TODO: Encontrar tickets por prioridad ordenados por fecha descendente
+    List<TicketEnunciado> findByPrioridadOrderByFechaCreacionDesc(String prioridad);
 }

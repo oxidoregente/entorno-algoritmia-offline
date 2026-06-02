@@ -13,4 +13,5 @@ import java.util.List;
  */
 public interface JugadorRepositoryEnunciado extends JpaRepository<JugadorEnunciado, Long> {
     // TODO: Implementa la consulta para Top 3 jugadores
+    List<JugadorEnunciado> findTop3ByOrderByPuntajeDesc();
 }

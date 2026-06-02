@@ -12,4 +12,5 @@ import java.util.List;
  */
 public interface PedidoRepositoryEnunciado extends JpaRepository<PedidoEnunciado, Long> {
     // TODO: Buscar por monto mayor que X ordenado por fecha descendente
+    List<PedidoEnunciado> findByMontoGreaterThanOrderByFechaDesc(double monto);
 }

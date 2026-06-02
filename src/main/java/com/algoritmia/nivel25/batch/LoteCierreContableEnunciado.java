@@ -54,7 +54,7 @@ public class LoteCierreContableEnunciado {
     @Bean
     public ItemProcessor<TransaccionEnunciado, TransaccionEnunciado> processor() {
         // TODO: Transformar el estado a "PROCESADO_POR_LOTE"
-        return null;
+        return item -> item;
     }
 
     @Bean
@@ -71,12 +71,19 @@ public class LoteCierreContableEnunciado {
                            ItemProcessor<TransaccionEnunciado, TransaccionEnunciado> processor,
                            RepositoryItemWriter<TransaccionEnunciado> writer) {
         // TODO: Construir el step usando StepBuilder con chunks de 10
-        return null;
+        return new StepBuilder("stepCierre", jobRepository)
+                .<TransaccionEnunciado, TransaccionEnunciado>chunk(10, transactionManager)
+                .reader(reader)
+                .processor(processor)
+                .writer(writer)
+                .build();
     }
 
     @Bean
     public Job jobCierre(JobRepository jobRepository, Step stepCierre) {
         // TODO: Construir el job usando JobBuilder
-        return null;
+        return new JobBuilder("jobCierre", jobRepository)
+                .start(stepCierre)
+                .build();
     }
 }

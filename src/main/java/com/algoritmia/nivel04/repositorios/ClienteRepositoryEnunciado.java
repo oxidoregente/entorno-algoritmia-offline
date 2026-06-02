@@ -12,4 +12,5 @@ import java.util.List;
  */
 public interface ClienteRepositoryEnunciado extends JpaRepository<ClienteEnunciado, Long> {
     // TODO: Buscar clientes por nombre exacto
+    List<ClienteEnunciado> findByNombre(String nombre);
 }

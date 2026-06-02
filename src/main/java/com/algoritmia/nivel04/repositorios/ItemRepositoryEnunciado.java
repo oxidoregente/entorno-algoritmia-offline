@@ -12,4 +12,5 @@ import java.util.List;
  */
 public interface ItemRepositoryEnunciado extends JpaRepository<ItemEnunciado, Long> {
     // TODO: Encontrar items con stock menor a un valor
+    List<ItemEnunciado> findByStockLessThan(int stock);
 }

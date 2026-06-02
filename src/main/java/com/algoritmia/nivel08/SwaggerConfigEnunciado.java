@@ -17,6 +17,6 @@ public class SwaggerConfigEnunciado {
     @Bean
     public OpenAPI customOpenAPI() {
         // TODO: Retorna una instancia básica de new OpenAPI()
-        return null;
+        return new OpenAPI();
     }
 }
