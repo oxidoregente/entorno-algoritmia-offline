@@ -1,6 +1,7 @@
 package com.algoritmia.nivel03.servicios;
 
-import com.algoritmia.nivel03.servicios.GestorInventarioEnunciado.EstatusOrden;
+import com.algoritmia.nivel02.logica.GestorInventarioEnunciado;
+import com.algoritmia.nivel02.logica.GestorInventarioEnunciado.EstatusOrden;
 import com.algoritmia.nivel03.servicios.ProcesadorPagosFintechEnunciado.TipoTarjeta;
 import org.springframework.context.ApplicationEventPublisher;
 
