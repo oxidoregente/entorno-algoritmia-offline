@@ -1,4 +1,4 @@
-package com.algoritmia.nivel21.diagramas;
+package com.algoritmia.nivel08.documentacion;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
