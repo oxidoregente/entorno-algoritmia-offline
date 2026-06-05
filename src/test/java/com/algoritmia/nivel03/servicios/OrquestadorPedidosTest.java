@@ -3,7 +3,8 @@ package com.algoritmia.nivel03.servicios;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-import com.algoritmia.nivel03.servicios.GestorInventarioEnunciado.EstatusOrden;
+import com.algoritmia.nivel02.logica.GestorInventarioEnunciado;
+import com.algoritmia.nivel02.logica.GestorInventarioEnunciado.EstatusOrden;
 import com.algoritmia.nivel03.servicios.ProcesadorPagosFintechEnunciado.TipoTarjeta;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
