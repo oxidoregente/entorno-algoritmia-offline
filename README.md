@@ -26,6 +26,8 @@ nivel01/arrays/
 └── TwoSumSolucion.java     ← Solución de referencia (compara al final)
 ```
 
+> **Regla de progresión:** Cada nivel N solo puede depender de niveles M donde M < N. Esto garantiza que un principiante avance linealmente sin saltos conceptuales hacia atrás.
+
 ---
 
 ## 🏁 Guía de Inicio Rápido (Desde Cero)
@@ -176,11 +178,13 @@ mvn test -Dtest=CalculadoraSimpleTest
 
 - ✅ Testing con JUnit 5 (patrón AAA)
 - ✅ Programación funcional (Lambdas, Streams)
-- ✅ Spring Boot (Services, Controllers, Repositories)
+- ✅ Inyección de dependencias en Spring
 - ✅ Persistencia con JPA/Hibernate
-- ✅ APIs REST y Documentación con Swagger
+- ✅ APIs REST y documentación con Swagger + Mermaid
+- ✅ Programación reactiva con WebFlux y Reactor
 - ✅ Seguridad con Spring Security y JWT
-- ✅ Contenedores con Docker
+- ✅ Contenedores con Docker y Docker Compose
+- ✅ Patrones de arquitectura empresarial (Saga, Hexagonal, DDD, Event Sourcing)
 - ✅ Y mucho más...
 
 ### ¿No sabes algo de la lista inicial?
@@ -218,56 +222,56 @@ mvn test -Dtest=CalculadoraSimpleTest
 
 ## 🗺️ Rutas de Aprendizaje Sugeridas
 
-Para facilitar tu progreso, hemos categorizado los niveles en cuatro rutas de aprendizaje progresivas, ordenadas por dificultad:
+Para facilitar tu progreso, hemos categorizado los niveles en cuatro rutas de aprendizaje progresivas, ordenadas por dificultad y prerequisitos:
 
 ### 🟢 Ruta 1: Explorador de Lógica (Principiante)
 *Enfocada en dominar Java puro, algoritmos y mentalidad de testing.*
 - **Nivel 00:** Testing Inverso (Aprende a escribir tests unitarios partiendo del código ya implementado).
-- **Nivel 01:** Algoritmia Base (Arrays, Strings, Recursión).
-- **Nivel 02:** Java Funcional (Streams y Lambdas).
+- **Nivel 01:** Algoritmia Base (Arrays, Strings, Recursión, Árboles).
+- **Nivel 02:** Java Funcional + Lógica de Negocio (Streams, Lambdas y algoritmos de negocio).
+- **Nivel 03:** Servicios Spring Boot (Inyección de dependencias con beans reales).
 - **Meta:** Resolver problemas lógicos y escribir código limpio y testeable.
 
 ### 🟡 Ruta 2: Constructor de Servicios (Intermedio)
 *Enfocada en el ecosistema Spring Boot y arquitectura de aplicaciones.*
-- **Nivel 03:** Lógica de Negocio (Servicios e Inyección de Dependencias).
 - **Nivel 04:** Persistencia JPA (Bases de datos relacionales y Hibernate).
 - **Nivel 05:** API REST (Controladores y estándares HTTP).
 - **Nivel 06:** Arquitectura Avanzada (DTOs, Records y Mappers).
 - **Nivel 07:** Observabilidad AOP (Programación Orientada a Aspectos).
+- **Nivel 08:** Documentación (Swagger/OpenAPI + Diagramas Mermaid).
 - **Meta:** Construir aplicaciones backend robustas con patrones de diseño industriales.
 
 ### 🔴 Ruta 3: Arquitecto de Infraestructura (Profesional)
-*Enfocada en contenedores, seguridad, mensajería y monitorización.*
-- **Nivel 08:** Documentación Dinámica (Swagger/OpenAPI).
-- **Nivel 09:** Dockerización (Dockerfile y multi-etapa).
-- **Nivel 10:** Orquestación (Docker Compose).
-- **Nivel 11:** Testing de Élite (Testcontainers).
-- **Nivel 12:** Seguridad Industrial (Spring Security y JWT).
-- **Nivel 13:** Optimización con Redis (Caché).
-- **Nivel 14:** Arquitectura de Eventos (RabbitMQ).
-- **Nivel 15:** Monitorización 360° (Actuator y Prometheus).
+*Enfocada en contenedores, testing avanzado, seguridad, mensajería y monitorización.*
+- **Nivel 09:** Testing de Integración (Testcontainers con Docker).
+- **Nivel 10:** Testing Avanzado (JUnit 5 Dinámico y Parametrizado).
+- **Nivel 11:** Simulación de APIs (WireMock).
+- **Nivel 12:** Dockerización (Dockerfile y multi-etapa).
+- **Nivel 13:** Orquestación (Docker Compose).
+- **Nivel 14:** Seguridad Industrial (Spring Security y JWT).
+- **Nivel 15:** Optimización con Redis (Caché).
+- **Nivel 16:** Arquitectura de Eventos (RabbitMQ).
+- **Nivel 17:** Notificaciones (Spring Mail).
 - **Meta:** Diseñar sistemas escalables, resilientes y listos para producción.
 
 ### ⚫ Ruta 4: Ingeniería de Élite (Avanzado)
-*Enfocada en automatización, integración, trazabilidad y especialización.*
-- **Nivel 16:** Gestión de Entornos (Perfiles y Properties de Spring).
-- **Nivel 17:** Migraciones de Base de Datos (Flyway).
-- **Nivel 18:** Automatización (Scheduler y tareas programadas).
-- **Nivel 19:** Clientes HTTP Reactivos (WebClient).
-- **Nivel 20:** Notificaciones (Spring Mail).
-- **Nivel 21:** Diagramas de Arquitectura (Mermaid).
-- **Nivel 22:** APIs Modernas (GraphQL).
-- **Nivel 23:** Resiliencia (Resilience4j).
-- **Nivel 24:** Trazabilidad Distribuida (Tracing y Zipkin).
-- **Nivel 25:** Procesamiento Masivo (Spring Batch).
-- **Nivel 26:** Comunicación Bidireccional (WebSockets).
-- **Nivel 27:** Auditoría Histórica (Hibernate Envers).
-- **Nivel 28:** Simulación de Fallos (WireMock).
-- **Nivel 29:** Testing Avanzado (JUnit 5 Dinámico y Parametrizado).
+*Enfocada en comunicación reactiva, resiliencia, observabilidad y arquitectura empresarial.*
+- **Nivel 18:** Clientes HTTP (WebClient para consumir APIs externas).
+- **Nivel 19:** Programación Reactiva (Project Reactor: Mono y Flux).
+- **Nivel 20:** APIs Modernas (GraphQL).
+- **Nivel 21:** Resiliencia (Resilience4j: CircuitBreaker, Bulkhead, RateLimiter).
+- **Nivel 22:** Trazabilidad Distribuida (Tracing y Zipkin).
+- **Nivel 23:** Comunicación Bidireccional (WebSockets).
+- **Nivel 24:** Procesamiento Masivo (Spring Batch).
+- **Nivel 25:** Automatización (Scheduler y tareas programadas).
+- **Nivel 26:** Auditoría Histórica (Hibernate Envers).
+- **Nivel 27:** Gestión de Entornos (Perfiles y Properties de Spring).
+- **Nivel 28:** Migraciones de Base de Datos (Flyway).
+- **Nivel 29:** Monitorización 360° (Actuator y Prometheus).
 - **Nivel 30:** Patrones de Orquestación (Saga y Outbox).
-- **Nivel 31:** Programación Reactiva (Project Reactor).
-- **Nivel 32:** Seguridad Proactiva (Detección de Intrusos y CSRF).
-- **Meta:** Dominar arquitecturas distribuidas, reactivas y seguras a escala empresarial.
+- **Nivel 31:** Seguridad Proactiva (Detección de Intrusos, XSS, SQLi, CSRF).
+- **Nivel 32:** Arquitectura Avanzada (Event Sourcing, CQS, DDD, Hexagonal).
+- **Meta:** Dominar arquitecturas distribuidas, reactivas, seguras y de élite empresarial.
 
 ---
 
