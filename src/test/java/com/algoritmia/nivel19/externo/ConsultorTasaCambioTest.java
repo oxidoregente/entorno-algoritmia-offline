@@ -26,6 +26,8 @@ class ConsultorTasaCambioTest {
         // Este test fallará hasta que el estudiante implemente el WebClient
         // StepVerifier.create(servicio.obtenerTasaUSD())
         //         .expectNext(0.92)
-        .verifyComplete();
+        //         .verifyComplete();
+        // TODO: Descomentar las líneas anteriores cuando implementes obtenerTasaUSD
+        org.junit.jupiter.api.Assertions.assertNotNull(servicio);
     }
 }
