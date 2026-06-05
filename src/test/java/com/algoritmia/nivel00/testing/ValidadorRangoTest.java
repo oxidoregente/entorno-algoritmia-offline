@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.*;
  *       {@code assertFalse} para inválidos.</li>
  * </ol></p>
  */
-class ValidadorRangoTestEnunciado {
+class ValidadorRangoTest {
 
     @Test
     void testRangoInclusivo() {

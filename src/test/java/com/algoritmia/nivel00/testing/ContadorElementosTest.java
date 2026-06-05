@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.*;
  *   <li>ASSERT: Usa {@code assertEquals} con el conteo esperado.</li>
  * </ol></p>
  */
-class ContadorElementosTestEnunciado {
+class ContadorElementosTest {
 
     @Test
     void testConteo() {

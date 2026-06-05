@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
  *   <li>ASSERT: Usa {@code assertEquals} para verificar el resultado.</li>
  * </ol></p>
  */
-class CalculadoraSimpleTestEnunciado {
+class CalculadoraSimpleTest {
 
     @Test
     void testSuma() {

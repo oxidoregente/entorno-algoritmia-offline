@@ -15,7 +15,7 @@ import org.junit.jupiter.api.Test;
  * 2. Implementa este test para verificar que el cálculo de interés compuesto sea correcto.
  * 3. Usa el patrón Arrange-Act-Assert (AAA).</p>
  */
-class CalculadoraFinancieraTestEnunciado {
+class CalculadoraFinancieraTest {
 
     @Test
     void testCalcularInteresCompuesto() {
