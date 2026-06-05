@@ -1,0 +1,25 @@
+package com.algoritmia.nivel27.profiles;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+/**
+ * Test para ejercicio de Profiles.
+ * Valida configuración por profile.
+ */
+@SpringBootTest
+@ActiveProfiles("prod")
+class ProfileTest {
+
+    @Autowired
+    private ProfileConfigEnunciado profileConfig;
+
+    @Test
+    void testEsProduccion() {
+        assertTrue(profileConfig.esProduccion(), "Debería detectar que el perfil 'prod' está activo");
+    }
+}

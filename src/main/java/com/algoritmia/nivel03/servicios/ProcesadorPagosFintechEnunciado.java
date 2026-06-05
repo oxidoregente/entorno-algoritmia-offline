@@ -1,15 +1,14 @@
 package com.algoritmia.nivel03.servicios;
 
-import com.algoritmia.nivel14.mensajeria.ProductorMensajesEnunciado;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 
 /**
  * 🎓 RETO: Procesador de Pagos Fintech. <b>Dificultad: Media</b>
  *
- * <p>
- * Este servicio calcula la comisión de una transacción basada en el tipo de
- * tarjeta y notifica cada pago procesado a través del sistema de mensajería.
- * </p>
+ * <p>Este servicio calcula la comisión de una transacción basada en el tipo de tarjeta
+ * y publica un evento de dominio para que otros componentes del sistema (auditoría,
+ * notificaciones, analítica) puedan reaccionar de forma desacoplada.</p>
  *
  * <p>
  * <b>Reglas de comisión:</b>
@@ -20,11 +19,10 @@ import org.springframework.stereotype.Service;
  * <li>CORPORATIVA: 5% del monto.</li>
  * </ul>
  *
- * <p>
- * <b>Nota:</b> Después de calcular la comisión, debes enviar un evento
- * asíncrono usando `productor.enviarEvento(...)` para notificar el pago
- * procesado.
- * </p>
+ * <p><b>Nota:</b> Después de calcular la comisión, debes publicar un evento de dominio
+ * usando {@code publisher.publishEvent(...)} para notificar el pago procesado. Esto
+ * desacopla el procesador del sistema de mensajería (RabbitMQ), que se introduce
+ * en el nivel 14.</p>
  *
  * <h3>Ejemplo:</h3>
  * 
@@ -37,19 +35,20 @@ import org.springframework.stereotype.Service;
  * <b>Pistas:</b>
  * </p>
  * <ul>
- * <li>Usa un `switch` mejorado (Java 21) con expresión para calcular la
- * tasa.</li>
- * <li>Llama a `productor.enviarEvento(datosDelPago)` después de calcular la
- * comisión.</li>
+ *   <li>Usa un `switch` mejorado (Java 21) con expresión para calcular la tasa.</li>
+ *   <li>Usa {@code ApplicationEventPublisher} (interfaz nativa de Spring) en lugar
+ *       de acoplarte a una clase concreta de mensajería.</li>
+ *   <li>Llama a {@code publisher.publishEvent("Pago procesado - Monto: $X | Comisión: $Y")}
+ *       después de calcular la comisión.</li>
  * </ul>
  */
 @Service
 public class ProcesadorPagosFintechEnunciado {
 
-    private final ProductorMensajesEnunciado productor;
+    private final ApplicationEventPublisher publisher;
 
-    public ProcesadorPagosFintechEnunciado(ProductorMensajesEnunciado productor) {
-        this.productor = productor;
+    public ProcesadorPagosFintechEnunciado(ApplicationEventPublisher publisher) {
+        this.publisher = publisher;
     }
 
     public enum TipoTarjeta {
@@ -57,15 +56,14 @@ public class ProcesadorPagosFintechEnunciado {
     }
 
     /**
-     * Calcula la comisión según el tipo de tarjeta y envía un evento de
-     * notificación.
+     * Calcula la comisión según el tipo de tarjeta y publica un evento de dominio.
      *
      * @param monto El importe de la transacción.
      * @param tipo  El tipo de tarjeta utilizada.
      * @return El monto de la comisión calculada.
      */
     public double calcularComision(double monto, TipoTarjeta tipo) {
-        // TODO: Implementa el cálculo con switch mejorado y envía evento
+        // TODO: Implementa el cálculo con switch mejorado y publica el evento
 
         double comision = 0;
 

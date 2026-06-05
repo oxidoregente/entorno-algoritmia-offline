@@ -3,25 +3,26 @@ package com.algoritmia.nivel03.servicios;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-import com.algoritmia.nivel14.mensajeria.ProductorMensajesEnunciado;
-import com.algoritmia.nivel03.servicios.GestorInventarioEnunciado.EstatusOrden;
+import com.algoritmia.nivel02.logica.GestorInventarioEnunciado;
+import com.algoritmia.nivel02.logica.GestorInventarioEnunciado.EstatusOrden;
 import com.algoritmia.nivel03.servicios.ProcesadorPagosFintechEnunciado.TipoTarjeta;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.context.ApplicationEventPublisher;
 
 /**
  * Test para ejercicio de Orquestador de Pedidos.
- * Valida integración de inventario, pagos y mensajería con mocks.
+ * Valida integración de inventario, pagos y publicación de eventos con mocks.
  */
 @ExtendWith(MockitoExtension.class)
 class OrquestadorPedidosTest {
 
     @Mock private GestorInventarioEnunciado inventario;
     @Mock private ProcesadorPagosFintechEnunciado pagos;
-    @Mock private ProductorMensajesEnunciado productor;
+    @Mock private ApplicationEventPublisher publicadorEventos;
 
     @InjectMocks
     private OrquestadorPedidosEnunciado orquestador;
@@ -33,15 +34,15 @@ class OrquestadorPedidosTest {
             .thenReturn(EstatusOrden.PROCESADO_EXITOSO);
 
         // ACT
-        boolean resultado = orquestador.procesarPedido("Laptop", 1, 1000.0, "CREDITO");
+        boolean resultado = orquestador.procesarPedido("Laptop", 1, 1000.0, TipoTarjeta.CREDITO);
 
         // ASSERT
         assertTrue(resultado);
-        
-        // Verificamos que se llamó a los tres servicios
+
+        // Verificamos que se llamó a los tres servicios en orden
         verify(inventario).procesarOrden(anyInt(), anyInt(), anyBoolean());
         verify(pagos).calcularComision(anyDouble(), any());
-        verify(productor).enviarEvento(anyString());
+        verify(publicadorEventos).publishEvent(anyString());
     }
 
     @Test
@@ -52,10 +53,10 @@ class OrquestadorPedidosTest {
 
         // ACT & ASSERT: El orquestador debería fallar
         assertThrows(RuntimeException.class, () -> {
-            orquestador.procesarPedido("Laptop", 1, 1000.0, "CREDITO");
+            orquestador.procesarPedido("Laptop", 1, 1000.0, TipoTarjeta.CREDITO);
         });
-        
+
         // El pago y la notificación NUNCA deberían haberse llamado
-        verifyNoInteractions(pagos, productor);
+        verifyNoInteractions(pagos, publicadorEventos);
     }
 }
