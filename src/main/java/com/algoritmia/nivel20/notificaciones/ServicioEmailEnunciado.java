@@ -1,5 +1,6 @@
 package com.algoritmia.nivel20.notificaciones;
 
+import com.algoritmia.nivel14.mensajeria.Notificador;
 import org.springframework.stereotype.Service;
 
 /**
@@ -10,12 +11,15 @@ import org.springframework.stereotype.Service;
  * por correo electrónico. En esta simulación, las notificaciones
  * se imprimen por consola con un formato profesional.</p>
  *
+ * <p><b>Implementa {@link Notificador}:</b> Este servicio implementa la interfaz
+ * definida en el nivel 14, lo que permite que el consumidor de RabbitMQ lo
+ * inyecte automáticamente sin acoplarse a esta clase concreta.</p>
+ *
  * <p>Este servicio es utilizado por otros componentes del nivel 20
- * como {@link com.algoritmia.nivel20.notificaciones.ServicioBienvenidaEnunciado}
- * y {@link com.algoritmia.nivel20.notificaciones.AlertaSaldoBajoEnunciado}.</p>
+ * como {@link ServicioBienvenidaEnunciado} y {@link AlertaSaldoBajoEnunciado}.</p>
  */
 @Service
-public class ServicioEmailEnunciado {
+public class ServicioEmailEnunciado implements Notificador {
 
     /**
      * Envía una notificación de correo simulada (se imprime por consola).
@@ -24,6 +28,7 @@ public class ServicioEmailEnunciado {
      * @param asunto Asunto del mensaje.
      * @param texto  Cuerpo del mensaje en texto plano.
      */
+    @Override
     public void enviarNotificacionSimple(String para, String asunto, String texto) {
         // TODO: Simular envío imprimiendo en consola con formato profesional
     }
