@@ -1,6 +1,8 @@
 package com.algoritmia.nivel03.servicios;
 
-import com.algoritmia.nivel14.mensajeria.ProductorMensajesEnunciado;
+import com.algoritmia.nivel03.servicios.GestorInventarioEnunciado.EstatusOrden;
+import com.algoritmia.nivel03.servicios.ProcesadorPagosFintechEnunciado.TipoTarjeta;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 
 /**
@@ -12,29 +14,34 @@ import org.springframework.stereotype.Service;
  *
  * <p><b>Flujo:</b></p>
  * <ol>
- *   <li><b>Validar Stock:</b> Usa `GestorInventarioEnunciado.procesarOrden(...)`.
- *       Si falla, la orden completa se rechaza.</li>
- *   <li><b>Procesar Pago:</b> Usa `ProcesadorPagosFintechEnunciado.calcularComision(...)`.
- *       Si falla, se revierte la orden.</li>
- *   <li><b>Notificar:</b> Si todo es exitoso, envía un mensaje con `ProductorMensajesEnunciado.enviarEvento(...)`.</li>
+ *   <li><b>Validar Stock:</b> Usa {@code GestorInventarioEnunciado.procesarOrden(...)}.
+ *       Si el estatus no es {@code PROCESADO_EXITOSO}, la orden completa se rechaza.</li>
+ *   <li><b>Procesar Pago:</b> Usa {@code ProcesadorPagosFintechEnunciado.calcularComision(...)}.
+ *       Si el cálculo falla, se revierte la orden de inventario.</li>
+ *   <li><b>Notificar:</b> Si todo es exitoso, publica un evento de dominio usando
+ *       {@link ApplicationEventPublisher}.</li>
  * </ol>
  *
  * <p><b>Enfoque de Testing:</b> Este reto se enfoca en orquestar múltiples dependencias
  * usando Mocks y verificar que todas fueron llamadas en el orden correcto.</p>
+ *
+ * <p><b>Nota arquitectónica:</b> Se usa {@code ApplicationEventPublisher} (interfaz nativa
+ * de Spring) en lugar de importar una clase concreta de mensajería. Esto desacopla este
+ * servicio del sistema de RabbitMQ, que se introduce en el nivel 14.</p>
  */
 @Service
 public class OrquestadorPedidosEnunciado {
 
     private final GestorInventarioEnunciado inventario;
     private final ProcesadorPagosFintechEnunciado pagos;
-    private final ProductorMensajesEnunciado productor;
+    private final ApplicationEventPublisher publicadorEventos;
 
     public OrquestadorPedidosEnunciado(GestorInventarioEnunciado inventario,
-                                     ProcesadorPagosFintechEnunciado pagos,
-                                     ProductorMensajesEnunciado productor) {
+                                       ProcesadorPagosFintechEnunciado pagos,
+                                       ApplicationEventPublisher publicadorEventos) {
         this.inventario = inventario;
         this.pagos = pagos;
-        this.productor = productor;
+        this.publicadorEventos = publicadorEventos;
     }
 
     /**
@@ -46,7 +53,7 @@ public class OrquestadorPedidosEnunciado {
      * @param tipoTarjeta El tipo de tarjeta para el pago.
      * @return true si el pedido se procesa exitosamente, false en caso contrario.
      */
-    public boolean procesarPedido(String item, int cantidad, double monto, String tipoTarjeta) {
+    public boolean procesarPedido(String item, int cantidad, double monto, TipoTarjeta tipoTarjeta) {
         // TODO: Implementa la orquestación de servicios en el orden correcto
         return false;
     }
