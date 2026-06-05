@@ -1,6 +1,6 @@
 package com.algoritmia.nivel02.streams;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 import java.util.List;
 import java.util.Map;
 import org.junit.jupiter.api.Test;

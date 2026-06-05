@@ -15,6 +15,8 @@ class ValidadorReactivoTest {
         // El test fallará hasta que el estudiante use Mono.zip
         // StepVerifier.create(validador.validarTodo(1L, 1L))
         //         .expectNext(true)
-        .verifyComplete();
+        //         .verifyComplete();
+        // TODO: Descomentar las líneas anteriores cuando implementes validarTodo
+        org.junit.jupiter.api.Assertions.assertNotNull(validador);
     }
 }

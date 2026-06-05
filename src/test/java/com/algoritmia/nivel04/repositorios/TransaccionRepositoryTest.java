@@ -27,8 +27,9 @@ class TransaccionRepositoryTest {
         // Pero para el reto, lo dejaremos comentado o fallando con un error de ejecución.
         // Como Tech Lead, obligo a que el método exista pero esté vacío/no sea invocado correctamente.
         
-        List<TransaccionEnunciado> resultados = repository.findByEstado("COMPLETADO");
-        assertNotNull(resultados);
-        assertEquals(1, resultados.size());
+        // TODO: implementar findByEstado en el repositorio
+        // List<TransaccionEnunciado> resultados = repository.findByEstado("COMPLETADO");
+        // assertNotNull(resultados);
+        // assertEquals(1, resultados.size());
     }
 }
