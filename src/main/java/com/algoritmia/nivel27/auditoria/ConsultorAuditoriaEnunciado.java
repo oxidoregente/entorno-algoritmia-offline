@@ -7,12 +7,32 @@ import org.springframework.stereotype.Service;
  * 🎓 RETO: Consultor de Auditoría.
  * <b>Dificultad: Media</b>
  *
- * <p>Comprende cómo Hibernate Envers crea automáticamente tablas de
- * auditoría (ej: {@code transaccion_enunciado_aud}) cuando una entidad
- * está anotada con {@code @Audited}.</p>
+ * <p>En una fintech, un cliente puede reclamar "yo no hice esa transferencia".
+ * El equipo de soporte debe poder revisar todas las versiones pasadas de la
+ * transacción (monto, fecha, cuenta destino) y mostrar al cliente el histórico
+ * completo. Hibernate Envers lo permite gracias a las tablas
+ * <code>_AUD</code> que se generan automáticamente.</p>
  *
- * <p>La tarea consiste en entender el mecanismo de captura de historial
- * y simular la consulta de revisiones pasadas de una transacción.</p>
+ * <p><b>Reglas / Estructura / Conceptos clave:</b></p>
+ * <ul>
+ *   <li>Toda entidad anotada con <code>@Audited</code> genera una tabla espejo <code>_AUD</code>.</li>
+ *   <li>Las revisiones se consultan con <code>AuditReader</code> y ofrecen metadatos (autor, fecha, tipo de cambio).</li>
+ *   <li>Este consultor simula la consulta imprimiendo por consola el id de la transacción.</li>
+ * </ul>
+ *
+ * <h3>Ejemplo:</h3>
+ * <pre>
+ * # Tablas generadas
+ * transaccion_enunciado
+ * transaccion_enunciado_aud
+ * revinfo (metadatos de revisión)
+ * </pre>
+ *
+ * <h3>Pistas:</h3>
+ * <ul>
+ *   <li>El mensaje en consola ya valida que la entidad cuenta con un <code>getId()</code>.</li>
+ *   <li>Para la versión real, sustituye el <code>System.out.println</code> por una <code>AuditQuery</code>.</li>
+ * </ul>
  */
 @Service
 public class ConsultorAuditoriaEnunciado {
