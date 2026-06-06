@@ -58,8 +58,8 @@ public class MotorCalculoRoguelikeEnunciado {
         double dañoFinal = dañoBase * multiplicadorItem;
 
         if (random.nextDouble() < probCritico)
-            dañoFinal *= 2;
+            dañoFinal *= 2.0;
 
-        return dañoFinal;
+        return Math.round(dañoFinal * 100) / 100;
     }
 }

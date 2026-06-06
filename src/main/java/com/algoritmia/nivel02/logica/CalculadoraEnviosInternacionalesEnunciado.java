@@ -59,8 +59,6 @@ public class CalculadoraEnviosInternacionalesEnunciado {
     	
     	}
     	
-    	
-        // TODO: Implementa la tarifación por zona y peso
         return (peso * tarifa) + recargo;
     }
 }

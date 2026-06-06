@@ -43,11 +43,6 @@ public class BuscadorEmpleadosEnunciado {
      * @param empleados Lista de empleados a evaluar. No debe ser {@code null}.
      * @return El salario máximo del departamento "IT", o {@code null} si no hay ninguno.
      */
-    public Double encontrarSalarioMaximoIT(List<Empleado> empleados) {
-        // TODO: Implementa tu lógica aquí.
-        // Filtra por "IT" y busca el máximo del campo salario.
-        return null;
-    }
 	public Double encontrarSalarioMaximoIT(List<Empleado> empleados) {
 		// TODO: Implementa tu lógica aquí.
 		// Filtra por "IT" y busca el máximo del campo salario.

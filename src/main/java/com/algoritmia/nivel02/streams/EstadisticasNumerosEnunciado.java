@@ -54,10 +54,6 @@ public class EstadisticasNumerosEnunciado {
      * @return objeto {@link DoubleSummaryStatistics} con las métricas
      *         agregadas.
      */
-    public DoubleSummaryStatistics obtenerEstadisticas(List<Double> numeros) {
-        // TODO: Implementa usando .stream().mapToDouble().summaryStatistics()
-        return null;
-    }
 	public DoubleSummaryStatistics obtenerEstadisticas(List<Double> numeros) {
 		// TODO: Implementa usando .stream().mapToDouble().summaryStatistics()
 

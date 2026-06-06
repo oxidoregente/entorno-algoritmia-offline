@@ -3,20 +3,24 @@ package com.algoritmia.nivel02.logica;
 import org.springframework.stereotype.Service;
 
 /**
- * 🎓 RETO: Validador de Email Empresarial.
- * <b>Dificultad: Fácil</b>
+ * 🎓 RETO: Validador de Email Empresarial. <b>Dificultad: Fácil</b>
  *
- * <p>Implementa un servicio que verifique si un correo electrónico cumple con los
- * estándares básicos de la empresa.</p>
+ * <p>
+ * Implementa un servicio que verifique si un correo electrónico cumple con los
+ * estándares básicos de la empresa.
+ * </p>
  *
- * <p><b>Reglas:</b></p>
+ * <p>
+ * <b>Reglas:</b>
+ * </p>
  * <ol>
- *   <li>Debe contener exactamente un símbolo '@'.</li>
- *   <li>Debe terminar en '.com' o '.org'.</li>
- *   <li>NO debe contener espacios en blanco.</li>
+ * <li>Debe contener exactamente un símbolo '@'.</li>
+ * <li>Debe terminar en '.com' o '.org'.</li>
+ * <li>NO debe contener espacios en blanco.</li>
  * </ol>
  *
  * <h3>Ejemplos:</h3>
+ * 
  * <pre>
  * "user@company.com"  -> true
  * "user@company.org"  -> true
@@ -24,11 +28,14 @@ import org.springframework.stereotype.Service;
  * "user name@com"     -> false
  * </pre>
  *
- * <p><b>Pistas:</b></p>
+ * <p>
+ * <b>Pistas:</b>
+ * </p>
  * <ul>
- *   <li>Usa `String.contains("@")` y cuenta las ocurrencias con bucles o `replace`.</li>
- *   <li>Usa `String.endsWith(".com")` o `endsWith(".org")`.</li>
- *   <li>Usa `String.contains(" ")` para detectar espacios.</li>
+ * <li>Usa `String.contains("@")` y cuenta las ocurrencias con bucles o
+ * `replace`.</li>
+ * <li>Usa `String.endsWith(".com")` o `endsWith(".org")`.</li>
+ * <li>Usa `String.contains(" ")` para detectar espacios.</li>
  * </ul>
  */
 @Service
@@ -42,6 +49,24 @@ public class ValidadorEmailEnunciado {
      */
     public boolean esEmailValido(String email) {
         // TODO: Implementa la validación del correo
-        return false;
+
+        if (email == null || email.trim().equals(""))
+            return false;
+
+        if (email.contains(" "))
+            return false;
+
+        int ocurrencia = 0;
+        for (char c : email.toCharArray())
+            if (c == '@')
+                ocurrencia++;
+
+        if (ocurrencia < 1 || ocurrencia > 1)
+            return false;
+        
+        if(!email.endsWith(".com") && !email.endsWith(".org"))
+            return false;
+
+        return true;
     }
 }

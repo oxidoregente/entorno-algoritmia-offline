@@ -4,34 +4,41 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * 🎓 RETO: Validador de Inscripciones a Cursos.
- * <b>Dificultad: Fácil</b>
+ * 🎓 RETO: Validador de Inscripciones a Cursos. <b>Dificultad: Fácil</b>
  *
- * <p>Determina si un estudiante puede inscribirse a un curso avanzado.</p>
+ * <p>
+ * Determina si un estudiante puede inscribirse a un curso avanzado.
+ * </p>
  *
- * <p>Un estudiante es elegible si cumple con los siguientes requisitos:
+ * <p>
+ * Un estudiante es elegible si cumple con los siguientes requisitos:
  * <ol>
- *   <li>Haber aprobado todos los cursos pre-requisitos necesarios.</li>
- *   <li>Tener un promedio (GPA) mínimo de 3.0.</li>
+ * <li>Haber aprobado todos los cursos pre-requisitos necesarios.</li>
+ * <li>Tener un promedio (GPA) mínimo de 3.0.</li>
  * </ol>
  *
  * <h3>Ejemplo:</h3>
+ * 
  * <pre>
  * Estudiante: ("Ana", 3.5, ["Matemáticas", "Física"])
  * Requisitos: ["Matemáticas", "Física"]
  * Resultado: true
  * </pre>
  *
- * <p><b>Pistas:</b></p>
+ * <p>
+ * <b>Pistas:</b>
+ * </p>
  * <ul>
- *   <li>Usa `estudiante.cursosAprobados().containsAll(requisitos)` para verificar los pre-requisitos.</li>
- *   <li>Verifica que `estudiante.gpa() >= 3.0`.</li>
+ * <li>Usa `estudiante.cursosAprobados().containsAll(requisitos)` para verificar
+ * los pre-requisitos.</li>
+ * <li>Verifica que `estudiante.gpa() >= 3.0`.</li>
  * </ul>
  */
 @Service
 public class ValidadorInscripcionesCursoEnunciado {
 
-    public record Estudiante(String nombre, double gpa, List<String> cursosAprobados) {}
+    public record Estudiante(String nombre, double gpa, List<String> cursosAprobados) {
+    }
 
     /**
      * Verifica si un estudiante puede inscribirse a un curso según sus requisitos.
@@ -42,6 +49,10 @@ public class ValidadorInscripcionesCursoEnunciado {
      */
     public boolean puedeInscribirse(Estudiante estudiante, List<String> requisitos) {
         // TODO: Verifica cursos aprobados y GPA mínimo
-        return false;
+
+        if (!estudiante.cursosAprobados.containsAll(requisitos))
+            return false;
+
+        return estudiante.gpa >= 3.0;
     }
 }

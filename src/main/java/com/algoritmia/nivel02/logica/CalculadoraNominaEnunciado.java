@@ -42,31 +42,31 @@ import java.util.stream.Collectors;
 @Service
 public class CalculadoraNominaEnunciado {
 
-	public record Deduccion(String concepto, double monto) {
-	}
+    public record Deduccion(String concepto, double monto) {
+    }
 
-	/**
-	 * Calcula el salario neto de un empleado.
-	 *
-	 * @param base               Salario base.
-	 * @param valorHoraExtra     Valor de cada hora extra.
-	 * @param cantidadHorasExtra Cantidad de horas extras trabajadas.
-	 * @param deducciones        Lista de deducciones a aplicar.
-	 * @return El salario neto calculado.
-	 * @throws RuntimeException Si las deducciones exceden el 50% del salario base.
-	 */
-	public double calcularNeto(double base, double valorHoraExtra, int cantidadHorasExtra,
-			List<Deduccion> deducciones) {
-		// TODO: Calcula extras, deducciones y valida la regla del 50%
-		double salarioNeto = 0;
+    /**
+     * Calcula el salario neto de un empleado.
+     *
+     * @param base               Salario base.
+     * @param valorHoraExtra     Valor de cada hora extra.
+     * @param cantidadHorasExtra Cantidad de horas extras trabajadas.
+     * @param deducciones        Lista de deducciones a aplicar.
+     * @return El salario neto calculado.
+     * @throws RuntimeException Si las deducciones exceden el 50% del salario base.
+     */
+    public double calcularNeto(double base, double valorHoraExtra, int cantidadHorasExtra,
+            List<Deduccion> deducciones) {
+        // TODO: Calcula extras, deducciones y valida la regla del 50%
+        double salarioNeto = 0;
 
-		double deduccionesMonto = deducciones.stream().collect(Collectors.summingDouble(Deduccion::monto));
-		
-		salarioNeto = base + (valorHoraExtra * cantidadHorasExtra) - deduccionesMonto;
+        double deduccionesMonto = deducciones.stream().collect(Collectors.summingDouble(Deduccion::monto));
 
-		if (salarioNeto < base)
-			throw new RuntimeException("Deducciones Excesivas");
-		
-		return salarioNeto;
-	}
+        salarioNeto = base + (valorHoraExtra * cantidadHorasExtra) - deduccionesMonto;
+
+        if (salarioNeto < base)
+            throw new RuntimeException("Deducciones Excesivas");
+
+        return salarioNeto;
+    }
 }

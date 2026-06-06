@@ -1,30 +1,37 @@
 package com.algoritmia.nivel02.logica;
 
 import org.springframework.stereotype.Service;
-import java.util.Map;
 
 /**
- * 🎓 RETO: Sistema de Reservas de Vuelos.
- * <b>Dificultad: Fácil</b>
+ * 🎓 RETO: Sistema de Reservas de Vuelos. <b>Dificultad: Fácil</b>
  *
- * <p>Calcula el precio final de un ticket de avión basándose en el destino y la clase seleccionada.</p>
+ * <p>
+ * Calcula el precio final de un ticket de avión basándose en el destino y la
+ * clase seleccionada.
+ * </p>
  *
- * <p><b>Destinos soportados y precios base:</b></p>
+ * <p>
+ * <b>Destinos soportados y precios base:</b>
+ * </p>
  * <ul>
- *   <li>"MADRID" -> $500</li>
- *   <li>"PARIS" -> $600</li>
- *   <li>"LONDRES" -> $700</li>
+ * <li>"MADRID" -> $500</li>
+ * <li>"PARIS" -> $600</li>
+ * <li>"LONDRES" -> $700</li>
  * </ul>
  *
- * <p><b>Reglas:</b></p>
+ * <p>
+ * <b>Reglas:</b>
+ * </p>
  * <ol>
- *   <li>Si el destino no está soportado, lanza una `IllegalArgumentException`.</li>
- *   <li>Clase "EJECUTIVA": incrementa el precio base en un 50%.</li>
- *   <li>Clase "TURISTA": mantiene el precio base.</li>
- *   <li>Al final, añade una tasa aeroportuaria fija de $45.</li>
+ * <li>Si el destino no está soportado, lanza una
+ * `IllegalArgumentException`.</li>
+ * <li>Clase "EJECUTIVA": incrementa el precio base en un 50%.</li>
+ * <li>Clase "TURISTA": mantiene el precio base.</li>
+ * <li>Al final, añade una tasa aeroportuaria fija de $45.</li>
  * </ol>
  *
  * <h3>Ejemplo:</h3>
+ * 
  * <pre>
  * destino="PARIS", clase="EJECUTIVA"
  * Precio base: 600
@@ -46,6 +53,38 @@ public class SistemaReservasVuelosEnunciado {
      */
     public double calcularPrecioTicket(String destino, String clase) {
         // TODO: Implementa la lógica de cálculo del ticket
-        return 0;
+
+        double precio = 0.0;
+
+        switch (destino.toLowerCase()) {
+        case "madrid":
+            precio = 500.0;
+            break;
+
+        case "paris":
+            precio = 600.0;
+            break;
+
+        case "londres":
+            precio = 700.0;
+            break;
+
+        default:
+            throw new IllegalArgumentException("Destino no encontrado");
+        }
+
+        switch (clase.toLowerCase()) {
+        case "ejecutiva":
+            precio *= 1.5;
+            break;
+        default:
+            throw new IllegalArgumentException("Clase no encontrada");
+        }
+
+        double tasaAeropuertuaria = 45.0;
+
+        precio += tasaAeropuertuaria;
+
+        return precio;
     }
 }
